@@ -8,10 +8,9 @@ public class CameraManager : MonoBehaviour {
     public CameraRoom CurrentRoom { get; private set; }
     public Transform CameraTarget;
     public float MoveSpeed;
-    public float DeadZoneSize;
+    public Vector2 DeadZoneSize;
 
     Vector2 targetPos;
-    Vector2 deadZoneOffset;
     Vector2 screenSizeCompensation;
     Camera cam;
     float lastCameraSize;
@@ -35,10 +34,14 @@ public class CameraManager : MonoBehaviour {
             return;
         }
 
-        float dist = Vector2.Distance(transform.position, CameraTarget.position);
-        deadZoneOffset = ((Vector2)CameraTarget.position - (Vector2)transform.position).normalized * DeadZoneSize;
-        if(CameraTarget && dist > DeadZoneSize) {
-            targetPos = (Vector2)CameraTarget.position - deadZoneOffset;
+        if(CameraTarget) {
+            if(CameraTarget.position.y >= transform.position.y + DeadZoneSize.y || CameraTarget.position.y <= transform.position.y - DeadZoneSize.y) {
+                targetPos.y = CameraTarget.position.y;
+            }
+
+            if(CameraTarget.position.x >= transform.position.x + DeadZoneSize.x || CameraTarget.position.x <= transform.position.x - DeadZoneSize.x) {
+                targetPos.x = CameraTarget.position.x;
+            }
         }
 
         if(CurrentRoom) {
@@ -67,7 +70,7 @@ public class CameraManager : MonoBehaviour {
                 );
         }
 
-        dist = Vector2.Distance(transform.position, targetPos);
+        float dist = Vector2.Distance(transform.position, targetPos);
         Vector3 newPos = Vector2.MoveTowards(transform.position, targetPos, MoveSpeed * (dist / 10f) * Time.deltaTime);
         newPos.z = -10f;
         transform.position = newPos;
@@ -104,10 +107,8 @@ public class CameraManager : MonoBehaviour {
             Gizmos.DrawLine(corner3, corner2);
         }
 
-        UnityEditor.Handles.color = Color.red;
-        UnityEditor.Handles.DrawWireDisc(new Vector3(transform.position.x, transform.position.y, 0f), Vector3.forward, DeadZoneSize);
-
-        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, 0f), deadZoneOffset, Color.white);
+        Gizmos.color = Color.cyan * new Color(1f, 1f, 1f, 0.3f);
+        Gizmos.DrawCube(new Vector3(transform.position.x, transform.position.y, 0f), DeadZoneSize * 2f);
     }
 
     public void SetRoom(CameraRoom room) {

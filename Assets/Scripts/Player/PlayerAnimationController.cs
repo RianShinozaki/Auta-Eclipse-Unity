@@ -31,10 +31,14 @@ public class PlayerAnimationController : MonoBehaviour
         {
             transform.localScale = new Vector3( parent.Velocity.x > 0 ? 1 : -1, 1, 1);
         }
+
+        anim.SetBool("Orb", parent.Orb);
     }
 
     public void SetJump()
     {
         anim.SetTrigger("Jump");
     }
+
+
 }

@@ -10,6 +10,8 @@ public class PhysicsEntity : MonoBehaviour
     public Vector2 Velocity;
     public float Gravity;
     public bool Grounded;
+    public bool Bounce;
+    public float BounceMult = 0.8f;
 
     public Rigidbody2D rb;
     public Collider2D coll;
@@ -19,20 +21,33 @@ public class PhysicsEntity : MonoBehaviour
 
     public List<ContactPoint2D> GroundPoints = new List<ContactPoint2D>();
     public List<ContactPoint2D> WallPoints = new List<ContactPoint2D>();
+
+    public int Mode;
+    public int SubMode;
+    public virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (Bounce)
+        {
+            Velocity = Vector2.Reflect(Velocity, collision.contacts[0].normal) * BounceMult;
+        }
+    }
     public virtual void OnCollisionStay2D(Collision2D collision)
     {
-        foreach(ContactPoint2D contact in collision.contacts)
+        if (!Bounce)
         {
-            float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
-            //Debug.Log(angle);
-            if(angle >= -45 && angle <= 45)
+            foreach (ContactPoint2D contact in collision.contacts)
             {
-                GroundPoints.Add(contact);
-            } else
-            {
-                WallPoints.Add(contact);
+                float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
+                if (angle >= -45 && angle <= 45)
+                {
+                    GroundPoints.Add(contact);
+                }
+                else
+                {
+                    WallPoints.Add(contact);
+                }
+
             }
-            
         }
     }
 
@@ -47,83 +62,88 @@ public class PhysicsEntity : MonoBehaviour
     {
         Vector3 vel = new Vector3(0, 0, 0);
 
-        int wallPointsNum = 0;
-        float avgAngle = 0;
-
-        foreach (ContactPoint2D contact in WallPoints)
+        if (!Bounce)
         {
-            Debug.Log(Vector2.SignedAngle(Vector2.up, contact.normal));
+            int wallPointsNum = 0;
+            float avgAngle = 0;
 
-            wallPointsNum++;
 
-            avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
-        }
-        if(wallPointsNum > 0)
-        {
-            avgAngle /= wallPointsNum;
-            if(avgAngle > 0)
+            foreach (ContactPoint2D contact in WallPoints)
             {
-                float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
-                if (Velocity.x > toSpdx)
+
+                wallPointsNum++;
+
+                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
+            }
+            if (wallPointsNum > 0)
+            {
+                avgAngle /= wallPointsNum;
+                if (avgAngle > 0)
                 {
-                    Velocity.x = toSpdx;
+                    float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
+                    if (Velocity.x > toSpdx)
+                    {
+                        Velocity.x = toSpdx;
+                    }
                 }
+
+                if (avgAngle < 0)
+                {
+                    float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
+                    if (Velocity.x < toSpdx)
+                    {
+                        Velocity.x = toSpdx;
+                    }
+                }
+
             }
 
-            if (avgAngle < 0)
+            int groundPointsNum = 0;
+            avgAngle = 0;
+
+
+            foreach (ContactPoint2D contact in GroundPoints)
             {
-                float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
-                if (Velocity.x < toSpdx)
-                {
-                    Velocity.x = toSpdx;
-                }
+
+                groundPointsNum++;
+
+                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
             }
 
-        }
-
-        int groundPointsNum = 0;
-        avgAngle = 0;
-
-
-        foreach (ContactPoint2D contact in GroundPoints)
-        {
-            //Debug.Log(Vector2.SignedAngle(Vector2.up, contact.normal));
-
-            groundPointsNum++;
-
-            avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
-        }
-
-        if(groundPointsNum == 0 )
-        {
-            
-            Velocity.y -= Gravity * Time.deltaTime;
-            vel.x = Velocity.x;
-
-            if (Velocity.y < 0) //If falling, look for collision as to land on it perfectly
+            if (groundPointsNum == 0)
             {
-                Grounded = false;
-                
 
-                RaycastHit2D hit;
-                hit = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, Velocity.y * Time.deltaTime, EnvironmentMask);
-                Debug.DrawRay(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down * Velocity.y * Time.deltaTime);
+                Velocity.y -= Gravity * Time.deltaTime;
+                vel.x = Velocity.x;
 
-                if (hit.collider != null) //Check for a collision
+                if (Velocity.y < 0) //If falling, look for collision as to land on it perfectly
                 {
-                    transform.position = hit.point + new Vector2(0, coll.bounds.extents.y); //Move to collision point
-                    transform.position -= new Vector3(0, Velocity.y * Time.deltaTime, 0);
-                    Velocity.y = 0;
+                    Grounded = false;
+
+
+                    RaycastHit2D hit;
+                    hit = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, Velocity.y * Time.deltaTime, EnvironmentMask);
+
+                    if (hit.collider != null) //Check for a collision
+                    {
+                        transform.position = hit.point + new Vector2(0, coll.bounds.extents.y) * 0.95f; //Move to collision point
+                        transform.position -= new Vector3(0, Velocity.y * Time.deltaTime, 0);
+                        Velocity.y = 0;
+                    }
                 }
+            }
+            else
+            {
+                Grounded = true;
+                avgAngle /= groundPointsNum;
+                Velocity.y = Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.x;
+                vel.x = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.x;
             }
         } else
         {
-            Grounded = true;
-            avgAngle /= groundPointsNum;
-            Velocity.y = Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.x;
-            vel.x = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.x;
+            Velocity.y -= Gravity * Time.deltaTime;
+            vel = new Vector3(Velocity.x, Velocity.y, 0);
         }
-
         
 
         vel.y = Velocity.y;
@@ -135,7 +155,6 @@ public class PhysicsEntity : MonoBehaviour
             WallPoints.Clear();
         }
 
-        //Debug.Log("Hooray");
     }
     public virtual void FixedUpdate()
     {

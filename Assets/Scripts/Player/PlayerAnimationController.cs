@@ -26,6 +26,7 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetFloat("YSpeed", parent.Velocity.y);
 
         anim.SetBool("Grounded", parent.Grounded);
+        anim.SetFloat("GhostJumpTimer", parent.GhostJumpTimer);
 
         if(parent.Grounded && parent.Velocity.x != 0)
         {

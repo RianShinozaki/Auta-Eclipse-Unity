@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class PlayerController : PhysicsEntity
 {
@@ -9,20 +10,22 @@ public class PlayerController : PhysicsEntity
 
     #region Movement Values
 
-    public float MoveSpeed;
-    public float Accel;
-    public float Stop;
+    [FoldoutGroup("Movement Values")] public float MoveSpeed;
+    [FoldoutGroup("Movement Values")] public float Accel;
+    [FoldoutGroup("Movement Values")] public float Stop;
 
-    public float JumpPower;
-    public float AirFrictionDivide;
-    public float ShortHopGravity;
-    public bool AllowShortJump;
+    [FoldoutGroup("Movement Values")] public float JumpPower;
+    [FoldoutGroup("Movement Values")] public float AirFrictionDivide;
+    [FoldoutGroup("Movement Values")] public float ShortHopGravity;
+    [FoldoutGroup("Movement Values")] public bool AllowShortJump;
     #endregion
 
-    public bool CanOrb;
-    public bool Orb;
-    public float OrbPower = 10;
-    
+    [FoldoutGroup("Abilities")] public bool CanOrb;
+    [FoldoutGroup("Abilities")] public bool Orb;
+    [FoldoutGroup("Abilities")] public float OrbPower = 10;
+    [FoldoutGroup("Abilities")] public float GhostJumpTimer = 0;
+
+    [FoldoutGroup("FX")] public GameObject MaterializeFX;
     StateMachine stateMachine;
     BoxCollider2D boxColl;
 
@@ -67,32 +70,44 @@ public class PlayerController : PhysicsEntity
 
         if (Grounded) {
 
-            if (Input.GetButtonDown("Jump")) {
-                //transform.position += Vector3.up * 0.5f;
-                Grounded = false;
-                Velocity.y = JumpPower;
-                animationController.SetJump();
-                AllowShortJump = true;
-                GroundPoints.Clear();
-            }
+            GhostJumpTimer = 0.11f;
 
             CanOrb = true;
+        } else
+        {
+            GhostJumpTimer -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Jump") && GhostJumpTimer > 0)
+        {
+            //transform.position += Vector3.up * 0.5f;
+            Grounded = false;
+            Velocity.y = JumpPower;
+            animationController.SetJump();
+            AllowShortJump = true;
+            GroundPoints.Clear();
+
+            GhostJumpTimer = 0;
         }
 
         if (Input.GetButtonDown("Fire1") && CanOrb)
         {
-            Grounded = false;
-            AllowShortJump = false;
-            GroundPoints.Clear();
-
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.1f) {
                 Velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * OrbPower;
+                if(Grounded)
+                {
+                    Velocity.y = Mathf.Clamp(Velocity.y, 2f, 100f);
+                }
             }
             else
             {
                 Velocity = new Vector2(transform.GetChild(0).localScale.x, 0) * OrbPower;
             }
             stateMachine.SetState(State_Orb);
+
+            Grounded = false;
+            AllowShortJump = false;
+            GroundPoints.Clear();
 
             CanOrb = false;
 
@@ -125,18 +140,19 @@ public class PlayerController : PhysicsEntity
             stateMachine.SetState(State_Normal);
             if( Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.1f)
             {
-                Velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * 4;
+                Velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * 3.5f;
 
             }
             Orb = false;
             Bounce = false;
+            Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity); ;
         }
-        if(stateMachine.TimeInState > 0.1f)
+        if(stateMachine.TimeInState > 0.08f)
         {
             Velocity.y -= Gravity * 0.5f * Time.deltaTime;
         } else
         {
-            Velocity.y += Gravity * Time.deltaTime;
+            Velocity.y += Gravity * Time.deltaTime*0.8f;
         }
         
     }

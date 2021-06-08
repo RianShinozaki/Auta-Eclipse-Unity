@@ -11,7 +11,7 @@ public class PhysicsEntity : MonoBehaviour
     public float Gravity;
     public bool Grounded;
     public bool Bounce;
-    public float BounceMult = 0.8f;
+    public float BounceMult = 0.9f;
 
     public Rigidbody2D rb;
     public Collider2D coll;
@@ -38,7 +38,7 @@ public class PhysicsEntity : MonoBehaviour
             foreach (ContactPoint2D contact in collision.contacts)
             {
                 float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
-                if (angle >= -45 && angle <= 45)
+                if (angle >= -45 && angle <= 45 && Velocity.y <= 0)
                 {
                     GroundPoints.Add(contact);
                 }

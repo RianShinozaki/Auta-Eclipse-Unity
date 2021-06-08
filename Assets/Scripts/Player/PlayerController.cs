@@ -43,7 +43,7 @@ public class PlayerController : PhysicsEntity
 
         if (Input.GetButtonDown("Jump") && Grounded) {
             Velocity.y = JumpPower;
-            Debug.Log("Yump");
+            //Debug.Log("Yump");
             transform.position += Vector3.up * 0.1f;
             Grounded = false;
         }

@@ -42,16 +42,28 @@ public class CameraManager : MonoBehaviour {
         }
 
         if(CurrentRoom) {
+            float xLeft = CurrentRoom.transform.position.x + CurrentRoom.XLimits.x + screenSizeCompensation.x;
+            xLeft = Mathf.Clamp(xLeft, float.MinValue, CurrentRoom.transform.position.x);
+
+            float xRight = CurrentRoom.transform.position.x + CurrentRoom.XLimits.y - screenSizeCompensation.x;
+            xRight = Mathf.Clamp(xRight, CurrentRoom.transform.position.x, float.MaxValue);
+
+            float yBottom = CurrentRoom.transform.position.y + CurrentRoom.YLimits.x + screenSizeCompensation.y;
+            yBottom = Mathf.Clamp(yBottom, float.MinValue, CurrentRoom.transform.position.y);
+
+            float yTop = CurrentRoom.transform.position.y + CurrentRoom.YLimits.y - screenSizeCompensation.y;
+            yTop = Mathf.Clamp(yTop, CurrentRoom.transform.position.y, float.MaxValue);
+
             targetPos.x = Mathf.Clamp(
                 targetPos.x,
-                CurrentRoom.transform.position.x + CurrentRoom.XLimits.x + screenSizeCompensation.x,
-                CurrentRoom.transform.position.x + CurrentRoom.XLimits.y - screenSizeCompensation.x
+                xLeft,
+                xRight
                 );
 
             targetPos.y = Mathf.Clamp(
                 targetPos.y,
-                CurrentRoom.transform.position.y + CurrentRoom.YLimits.x + screenSizeCompensation.y,
-                CurrentRoom.transform.position.y + CurrentRoom.YLimits.y - screenSizeCompensation.y
+                yBottom,
+                yTop
                 );
         }
 

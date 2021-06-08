@@ -24,7 +24,7 @@ public class PhysicsEntity : MonoBehaviour
         foreach(ContactPoint2D contact in collision.contacts)
         {
             float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
-            Debug.Log(angle);
+            //Debug.Log(angle);
             if(angle >= -45 && angle <= 45)
             {
                 GroundPoints.Add(contact);
@@ -87,7 +87,7 @@ public class PhysicsEntity : MonoBehaviour
 
         foreach (ContactPoint2D contact in GroundPoints)
         {
-            Debug.Log(Vector2.SignedAngle(Vector2.up, contact.normal));
+            //Debug.Log(Vector2.SignedAngle(Vector2.up, contact.normal));
 
             groundPointsNum++;
 
@@ -135,7 +135,7 @@ public class PhysicsEntity : MonoBehaviour
             WallPoints.Clear();
         }
 
-        Debug.Log("Hooray");
+        //Debug.Log("Hooray");
     }
     public virtual void FixedUpdate()
     {

@@ -62,8 +62,8 @@ public class CameraManager : MonoBehaviour {
 
             targetPos.y = Mathf.Clamp(
                 targetPos.y,
-                yTop,
-                yBottom
+                yBottom,
+                yTop
                 );
         }
 

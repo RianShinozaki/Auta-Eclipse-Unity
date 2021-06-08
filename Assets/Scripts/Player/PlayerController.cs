@@ -24,7 +24,10 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Abilities")] public bool Orb;
     [FoldoutGroup("Abilities")] public float OrbPower = 10;
     [FoldoutGroup("Abilities")] public float GhostJumpTimer = 0;
+    [FoldoutGroup("Abilities")] public float AfterIMGTimer = 0;
+    [FoldoutGroup("Abilities")] public bool CreateAfterImg = false;
 
+    [FoldoutGroup("FX")] public GameObject AfterIMG;
     [FoldoutGroup("FX")] public GameObject MaterializeFX;
     StateMachine stateMachine;
     BoxCollider2D boxColl;
@@ -110,6 +113,7 @@ public class PlayerController : PhysicsEntity
             GroundPoints.Clear();
 
             CanOrb = false;
+            StartCoroutine(CreateAfterImgEnum());
 
         }
 
@@ -119,6 +123,28 @@ public class PlayerController : PhysicsEntity
         }
     }
 
+    
+    IEnumerator CreateAfterImgEnum()
+    {
+        CreateAfterImg = true;
+        while(CreateAfterImg)
+        {
+            AfterIMGTimer += Time.deltaTime;
+
+            if (AfterIMGTimer > 0.07f)
+            {
+                GameObject img = Instantiate(AfterIMG, transform.position, Quaternion.identity);
+                img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+                AfterIMGTimer = 0;
+            }
+            yield return null;
+        }
+        
+        yield break;
+    }
+
+
+    //STATES
     void State_Orb(PhysicsEntity ent)
     {
         boxColl.size = CollisionSizes[1];
@@ -145,7 +171,8 @@ public class PlayerController : PhysicsEntity
             }
             Orb = false;
             Bounce = false;
-            Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity); ;
+            Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity);
+            CreateAfterImg = false;
         }
         if(stateMachine.TimeInState > 0.08f)
         {

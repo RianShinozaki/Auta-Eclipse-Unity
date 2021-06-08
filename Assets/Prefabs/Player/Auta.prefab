@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b7175424d48ca418494d73e582f55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: {x: 0, y: -4.3792305}
+  Velocity: {x: 0, y: 0}
   Gravity: 16
-  Grounded: 0
+  Grounded: 1
   Bounce: 0
   BounceMult: 0.8
   rb: {fileID: 5492783203385954759}
@@ -73,16 +73,20 @@ MonoBehaviour:
   Mode: 0
   SubMode: 0
   MoveSpeed: 5
-  Accel: 0.3
-  Stop: 0.2
+  Accel: 0.5
+  Stop: 0.3
   JumpPower: 10
   AirFrictionDivide: 0.8
   ShortHopGravity: 16
   AllowShortJump: 1
-  CanOrb: 0
+  CanOrb: 1
   Orb: 0
   OrbPower: 10
-  MaterializeFX: {fileID: 0}
+  GhostJumpTimer: 0.11
+  AfterIMGTimer: 0.0638498
+  CreateAfterImg: 0
+  AfterIMG: {fileID: 97007617958594002, guid: 23f980a8a101727418e3a7481d5dc4d7, type: 3}
+  MaterializeFX: {fileID: 631040877765853874, guid: a3fcc0855be87c74daada1c170d1a5c2, type: 3}
 --- !u!61 &5492783203385954756
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -39,7 +39,7 @@ public class PhysicsEntity : MonoBehaviour
             foreach (ContactPoint2D contact in collision.contacts)
             {
                 float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
-                if (angle >= -45 && angle <= 45 && Velocity.y <= 0)
+                if (angle >= -45 && angle <= 45 && (Velocity.y <= 0 || Grounded))
                 {
                     GroundPoints.Add(contact);
                 }
@@ -47,7 +47,7 @@ public class PhysicsEntity : MonoBehaviour
                 {
                     CeilingPoints.Add(contact);
                 } 
-                else
+                else if( (angle > 45  && angle <= 135) || (angle >= -135 && angle < -45) )
                 {
                     WallPoints.Add(contact);
                 }

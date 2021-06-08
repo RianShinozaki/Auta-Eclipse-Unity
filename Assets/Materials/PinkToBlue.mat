@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PinkToBlue
-  m_Shader: {fileID: -6465566751694194690, guid: 4e9cbdc8021eeb04489fbdfa1db23a28, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 42004c8277e5c0442ad7008d97b4a5fc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

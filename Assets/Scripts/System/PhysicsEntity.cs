@@ -21,6 +21,7 @@ public class PhysicsEntity : MonoBehaviour
 
     public List<ContactPoint2D> GroundPoints = new List<ContactPoint2D>();
     public List<ContactPoint2D> WallPoints = new List<ContactPoint2D>();
+    public List<ContactPoint2D> CeilingPoints = new List<ContactPoint2D>();
 
     public int Mode;
     public int SubMode;
@@ -42,6 +43,10 @@ public class PhysicsEntity : MonoBehaviour
                 {
                     GroundPoints.Add(contact);
                 }
+                else if (angle > 135 || angle < -135)
+                {
+                    CeilingPoints.Add(contact);
+                } 
                 else
                 {
                     WallPoints.Add(contact);

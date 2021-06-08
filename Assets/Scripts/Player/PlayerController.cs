@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : PhysicsEntity
 {
 
+    PlayerAnimationController animationController;
 
     #region Movement Values
 
@@ -14,7 +15,9 @@ public class PlayerController : PhysicsEntity
 
     public float JumpPower;
     public float AirFrictionDivide;
-
+    public float ShortHopGravity;
+    public bool AllowShortJump;
+    
     #endregion
 
 
@@ -23,6 +26,8 @@ public class PlayerController : PhysicsEntity
     public override void Awake()
     {
         base.Awake();
+
+        animationController = GetComponentInChildren<PlayerAnimationController>();
     }
 
     // Update is called once per frame
@@ -46,6 +51,13 @@ public class PlayerController : PhysicsEntity
             Debug.Log("Yump");
             transform.position += Vector3.up * 0.1f;
             Grounded = false;
+            animationController.SetJump();
+            AllowShortJump = true;
+        }
+
+        if(Velocity.y > 0)
+        {
+            Velocity.y -= ShortHopGravity * Time.deltaTime * ((AllowShortJump && !Input.GetButton("Jump")) ? 1 : 0);
         }
     }
 }

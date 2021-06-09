@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour {
     public static ObjectPool Instance;
+    public static ObjectPool GlobalInstance;
 
+    public bool IsGlobal;
     public Pool[] Pools;
 
     Dictionary<string, Stack<ObjectPoolObject>> Objects;
 
     private void Awake() {
-        if(Instance) {
+        if(IsGlobal && GlobalInstance || !IsGlobal && Instance) {
             return;
         }
-        Instance = this;
+
+        if(IsGlobal) {
+            GlobalInstance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Instance = this;
+        }
 
         foreach(Pool pool in Pools) {
             Objects.Add(pool.Name, new Stack<ObjectPoolObject>());

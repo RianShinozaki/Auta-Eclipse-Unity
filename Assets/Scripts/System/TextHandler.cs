@@ -14,6 +14,6 @@ public class TextHandler : MonoBehaviour {
     }
 
     public void NextLine() {
-
+        currentDialogue++;
     }
 }

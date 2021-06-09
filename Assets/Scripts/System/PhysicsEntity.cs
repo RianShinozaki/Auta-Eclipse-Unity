@@ -25,6 +25,7 @@ public class PhysicsEntity : MonoBehaviour
 
     public int Mode;
     public int SubMode;
+    public bool Landed = false;
     public virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (Bounce)
@@ -53,6 +54,16 @@ public class PhysicsEntity : MonoBehaviour
                 }
 
             }
+        } else
+        {
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
+                if (angle >= -45 && angle <= 45)
+                {
+                    Landed = true;
+                }
+            }
         }
     }
 
@@ -65,6 +76,8 @@ public class PhysicsEntity : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
+
+
         Vector3 vel = new Vector3(0, 0, 0);
 
         if (!Bounce)
@@ -99,6 +112,27 @@ public class PhysicsEntity : MonoBehaviour
                     {
                         Velocity.x = toSpdx;
                     }
+                }
+
+            }
+
+            int ceilPointsNum = 0;
+            avgAngle = 0;
+
+            foreach (ContactPoint2D contact in CeilingPoints)
+            {
+
+                ceilPointsNum++;
+
+                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
+            }
+            if (ceilPointsNum > 0)
+            {
+                avgAngle /= ceilPointsNum;
+
+                if (Velocity.y > Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.y)
+                {
+                    Velocity.y = Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.y;
                 }
 
             }
@@ -158,6 +192,7 @@ public class PhysicsEntity : MonoBehaviour
         {
             GroundPoints.Clear();
             WallPoints.Clear();
+            CeilingPoints.Clear();
         }
 
     }

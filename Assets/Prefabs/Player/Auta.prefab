@@ -72,6 +72,7 @@ MonoBehaviour:
     m_Bits: 64
   Mode: 0
   SubMode: 0
+  Landed: 0
   MoveSpeed: 5
   Accel: 0.5
   Stop: 0.3
@@ -87,6 +88,7 @@ MonoBehaviour:
   CreateAfterImg: 0
   AfterIMG: {fileID: 97007617958594002, guid: 23f980a8a101727418e3a7481d5dc4d7, type: 3}
   MaterializeFX: {fileID: 631040877765853874, guid: a3fcc0855be87c74daada1c170d1a5c2, type: 3}
+  DisintegrateFX: {fileID: 8438200916652274541, guid: 4812193767c1ac54aac698409af82526, type: 3}
 --- !u!61 &5492783203385954756
 BoxCollider2D:
   m_ObjectHideFlags: 0

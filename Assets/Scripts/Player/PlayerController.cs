@@ -29,6 +29,8 @@ public class PlayerController : PhysicsEntity
 
     [FoldoutGroup("FX")] public GameObject AfterIMG;
     [FoldoutGroup("FX")] public GameObject MaterializeFX;
+    [FoldoutGroup("FX")] public GameObject DisintegrateFX;
+
     StateMachine stateMachine;
     BoxCollider2D boxColl;
 
@@ -115,6 +117,10 @@ public class PlayerController : PhysicsEntity
             CanOrb = false;
             StartCoroutine(CreateAfterImgEnum());
 
+            GameObject img = Instantiate(DisintegrateFX, transform.position, Quaternion.identity);
+            img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+            img.transform.localScale = transform.GetChild(0).localScale;
+
         }
 
         if (Velocity.y > 0)
@@ -135,6 +141,7 @@ public class PlayerController : PhysicsEntity
             {
                 GameObject img = Instantiate(AfterIMG, transform.position, Quaternion.identity);
                 img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+                img.transform.localScale = transform.localScale;
                 AfterIMGTimer = 0;
             }
             yield return null;
@@ -153,12 +160,12 @@ public class PlayerController : PhysicsEntity
 
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f ) {
         
-            if (Mathf.Abs(Velocity.x) < MoveSpeed)
-                Velocity.x = Mathf.MoveTowards(Velocity.x, Input.GetAxisRaw("Horizontal") * MoveSpeed, Accel * 0.2f);
+            if ((Mathf.Abs(Velocity.x) < MoveSpeed) || Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(Velocity.x))
+                Velocity.x = Mathf.MoveTowards(Velocity.x, Input.GetAxisRaw("Horizontal") * MoveSpeed, Accel * 0.15f);
         }
         else
         {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * 0.3f);
+            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * 0.15f);
         }
 
         if(stateMachine.TimeInState > 0.4f && !Input.GetButton("Fire1") )
@@ -181,6 +188,17 @@ public class PlayerController : PhysicsEntity
         {
             Velocity.y += Gravity * Time.deltaTime*0.8f;
         }
-        
+
+        if(Landed && Mathf.Abs(Velocity.y) < 3)
+        {
+            stateMachine.SetState(State_Normal);
+            Orb = false;
+            Bounce = false;
+            Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity);
+            CreateAfterImg = false;
+        }
+
+        Landed = false;
+
     }
 }

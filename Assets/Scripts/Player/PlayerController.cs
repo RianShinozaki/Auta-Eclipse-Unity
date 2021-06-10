@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
-
+using Rewired;
 public class PlayerController : PhysicsEntity
 {
 
@@ -31,8 +31,19 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("FX")] public GameObject MaterializeFX;
     [FoldoutGroup("FX")] public GameObject DisintegrateFX;
 
+    public const int MOVEMENT_HORIZONTAL = 1;
+    public const int MOVEMENT_VERTICAL = 2;
+    public const int JUMP = 3;
+    public const int ATTACK = 4;
+    public const int ORB = 5;
+    public const int SPECIAL = 6;
+    public int PlayerID;
+    public Player player;
+
     StateMachine stateMachine;
     BoxCollider2D boxColl;
+
+    
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
@@ -43,6 +54,8 @@ public class PlayerController : PhysicsEntity
     // Start is called before the first frame update
     public override void Awake()
     {
+        player = ReInput.players.GetPlayer(PlayerID);
+
         base.Awake();
 
         animationController = GetComponentInChildren<PlayerAnimationController>();
@@ -66,8 +79,8 @@ public class PlayerController : PhysicsEntity
     {
         boxColl.size = CollisionSizes[0];
 
-        if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f) {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, Input.GetAxisRaw("Horizontal") * MoveSpeed, Accel * (Grounded ? 1 : AirFrictionDivide));
+        if(Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f) {
+            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * (Grounded ? 1 : AirFrictionDivide));
         } else
         {
             Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * (Grounded ? 1 : AirFrictionDivide));
@@ -83,7 +96,7 @@ public class PlayerController : PhysicsEntity
             GhostJumpTimer -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump") && GhostJumpTimer > 0)
+        if (player.GetButtonDown(JUMP) && GhostJumpTimer > 0)
         {
             //transform.position += Vector3.up * 0.5f;
             Grounded = false;
@@ -95,10 +108,10 @@ public class PlayerController : PhysicsEntity
             GhostJumpTimer = 0;
         }
 
-        if (Input.GetButtonDown("Fire1") && CanOrb)
+        if (player.GetButtonDown(ORB) && CanOrb)
         {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.1f) {
-                Velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * OrbPower;
+            if (player.GetAxisRaw(MOVEMENT_HORIZONTAL) > 0.1f || Mathf.Abs(player.GetAxisRaw(MOVEMENT_VERTICAL)) > 0.1f) {
+                Velocity = new Vector2(player.GetAxisRaw(MOVEMENT_HORIZONTAL), player.GetAxisRaw(MOVEMENT_VERTICAL)).normalized * OrbPower;
                 if(Grounded)
                 {
                     Velocity.y = Mathf.Clamp(Velocity.y, 2f, 100f);
@@ -125,7 +138,7 @@ public class PlayerController : PhysicsEntity
 
         if (Velocity.y > 0)
         {
-            Velocity.y -= ShortHopGravity * Time.deltaTime * ((AllowShortJump && !Input.GetButton("Jump")) ? 1 : 0);
+            Velocity.y -= ShortHopGravity * Time.deltaTime * ((AllowShortJump && !player.GetButton(JUMP)) ? 1 : 0);
         }
     }
 
@@ -158,22 +171,22 @@ public class PlayerController : PhysicsEntity
         Orb = true;
         Bounce = true;
 
-        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f ) {
+        if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f ) {
         
-            if ((Mathf.Abs(Velocity.x) < MoveSpeed) || Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(Velocity.x))
-                Velocity.x = Mathf.MoveTowards(Velocity.x, Input.GetAxisRaw("Horizontal") * MoveSpeed, Accel * 0.15f);
+            if ((Mathf.Abs(Velocity.x) < MoveSpeed) || Mathf.Sign(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) != Mathf.Sign(Velocity.x))
+                Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * 0.15f);
         }
         else
         {
             Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * 0.15f);
         }
 
-        if(stateMachine.TimeInState > 0.4f && !Input.GetButton("Fire1") )
+        if(stateMachine.TimeInState > 0.4f && !player.GetButton(ORB) )
         {
             stateMachine.SetState(State_Normal);
-            if( Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.1f)
+            if( Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f || Mathf.Abs(player.GetAxisRaw(MOVEMENT_VERTICAL)) > 0.1f)
             {
-                Velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * 3.5f;
+                Velocity = new Vector2(player.GetAxisRaw(MOVEMENT_HORIZONTAL), player.GetAxisRaw(MOVEMENT_VERTICAL)) * 3.5f;
 
             }
             Orb = false;

@@ -50,16 +50,19 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
     "com.needle.shadergraph-markdown": "1.1.2",
-    "com.simeonradivoev.uni-git": "1.5.4"
+    "com.simeonradivoev.uni-git": "1.5.4",
+    "com.cammin.ldtkunity": "2.0.4"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.cammin.ldtkunity",
         "com.needle.shadergraph-markdown",
         "com.openupm",
-        "com.simeonradivoev.uni-git"
+        "com.simeonradivoev.uni-git",
+        "jillejr.newtonsoft.json-for-unity"
       ]
     }
   ]

@@ -43,7 +43,8 @@ public class PlayerController : PhysicsEntity
     StateMachine stateMachine;
     BoxCollider2D boxColl;
 
-    
+    float ComboNumber;
+    float AttackBuffer;
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
@@ -67,13 +68,22 @@ public class PlayerController : PhysicsEntity
     {
         stateMachine.SetState(State_Normal);
         stateMachine.SetRunState(true);
+        ComboNumber = 1;
     }
 
     // Update is called once per frame
     public override void Update()
     {
         base.Update();
+
+        AttackBuffer = Mathf.MoveTowards(AttackBuffer, 0, Time.deltaTime);
+        if(player.GetButtonDown(ATTACK))
+        {
+            AttackBuffer = 0.1f;
+        }
     }
+
+    //STATES
 
     void State_Normal(PhysicsEntity ent)
     {
@@ -140,31 +150,13 @@ public class PlayerController : PhysicsEntity
         {
             Velocity.y -= ShortHopGravity * Time.deltaTime * ((AllowShortJump && !player.GetButton(JUMP)) ? 1 : 0);
         }
+
+        Attack();
+        ComboNumber = Mathf.MoveTowards(ComboNumber, 1, Time.deltaTime * 10);
+        ComboNumber = Mathf.Clamp(ComboNumber, 1, 3);
+
     }
 
-    
-    IEnumerator CreateAfterImgEnum()
-    {
-        CreateAfterImg = true;
-        while(CreateAfterImg)
-        {
-            AfterIMGTimer += Time.deltaTime;
-
-            if (AfterIMGTimer > 0.07f)
-            {
-                GameObject img = Instantiate(AfterIMG, transform.position, Quaternion.identity);
-                img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
-                img.transform.localScale = transform.localScale;
-                AfterIMGTimer = 0;
-            }
-            yield return null;
-        }
-        
-        yield break;
-    }
-
-
-    //STATES
     void State_Orb(PhysicsEntity ent)
     {
         boxColl.size = CollisionSizes[1];
@@ -213,5 +205,74 @@ public class PlayerController : PhysicsEntity
 
         Landed = false;
 
+    }
+
+    void State_Attack(PhysicsEntity ent)
+    {
+
+        if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f && !Grounded)
+        {
+            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * (Grounded ? 1 : AirFrictionDivide));
+        }
+        else
+        {
+            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * AirFrictionDivide);
+        }
+
+        AnimatorClipInfo[] CurrentClipInfo;
+        if (animationController.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle") ) {
+            AttackEnd();
+        }
+
+
+
+    }
+
+    public void Attack()
+    {
+        if(AttackBuffer > 0)
+        {
+            stateMachine.SetState(State_Attack);
+
+            if (player.GetAxisRaw(MOVEMENT_VERTICAL) > 0.1f)
+            {
+                animationController.SwordAttack(0, 2);
+                return;
+            }
+            if (player.GetAxisRaw(MOVEMENT_VERTICAL) < -0.1f)
+            {
+                animationController.SwordAttack(0, 1);
+                return;
+            }
+
+            animationController.SwordAttack(Mathf.CeilToInt(ComboNumber), 0);
+            ComboNumber = Mathf.CeilToInt(ComboNumber) + 1;
+            
+        }
+    }
+
+    public void AttackEnd()
+    {
+        stateMachine.SetState(State_Normal);
+    }
+
+    IEnumerator CreateAfterImgEnum()
+    {
+        CreateAfterImg = true;
+        while (CreateAfterImg)
+        {
+            AfterIMGTimer += Time.deltaTime;
+
+            if (AfterIMGTimer > 0.07f)
+            {
+                GameObject img = Instantiate(AfterIMG, transform.position, Quaternion.identity);
+                img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+                img.transform.localScale = transform.localScale;
+                AfterIMGTimer = 0;
+            }
+            yield return null;
+        }
+
+        yield break;
     }
 }

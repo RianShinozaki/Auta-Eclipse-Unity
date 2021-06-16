@@ -8,11 +8,6 @@ public class PlayerAnimationController : MonoBehaviour
     PlayerController parent;
     Animator anim;
 
-    int xSpeedID;
-    int ySpeedID;
-    int GroundedID;
-    int JumpID;
-
     void Start()
     {
         parent = transform.root.GetComponent<PlayerController>();
@@ -41,5 +36,18 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetTrigger("Jump");
     }
 
+    public void SwordAttack(int comboNum, int attackType)
+    {
+        anim.SetTrigger("Sword Attack");
+        anim.SetInteger("Combo Number", comboNum);
+        anim.SetInteger("Attack Type", attackType);
+        anim.SetBool("Grounded", parent.Grounded);
+
+    }
+
+    public void AttackEnd()
+    {
+        parent.AttackEnd();
+    }
 
 }

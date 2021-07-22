@@ -56,9 +56,11 @@
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.cammin.ldtkunity",
         "com.needle.shadergraph-markdown",
         "com.openupm",
-        "com.simeonradivoev.uni-git"
+        "com.simeonradivoev.uni-git",
+        "jillejr.newtonsoft.json-for-unity"
       ]
     }
   ]

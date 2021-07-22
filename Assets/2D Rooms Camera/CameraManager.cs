@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
+
+public static class CamVariables
+{
+    public static float Screenshake = 0;
+}
 public class CameraManager : MonoBehaviour {
     public static CameraManager Instance;
     public CameraRoom CurrentRoom { get; private set; }
@@ -73,7 +78,15 @@ public class CameraManager : MonoBehaviour {
         float dist = Vector2.Distance(transform.position, targetPos);
         Vector3 newPos = Vector2.MoveTowards(transform.position, targetPos, MoveSpeed * (dist / 10f) * Time.deltaTime);
         newPos.z = -10f;
-        transform.position = newPos;
+
+        Vector2 shake = new Vector2(0, 0);
+
+        if(CamVariables.Screenshake > 0)
+        {
+            shake = new Vector2(Random.Range(-CamVariables.Screenshake, CamVariables.Screenshake), Random.Range(-CamVariables.Screenshake, CamVariables.Screenshake))/2;
+            CamVariables.Screenshake -= 0.01f * 60 * Time.deltaTime;
+        }
+        transform.position = newPos + new Vector3(shake.x, shake.y, 0);
     }
 
     private void OnDrawGizmosSelected() {

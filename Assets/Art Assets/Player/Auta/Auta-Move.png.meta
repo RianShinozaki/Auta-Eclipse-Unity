@@ -47,6 +47,75 @@ TextureImporter:
   - first:
       213: -9071376921468194211
     second: Auta-Move_14
+  - first:
+      213: -9192594198885042232
+    second: Auta-Move_15
+  - first:
+      213: 6289307257071130339
+    second: Auta-Move_16
+  - first:
+      213: 6099342757354219003
+    second: Auta-Move_17
+  - first:
+      213: 7806134103726124428
+    second: Auta-Move_18
+  - first:
+      213: -5932324161285969756
+    second: Auta-Move_19
+  - first:
+      213: 8069557928482348987
+    second: Auta-Move_20
+  - first:
+      213: 6293336410592338520
+    second: Auta-Move_21
+  - first:
+      213: -5279628366646807879
+    second: Auta-Move_22
+  - first:
+      213: 2798177661822091686
+    second: Auta-Move_23
+  - first:
+      213: 6114660874185438543
+    second: Auta-Move_24
+  - first:
+      213: -2152841506046213024
+    second: Auta-Move_25
+  - first:
+      213: -777612551698839058
+    second: Auta-Move_26
+  - first:
+      213: 34745508540055847
+    second: Auta-Move_27
+  - first:
+      213: 6435313544067776187
+    second: Auta-Move_28
+  - first:
+      213: 8283403813912907714
+    second: Auta-Move_29
+  - first:
+      213: 3887075327952931527
+    second: Auta-Move_30
+  - first:
+      213: -8635007707227561033
+    second: Auta-Move_31
+  - first:
+      213: 7528617049773928021
+    second: Auta-Move_32
+  - first:
+      213: 640125824163534800
+    second: Auta-Move_33
+  - first:
+      213: 862923072671012168
+    second: Auta-Move_34
+  - first:
+      213: 6189544952579841989
+    second: Auta-Move_35
+  - first:
+      213: 6565833887545245028
+    second: Auta-Move_36
+  - first:
+      213: -3709646529073851009
+    second: Auta-Move_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -188,11 +257,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 34
+        y: 136
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,11 +278,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 34
+        y: 136
         width: 24
         height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,11 +299,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 34
+        y: 136
         width: 24
         height: 34
-      alignment: 9
-      pivot: {x: 0.5416667, y: 0.47058824}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,11 +320,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 34
+        y: 136
         width: 24
         height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,11 +341,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 34
+        y: 136
         width: 24
         height: 34
-      alignment: 9
-      pivot: {x: 0.5416667, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,11 +362,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 34
+        y: 136
         width: 24
         height: 34
-      alignment: 9
-      pivot: {x: 0.5833334, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,11 +383,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 34
+        y: 136
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,11 +404,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,11 +425,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,11 +446,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,11 +467,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,11 +488,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,11 +509,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,11 +530,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -482,11 +551,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 168
-        y: 0
+        y: 102
         width: 24
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,6 +563,489 @@ TextureImporter:
       bones: []
       spriteID: d52363c80cefb1280800000000000000
       internalID: -9071376921468194211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7f323d7485d6080800000000000000
+      internalID: -9192594198885042232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6d20dc0ab184750800000000000000
+      internalID: 6289307257071130339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5237f0ce735a450800000000000000
+      internalID: 6099342757354219003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d68a1db95f45c60800000000000000
+      internalID: 7806134103726124428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8251a2b962cada0800000000000000
+      internalID: -5932324161285969756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf90ad7e24dcff60800000000000000
+      internalID: 8069557928482348987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85263653f1c665750800000000000000
+      internalID: 6293336410592338520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 68
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2f0f329fdfab6b0800000000000000
+      internalID: -5279628366646807879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1c65f02cf15d620800000000000000
+      internalID: 2798177661822091686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f457dcf0ba3abd450800000000000000
+      internalID: 6114660874185438543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06406667e029f12e0800000000000000
+      internalID: -2152841506046213024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee90b13118d5535f0800000000000000
+      internalID: -777612551698839058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721021e1bd07b7000800000000000000
+      internalID: 34745508540055847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe7b649293de4950800000000000000
+      internalID: 6435313544067776187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf0563a1ef84f270800000000000000
+      internalID: 8283403813912907714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 34
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cac1d98a6aa1f530800000000000000
+      internalID: 3887075327952931527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3e0f19d3a4a2880800000000000000
+      internalID: -8635007707227561033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_32
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e69b581550b7860800000000000000
+      internalID: 7528617049773928021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d752d8ab0f22e800800000000000000
+      internalID: 640125824163534800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_34
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8455b0f66f7b9fb00800000000000000
+      internalID: 862923072671012168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf55db375ea5e550800000000000000
+      internalID: 6189544952579841989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d3b5922278e1b50800000000000000
+      internalID: 6565833887545245028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Auta-Move_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75da48e220b48cc0800000000000000
+      internalID: -3709646529073851009
       vertices: []
       indices: 
       edges: []

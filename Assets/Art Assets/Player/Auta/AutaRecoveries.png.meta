@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 07cbfabf4f4a4e1418d58b618374bef4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3512765278851477191
+    second: AutaRecoveries_0
+  - first:
+      213: 8561656140643797833
+    second: AutaRecoveries_1
+  - first:
+      213: 9142514850335836527
+    second: AutaRecoveries_2
+  - first:
+      213: -909872989412542907
+    second: AutaRecoveries_3
+  - first:
+      213: -7200637045972798855
+    second: AutaRecoveries_4
+  - first:
+      213: -8588617853154458159
+    second: AutaRecoveries_5
+  - first:
+      213: 3630231580194647404
+    second: AutaRecoveries_6
+  - first:
+      213: 8108385706923497723
+    second: AutaRecoveries_7
+  - first:
+      213: 1927771351783592130
+    second: AutaRecoveries_8
+  - first:
+      213: 2382576542061696157
+    second: AutaRecoveries_9
+  - first:
+      213: 8192263664038945193
+    second: AutaRecoveries_10
+  - first:
+      213: -875266929061659997
+    second: AutaRecoveries_11
+  - first:
+      213: 7188143099282258490
+    second: AutaRecoveries_12
+  - first:
+      213: -8921323836974942250
+    second: AutaRecoveries_13
+  - first:
+      213: -2786297062462762976
+    second: AutaRecoveries_14
+  - first:
+      213: -6418369258652527777
+    second: AutaRecoveries_15
+  - first:
+      213: 5304332089671091867
+    second: AutaRecoveries_16
+  - first:
+      213: -7615680729220685785
+    second: AutaRecoveries_17
+  - first:
+      213: 8136477389510045852
+    second: AutaRecoveries_18
+  - first:
+      213: -9047966793382728249
+    second: AutaRecoveries_19
+  - first:
+      213: 3753044793602925152
+    second: AutaRecoveries_20
+  - first:
+      213: -5606951341212680953
+    second: AutaRecoveries_21
+  - first:
+      213: 1819044218934807462
+    second: AutaRecoveries_22
+  - first:
+      213: -1920277209985405662
+    second: AutaRecoveries_23
+  - first:
+      213: 4948003215020781964
+    second: AutaRecoveries_24
+  - first:
+      213: 3376321149934452649
+    second: AutaRecoveries_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AutaRecoveries_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9315bbe1796204fc0800000000000000
+      internalID: -3512765278851477191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b8d18f5ec11d670800000000000000
+      internalID: 8561656140643797833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69400831dcb0ee70800000000000000
+      internalID: 9142514850335836527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546b75b365b7f53f0800000000000000
+      internalID: -909872989412542907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972f54ed1c2321c90800000000000000
+      internalID: -7200637045972798855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 96
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5862721991fc880800000000000000
+      internalID: -8588617853154458159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d28ed636c216230800000000000000
+      internalID: 3630231580194647404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8970327d5c68070800000000000000
+      internalID: 8108385706923497723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c05c37a4d1d0ca10800000000000000
+      internalID: 1927771351783592130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9414c7ddbc901120800000000000000
+      internalID: 2382576542061696157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1a161e564c0b170800000000000000
+      internalID: 8192263664038945193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 72
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaf1a98d5d6ad3f0800000000000000
+      internalID: -875266929061659997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3af46b701a61c360800000000000000
+      internalID: 7188143099282258490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d732eacc37113480800000000000000
+      internalID: -8921323836974942250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020513985951559d0800000000000000
+      internalID: -2786297062462762976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f539abc4a2f5de6a0800000000000000
+      internalID: -6418369258652527777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960d879ee5cc9940800000000000000
+      internalID: 5304332089671091867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 48
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7206304f9baaf4690800000000000000
+      internalID: -7615680729220685785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c907ebca3139ae070800000000000000
+      internalID: 8136477389510045852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd64ecb32a2f6280800000000000000
+      internalID: -9047966793382728249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062e4d4fa5e751430800000000000000
+      internalID: 3753044793602925152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d3e1a467b1032b0800000000000000
+      internalID: -5606951341212680953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab4654541b8e3910800000000000000
+      internalID: 1819044218934807462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 24
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22daa843d0ec955e0800000000000000
+      internalID: -1920277209985405662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81fdca55b6daa440800000000000000
+      internalID: 4948003215020781964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaRecoveries_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 27
+        height: 24
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af3b75823a1bde20800000000000000
+      internalID: 3376321149934452649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

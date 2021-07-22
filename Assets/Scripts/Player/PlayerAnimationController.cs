@@ -23,9 +23,17 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetBool("Grounded", parent.Grounded);
         anim.SetFloat("GhostJumpTimer", parent.GhostJumpTimer);
 
+        anim.SetFloat("HurtState", parent.HurtState);
+
         if(parent.Grounded && parent.Velocity.x != 0)
         {
+            float prevScale = transform.localScale.x;
             transform.localScale = new Vector3( parent.Velocity.x > 0 ? 1 : -1, 1, 1);
+            if(prevScale != transform.localScale.x)
+            {
+                if(anim.GetCurrentAnimatorStateInfo(0).IsName("Move") || anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || anim.GetCurrentAnimatorStateInfo(0).IsName("Stop"))
+                    Turn();
+            }
         }
 
         anim.SetBool("Orb", parent.Orb);
@@ -34,6 +42,10 @@ public class PlayerAnimationController : MonoBehaviour
     public void SetJump()
     {
         anim.SetTrigger("Jump");
+    }
+    public void SetRunJump()
+    {
+        anim.SetTrigger("RunJump");
     }
 
     public void SwordAttack(int comboNum, int attackType)
@@ -45,9 +57,39 @@ public class PlayerAnimationController : MonoBehaviour
 
     }
 
+    public void GrabState(bool active)
+    {
+        anim.SetBool("Grabbing", active);
+    }
+    public void SetHitBoxes(int index)
+    {
+        parent.SetHitBoxes(index);
+    }
+
     public void AttackEnd()
     {
         parent.AttackEnd();
+    }
+
+    public void Land()
+    {
+        anim.SetTrigger("Land");
+        anim.SetBool("Grounded", true);
+    }
+
+    public void Turn()
+    {
+        anim.SetTrigger("Turn");
+    }
+
+    public void Stop()
+    {
+        anim.SetTrigger("Stop");
+    }
+
+    public void SetSpeed(float Spd)
+    {
+        anim.SetFloat("Anim Speed", Spd);
     }
 
 }

@@ -7,13 +7,6 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
-    "com.simeonradivoev.uni-git": {
-      "version": "1.5.4",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://package.openupm.com"
-    },
     "com.unity.2d.animation": {
       "version": "5.0.5",
       "depth": 0,

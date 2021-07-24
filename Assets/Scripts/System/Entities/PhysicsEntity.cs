@@ -242,7 +242,8 @@ public class PhysicsEntity : MonoBehaviour
         
 
         vel.y = Velocity.y;
-        transform.position += vel * Time.deltaTime * TimeScale;
+        rb.velocity = vel * TimeScale;
+        //transform.position += 
 
         if (rb.IsAwake())
         {

@@ -1,19 +1,12 @@
 {
   "dependencies": {
     "com.cammin.ldtkunity": {
-      "version": "2.0.4",
+      "version": "2.1.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "jillejr.newtonsoft.json-for-unity": "13.0.102"
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
       },
-      "url": "https://package.openupm.com"
-    },
-    "com.needle.shadergraph-markdown": {
-      "version": "1.1.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://package.openupm.com"
     },
     "com.unity.2d.animation": {
@@ -266,13 +259,6 @@
         "com.unity.render-pipelines.core": "10.5.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "jillejr.newtonsoft.json-for-unity": {
-      "version": "13.0.102",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://package.openupm.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

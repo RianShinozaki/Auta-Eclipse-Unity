@@ -7130,6 +7130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 556482248, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661165799, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 589251782072087658, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417009071497738506, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5492783203385954758, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7177,6 +7193,10 @@ PrefabInstance:
     - target: {fileID: 5492783203385954779, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
       propertyPath: m_Name
       value: Auta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164057996053165388, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 532b79d9dcb6cc44c8c7552fb45cfdfa, type: 3}
@@ -7325,6 +7345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 442249731}
     m_Modifications:
+    - target: {fileID: 8711954853577352343, guid: 0411b2f416eaef4408c83d186eb63a5f, type: 3}
+      propertyPath: m_LightType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8711954854105617668, guid: 0411b2f416eaef4408c83d186eb63a5f, type: 3}
       propertyPath: m_RootOrder
       value: 1

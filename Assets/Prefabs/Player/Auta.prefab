@@ -92,7 +92,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &556482248
@@ -599,7 +599,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &2047762193
@@ -687,7 +687,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &2134361272
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &3417009071497738506
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &4829695373565955227
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 0}
+  entityResponder: {fileID: 5492783203385954776}
   type: 0
   coll: {fileID: 0}
 --- !u!1 &5492783203385954779
@@ -1484,13 +1484,15 @@ MonoBehaviour:
   EnvironmentMask:
     serializedVersion: 2
     m_Bits: 64
-  HitFX: {fileID: 0}
-  AfterIMGTimer: 0.047351
+  UnderwaterDragScale: 0.7
+  HitFX: {fileID: 7469896179650156141, guid: 2aea712ae23b1864195936759e9d3a58, type: 3}
+  AfterIMGTimer: 0
   CreateAfterImg: 0
   AfterIMG: {fileID: 97007617958594002, guid: 23f980a8a101727418e3a7481d5dc4d7, type: 3}
-  Anim: {fileID: 0}
+  Anim: {fileID: 5492783203451174449}
+  Underwater: 0
   isCombatEntity: 1
-  HP: 20
+  HP: 17
   MaxHP: 20
   HitStun: 0
   HurtState: 0
@@ -1502,8 +1504,8 @@ MonoBehaviour:
   GrabBox: {fileID: 2839134833287991069}
   AimArrow: {fileID: 8785785648799902169}
   MoveSpeed: 5.5
-  Accel: 0.5
-  Stop: 0.3
+  Accel: 65
+  Stop: 40
   JumpPower: 11
   AirFrictionDivide: 0.8
   ShortHopGravity: 16
@@ -1517,7 +1519,7 @@ MonoBehaviour:
   MaterializeFX: {fileID: 631040877765853874, guid: a3fcc0855be87c74daada1c170d1a5c2, type: 3}
   DisintegrateFX: {fileID: 8438200916652274541, guid: 4812193767c1ac54aac698409af82526, type: 3}
   PlayerID: 0
-  stateMachine: {fileID: 0}
+  stateMachine: {fileID: 5492783203385954777}
   HitBoxSets:
   - {fileID: 7164057996053165388}
   - {fileID: 589251782072087658}

@@ -121,12 +121,12 @@ public class PlayerController : PhysicsEntity
         boxColl.size = CollisionSizes[0];
 
         if(Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f) {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * (Grounded ? 1 : AirFrictionDivide));
+            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * Time.deltaTime * TimeScale * (100/60) * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         } else
         {
             if (GravityCancelTime == 0)
             {
-                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * (Grounded ? 1 : AirFrictionDivide) * (HurtState > 0 ? 0 : 1));
+                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * (Grounded ? 1 : AirFrictionDivide) * (HurtState > 0 ? 0 : 1) * (Underwater ? UnderwaterDragScale : 1));
             }
         }
 
@@ -203,11 +203,11 @@ public class PlayerController : PhysicsEntity
         if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f ) {
         
             if ((Mathf.Abs(Velocity.x) < MoveSpeed) || Mathf.Sign(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) != Mathf.Sign(Velocity.x))
-                Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * 0.15f);
+                Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         }
         else
         {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * 0.15f);
+            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         }
 
         if(stateMachine.TimeInState > 0.4f && !player.GetButton(ORB) )
@@ -288,13 +288,13 @@ public class PlayerController : PhysicsEntity
 
         if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f && !Grounded)
         {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * (Grounded ? 1 : AirFrictionDivide));
+            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * Time.deltaTime * TimeScale * (100 / 60) * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         }
         else
         {
             if (Mathf.Abs(Velocity.x) > 0)
             {
-                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * AirFrictionDivide);
+                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
 
                 if(Mathf.Abs(Velocity.x) < 0.1f)
                 {
@@ -405,7 +405,10 @@ public class PlayerController : PhysicsEntity
             Velocity.y = 0;
         Velocity.x = 0;
         StartCoroutine(AttackPushback(Mathf.Sign(transform.GetChild(0).localScale.x)));
-        HitStun = Defender.GetComponent<PhysicsEntity>().HitStun;
+        if (attacker != null)
+        {
+            HitStun = attacker.GetComponent<HitBox>().inflictHitStun;
+        }
     }
     public override void OnLand()
     {

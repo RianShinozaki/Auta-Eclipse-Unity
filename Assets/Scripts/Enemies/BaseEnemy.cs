@@ -145,7 +145,10 @@ public class BaseEnemy : PhysicsEntity
             Velocity.x = Speed * Mathf.Cos(directionToOther * Mathf.Deg2Rad);
             Velocity.y = Speed * Mathf.Sin(directionToOther * Mathf.Deg2Rad);
 
-            defender.GetComponent<PhysicsEntity>().Velocity = Velocity * -1;
+            if (defender != null)
+            {
+                defender.GetComponent<PhysicsEntity>().Velocity = Velocity * -1;
+            }
         }
     }
 }

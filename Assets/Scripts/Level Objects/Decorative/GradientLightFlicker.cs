@@ -18,11 +18,14 @@ public class GradientLightFlicker : MonoBehaviour
     Color ogColor;
     float ogIntensity;
 
+    public Vector2 NormalTimeToFlicker = new Vector2(3, 5);
+    public Vector2Int NormalFlickerNum = new Vector2Int(3, 4);
+
     // Start is called before the first frame update
     void Start()
     {
-        TimeToFlicker = Random.Range(3, 5);
-        FlickerNum = Random.Range(3, 4);
+        TimeToFlicker = Random.Range(NormalTimeToFlicker.x, NormalTimeToFlicker.y);
+        FlickerNum = Random.Range(NormalFlickerNum.x, NormalFlickerNum.y);
 
         ogColor = Sprite.color;
         ogIntensity = ThisLight.intensity;

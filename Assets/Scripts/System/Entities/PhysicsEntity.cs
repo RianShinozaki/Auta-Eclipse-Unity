@@ -20,12 +20,14 @@ public class PhysicsEntity : MonoBehaviour
     [FoldoutGroup("Manual Setup")] public Rigidbody2D rb;
     [FoldoutGroup("Manual Setup")] public Collider2D coll;
     [FoldoutGroup("Manual Setup")] public LayerMask EnvironmentMask;
+    [FoldoutGroup("Manual Setup")] public float UnderwaterDragScale = 0.7f;
 
     [FoldoutGroup("Setup")] public GameObject HitFX;
     [FoldoutGroup("Setup")] public float AfterIMGTimer = 0;
     [FoldoutGroup("Setup")] public bool CreateAfterImg = false;
     [FoldoutGroup("Setup")] public GameObject AfterIMG;
     [FoldoutGroup("Setup")] public Animator Anim;
+    [FoldoutGroup("Setup")] public bool Underwater;
 
     #endregion Physics
 
@@ -236,7 +238,7 @@ public class PhysicsEntity : MonoBehaviour
             }
         } else
         {
-            Velocity.y -= Gravity * Time.deltaTime * TimeScale;
+            Velocity.y -= Gravity * Time.deltaTime * TimeScale * (Underwater ? UnderwaterDragScale : 1);
             vel = new Vector3(Velocity.x, Velocity.y, 0);
         }
         
@@ -256,6 +258,25 @@ public class PhysicsEntity : MonoBehaviour
     public virtual void FixedUpdate()
     {
         
+    }
+
+    public virtual void OnTriggerStay2D(Collider2D other)
+    {
+        Debug.Log("WHUH?");
+        if (other.CompareTag("Water"))
+        {
+            Debug.Log("HUH?");
+
+            Underwater = true;
+        }
+    }
+
+    public virtual void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Water"))
+        {
+            Underwater = false;
+        }
     }
 
     public virtual void HitResponse(GameObject attacker, GameObject Defender)

@@ -7,7 +7,10 @@ public class ParallaxController : MonoBehaviour {
     public float divide;
     public Vector3 offset;
 
+    public bool XLock;
+    public bool YLock;
+
     void Update() {
-        transform.position = new Vector3(cam.position.x / divide, cam.position.y / divide, 10 - divide) + offset;
+        transform.position = new Vector3(  cam.position.x / (XLock ? 1 :divide), cam.position.y / (YLock ? 1 : divide), 10 - divide) + offset;
     }
 }

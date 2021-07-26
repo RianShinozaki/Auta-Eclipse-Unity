@@ -12,6 +12,7 @@ public class Lumpy : BaseEnemy {
     [FoldoutGroup("States")] public Vector2 WaitTimeRandRange;
     float initX;
     [FoldoutGroup("States")] public float AttackDist;
+
     [FoldoutGroup("Manual Setup")] public HitBox hb;
 
     public void Start() {
@@ -20,6 +21,8 @@ public class Lumpy : BaseEnemy {
         WaitTimeRand = Random.Range(WaitTimeRandRange.x, WaitTimeRandRange.y);
         initX = transform.position.x;
         Anim = GetComponent<Animator>();
+
+        ObjectPool.Instance.SpawnObject("Coin", transform.position, Quaternion.identity);
 
     }
 

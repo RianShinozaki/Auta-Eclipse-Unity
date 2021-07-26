@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX" Hash="968419141">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1164910237" Name="SmallCoin" ObjectPath="\Events\Default Work Unit\Items\SmallCoin" DurationType="OneShot" DurationMin="0.258617" DurationMax="0.258617">
+					<IncludedMemoryFiles>
+						<File Id="36241984" Language="SFX">
+							<ShortName>SFX\Coin.wav</ShortName>
+							<Path>SFX\SFX\Coin_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

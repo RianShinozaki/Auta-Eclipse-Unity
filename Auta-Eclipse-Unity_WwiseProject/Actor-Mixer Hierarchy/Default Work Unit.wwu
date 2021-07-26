@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{778434BC-64D1-44A5-9AED-7445C488E504}" ShortID="584926206">
+					<ChildrenList>
+						<Sound Name="BurnHurt" ID="{E4318C0C-E242-40F4-ACCF-8785294F4753}" ShortID="182936962">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BurnHurt" ID="{DE2D2284-9AE8-4B41-9A09-C207CFBD99E8}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\BurnHurt.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="159560241"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="BurnHurt" ID="{DE2D2284-9AE8-4B41-9A09-C207CFBD99E8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Coin" ID="{03F291B1-3244-4668-9FF2-713C4116CB98}" ShortID="1016833020">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Coin" ID="{AF867E2D-7B59-4967-9742-22BEFF15F45A}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Coin.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="36241984"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Coin" ID="{AF867E2D-7B59-4967-9742-22BEFF15F45A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CuteBot" ID="{4CFE5003-95D9-4911-86B9-B45DA2F55B3F}" ShortID="99662033">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CuteBot" ID="{DAF49EFF-A967-4818-9034-6A3142E47526}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\CuteBot.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="873521207"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CuteBot" ID="{DAF49EFF-A967-4818-9034-6A3142E47526}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DoorOpen" ID="{CC3F9900-3301-4CE4-BDEB-91240F46A004}" ShortID="580445904">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DoorOpen" ID="{6B296EB6-FBA5-40E8-BE00-7C45ECE39E82}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\DoorOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="937662806"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DoorOpen" ID="{6B296EB6-FBA5-40E8-BE00-7C45ECE39E82}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EggCrack" ID="{6FFBF749-9140-4E32-AB90-6AE648F45827}" ShortID="879418177">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EggCrack" ID="{962C2B91-9FDF-4E5A-B82E-1D6095ECEAD2}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\EggCrack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="465780379"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="EggCrack" ID="{962C2B91-9FDF-4E5A-B82E-1D6095ECEAD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hit" ID="{E8DF8F6B-BDF3-43E8-AA31-F324AE7B50D1}" ShortID="657963502">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hit" ID="{889E1DC2-1399-4995-AC6F-79866FBC97F4}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Hit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="595031836"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit" ID="{889E1DC2-1399-4995-AC6F-79866FBC97F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SlideAttack" ID="{1DF3021A-B9D9-4200-9491-75F6A45EE9BE}" ShortID="195743335">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SlideAttack" ID="{E3BD81AC-A70F-40E9-B773-7D2AFD10E705}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SlideAttack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="40245905"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SlideAttack" ID="{E3BD81AC-A70F-40E9-B773-7D2AFD10E705}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpiderBellyRoar" ID="{8322F0BE-8C76-43D2-A42C-48C4BE99C26C}" ShortID="405279617">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpiderBellyRoar" ID="{0DA3C76E-32B3-4D51-A635-1D1EF93CEAAC}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\SpiderBellyRoar.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="46176292"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SpiderBellyRoar" ID="{0DA3C76E-32B3-4D51-A635-1D1EF93CEAAC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Throw" ID="{22F9762A-39E0-4A22-B183-318BAD2B9BB2}" ShortID="442869589">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Throw" ID="{5D47F1F5-DA04-4255-907E-3B54A9C3F374}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\Throw.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="224844720"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Throw" ID="{5D47F1F5-DA04-4255-907E-3B54A9C3F374}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UpwardsAttack" ID="{DC4E8270-42F1-4964-83A0-BE86AB527284}" ShortID="257872367">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UpwardsAttack" ID="{4A202EA8-C6E8-4C33-829D-34FE6F7C529E}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\UpwardsAttack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="275244291"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="UpwardsAttack" ID="{4A202EA8-C6E8-4C33-829D-34FE6F7C529E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

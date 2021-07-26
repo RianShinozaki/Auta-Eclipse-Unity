@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Items" ID="{AF76C228-0493-443F-A723-9385EB8FBD46}" ShortID="541027230">
+					<ChildrenList>
+						<Event Name="SmallCoin" ID="{11F351EE-8155-4E05-9BDC-6A413CED482A}">
+							<ChildrenList>
+								<Action Name="" ID="{7CA6A3EF-3D7A-43A7-A1AA-F56D13051650}" ShortID="419957204">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coin" ID="{03F291B1-3244-4668-9FF2-713C4116CB98}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

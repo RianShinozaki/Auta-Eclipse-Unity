@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 7342701581529692111}
   - component: {fileID: 7342701581529692106}
   - component: {fileID: 7342701581529692096}
+  - component: {fileID: 4494141219498484679}
   m_Layer: 7
   m_Name: Lumpy
   m_TagString: Untagged
@@ -358,10 +359,14 @@ MonoBehaviour:
   EnvironmentMask:
     serializedVersion: 2
     m_Bits: 64
+  UnderwaterDragScale: 0.7
   HitFX: {fileID: 0}
+  SplashFX: {fileID: 0}
   AfterIMGTimer: 0
   CreateAfterImg: 0
   AfterIMG: {fileID: 97007617958594002, guid: 23f980a8a101727418e3a7481d5dc4d7, type: 3}
+  Anim: {fileID: 0}
+  Underwater: 0
   isCombatEntity: 1
   HP: 16
   MaxHP: 16
@@ -377,7 +382,6 @@ MonoBehaviour:
   StunTime: 0
   stunned: 0
   GrabbedBy: {fileID: 0}
-  Anim: {fileID: 0}
   CannonballHitBox: {fileID: 2009278626}
   EyeDist: 7
   EyeAngleRange: 30
@@ -390,7 +394,6 @@ MonoBehaviour:
   PatrolRegion: 5.67
   WaitTimeRandRange: {x: 0.8, y: 1.2}
   AttackDist: 2.5
-  anim: {fileID: 0}
   hb: {fileID: 7342701579993842387}
 --- !u!95 &7342701581529692106
 Animator:
@@ -424,6 +427,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeInState: 0
+--- !u!114 &4494141219498484679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342701581529692105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f553592e62d2ce943a46fa2a58f96697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoolName: Lumpy
 --- !u!1 &7342701581853089479
 GameObject:
   m_ObjectHideFlags: 0

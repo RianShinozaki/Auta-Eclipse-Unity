@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1164910237	SmallCoin			\Default Work Unit\Items\SmallCoin	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	36241984	Coin	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\SFX\Coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Coin		22874
+

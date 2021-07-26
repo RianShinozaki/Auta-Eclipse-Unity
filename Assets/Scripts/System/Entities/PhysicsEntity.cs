@@ -22,7 +22,9 @@ public class PhysicsEntity : MonoBehaviour
     [FoldoutGroup("Manual Setup")] public LayerMask EnvironmentMask;
     [FoldoutGroup("Manual Setup")] public float UnderwaterDragScale = 0.7f;
 
-    [FoldoutGroup("Setup")] public GameObject HitFX;
+    [FoldoutGroup("Resources")] public GameObject HitFX;
+    [FoldoutGroup("Resources")] public GameObject SplashFX;
+
     [FoldoutGroup("Setup")] public float AfterIMGTimer = 0;
     [FoldoutGroup("Setup")] public bool CreateAfterImg = false;
     [FoldoutGroup("Setup")] public GameObject AfterIMG;
@@ -90,7 +92,8 @@ public class PhysicsEntity : MonoBehaviour
 
     public virtual void Awake() 
     {
-        HitFX = Resources.Load<GameObject>("FX/HitFX");
+        HitFX = Resources.Load<GameObject>("FX/pre_HitFX");
+        SplashFX = Resources.Load<GameObject>("FX/pre_WaterSplash");
 
         Anim = GetComponent<Animator>();
         if (Anim == null)
@@ -262,12 +265,17 @@ public class PhysicsEntity : MonoBehaviour
 
     public virtual void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("WHUH?");
         if (other.CompareTag("Water"))
         {
-            Debug.Log("HUH?");
-
             Underwater = true;
+        }
+    }
+
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            Instantiate(SplashFX, other.ClosestPoint(transform.position), Quaternion.identity);
         }
     }
 
@@ -276,6 +284,7 @@ public class PhysicsEntity : MonoBehaviour
         if(other.CompareTag("Water"))
         {
             Underwater = false;
+            Instantiate(SplashFX, other.ClosestPoint(transform.position), Quaternion.identity);
         }
     }
 

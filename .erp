@@ -2,15 +2,10 @@
 <ERPSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <showSceneName>true</showSceneName>
   <showProjectName>true</showProjectName>
-  <resetOnSceneChange>true</resetOnSceneChange>
+  <resetOnSceneChange>false</resetOnSceneChange>
   <debugMode>false</debugMode>
   <EditorClosed>true</EditorClosed>
-<<<<<<< Updated upstream
-  <LastTimestamp>1627160068</LastTimestamp>
-  <LastSessionID>1695262927291366930</LastSessionID>
-=======
-  <LastTimestamp>1623818285</LastTimestamp>
-  <LastSessionID>4398629388377599898</LastSessionID>
->>>>>>> Stashed changes
+  <LastTimestamp>1627333649</LastTimestamp>
+  <LastSessionID>5420449035790093959</LastSessionID>
   <Errored>false</Errored>
 </ERPSettings>

@@ -3,7 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{01C2C5DC-7662-428C-BB16-D594F9AAFEA5}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\kaish\Music\Auta\SFX\"/>
 				<Property Name="Event Action List\{11F351EE-8155-4E05-9BDC-6A413CED482A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{25D1CF33-4AFB-4E24-B5C0-7DB731623E5D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{290DCE61-081F-4124-AF45-7B6A5584B0BB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4023F77A-EB88-4124-93AE-5E081021407E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E8E25929-0D6D-49B3-9FA7-4CC5EC010D19}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

@@ -17,22 +17,24 @@ public class MoneyPickup : MonoBehaviour
     ObjectPoolObject opo;
 
     PlayableGraph playableGraph;
+    bool setGraph;
 
     public AK.Wwise.Event PickupSound;
 
     Rigidbody2D rb;
 
-    void Start()
+    void OnEnable()
     {
         anim = GetComponent<Animator>();
         AnimationPlayableUtilities.PlayClip(GetComponent<Animator>(), Clips[Type], out playableGraph);
+        setGraph = true;
 
         opo = GetComponent<ObjectPoolObject>();
 
         rb = GetComponent<Rigidbody2D>();
 
         float Direction = Random.Range(Mathf.PI / 4, Mathf.PI * 3 / 4);
-        rb.velocity = new Vector2(3 * Mathf.Sin(Direction), 3 * Mathf.Cos(Direction));
+        rb.velocity = new Vector2(3.5f * Mathf.Cos(Direction), 3.5f * Mathf.Sin(Direction));
     }
 
     // Update is called once per frame
@@ -43,13 +45,14 @@ public class MoneyPickup : MonoBehaviour
             //GameObject soundHelper = new GameObject("Sound Helper");
             //soundHelper.transform.position = transform.position;
             PickupSound.Post(gameObject);
-
+            ObjectPool.Instance.SpawnObject("LightBurst", transform.position, Quaternion.identity);
             opo.RePool();
         }
     }
 
     void OnDestroy()
     {
-        playableGraph.Destroy();
+        if(setGraph)
+            playableGraph.Destroy();
     }
 }

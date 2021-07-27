@@ -1486,6 +1486,7 @@ MonoBehaviour:
     m_Bits: 64
   UnderwaterDragScale: 0.7
   HitFX: {fileID: 7469896179650156141, guid: 2aea712ae23b1864195936759e9d3a58, type: 3}
+  SplashFX: {fileID: 0}
   AfterIMGTimer: 0
   CreateAfterImg: 0
   AfterIMG: {fileID: 97007617958594002, guid: 23f980a8a101727418e3a7481d5dc4d7, type: 3}
@@ -1527,6 +1528,14 @@ MonoBehaviour:
   - {fileID: 1661165799}
   - {fileID: 556482248}
   currentHitBox: {fileID: 0}
+  Sound_OrbThrow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 71415255b0df510489430f3c0013cd3f, type: 2}
+  Sound_Materialize:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 674f72b9688817040b5bb0041315e953, type: 2}
 --- !u!61 &5492783203385954756
 BoxCollider2D:
   m_ObjectHideFlags: 0

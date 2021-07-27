@@ -46,6 +46,11 @@ public class PlayerHitboxController : MonoBehaviour
         parent.GetComponent<PlayerController>().currentHitBox = null;
     }
 
+    void CancelLag()
+    {
+        parent.GetComponent<PlayerController>().AttackLag = false;
+    }
+
     public void CallHitBox(int index)
     {
         HitBoxes[index].SetActive(true);

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 14744b459ef0084eb86d582001d1a11c
     GuidInternal: 
-    m_lastTime: -8585742798459216277
+    m_lastTime: -8585742478043202250
     List:
     - name: SFX
       guid: 41e2f2017a65a6428488af67f7cb61cb
@@ -94,8 +94,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 770ceea5d5fe33439e2ec73083c67e5e
     GuidInternal: 
-    m_lastTime: -8585742799182832920
+    m_lastTime: -8585741961614446064
     List:
+    - name: Auta
+      guid: 6eaec7b103c2384b92b6419ef58ccc11
+      id: 3435608010
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      Path: Events\Default Work Unit\Auta
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Combat
+      guid: 506189121b2f504eb914c6e9ba2ac9fb
+      id: 2764240573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Combat
+        ObjectType: 4
+        guid: 506189121b2f504eb914c6e9ba2ac9fb
+      Path: Events\Default Work Unit\Combat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Environment
+      guid: 28d6c1f93481fe4b9758151c90a8d46d
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 28d6c1f93481fe4b9758151c90a8d46d
+      Path: Events\Default Work Unit\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Items
       guid: 28c276af93043f44a7239385eb8fbd46
       id: 2151963051
@@ -113,6 +164,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Materialize
+      guid: 33cfd125fb4a244eb5c07db731623e5d
+      id: 2205125440
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Materialize
+        ObjectType: 3
+        guid: 33cfd125fb4a244eb5c07db731623e5d
+      Path: Events\Default Work Unit\Auta\Materialize
+      maxAttenuation: 0
+      maxDuration: 0.371655
+      minDuration: 0.371655
+    - name: OrbThrow
+      guid: 2959e2e86d0db3499fa74cc5ec010d19
+      id: 4035672268
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: OrbThrow
+        ObjectType: 3
+        guid: 2959e2e86d0db3499fa74cc5ec010d19
+      Path: Events\Default Work Unit\Auta\OrbThrow
+      maxAttenuation: 0
+      maxDuration: 0.156644
+      minDuration: 0.156644
     - name: SmallCoin
       guid: ee51f3115581054e9bdc6a413ced482a
       id: 1164910237
@@ -131,8 +222,48 @@ MonoBehaviour:
         guid: ee51f3115581054e9bdc6a413ced482a
       Path: Events\Default Work Unit\Items\SmallCoin
       maxAttenuation: 0
-      maxDuration: 0.258617
-      minDuration: 0.258617
+      maxDuration: 0.232313
+      minDuration: 0.154844
+    - name: WallSlam
+      guid: 61ce0d291f082441af457b6a5584b0bb
+      id: 1760723946
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Combat
+        ObjectType: 4
+        guid: 506189121b2f504eb914c6e9ba2ac9fb
+      - ElementName: WallSlam
+        ObjectType: 3
+        guid: 61ce0d291f082441af457b6a5584b0bb
+      Path: Events\Default Work Unit\Combat\WallSlam
+      maxAttenuation: 0
+      maxDuration: 0.37517
+      minDuration: 0.37517
+    - name: WaterSplash
+      guid: 7af7234088eb244193ae5e081021407e
+      id: 777507535
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 28d6c1f93481fe4b9758151c90a8d46d
+      - ElementName: WaterSplash
+        ObjectType: 3
+        guid: 7af7234088eb244193ae5e081021407e
+      Path: Events\Default Work Unit\Environment\WaterSplash
+      maxAttenuation: 0
+      maxDuration: 1.052902
+      minDuration: 1.052902
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -190,7 +321,7 @@ MonoBehaviour:
     m_lastTime: -8585742954758711799
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

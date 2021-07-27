@@ -4,6 +4,8 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using Rewired;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
+
 public class PlayerController : PhysicsEntity
 {
 
@@ -33,6 +35,8 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Abilities")] public bool Orb;
     [FoldoutGroup("Abilities")] public float OrbPower = 10;
     [FoldoutGroup("Abilities")] public float GhostJumpTimer = 0;
+    [FoldoutGroup("Abilities")] public bool CanAttackBoost;
+    [FoldoutGroup("Abilities")] public bool AttackLag;
 
     [FoldoutGroup("FX")] public GameObject MaterializeFX;
     [FoldoutGroup("FX")] public GameObject DisintegrateFX;
@@ -44,15 +48,18 @@ public class PlayerController : PhysicsEntity
     public const int ORB = 5;
     public const int SPECIAL = 6;
     public int PlayerID;
-    public Player player;
-
-    public StateMachine stateMachine;
+    [FoldoutGroup("Manual Setup")] public Player player;
+    [FoldoutGroup("Manual Setup")] public StateMachine stateMachine;
     BoxCollider2D boxColl;
 
     float ComboNumber;
+    float ComboTime;
     float AttackBuffer;
-    public GameObject[] HitBoxSets;
-    public GameObject currentHitBox = null;
+    [FoldoutGroup("Combat")] public GameObject[] HitBoxSets;
+    [FoldoutGroup("Combat")] public GameObject currentHitBox = null;
+
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_OrbThrow;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Materialize;
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
@@ -135,6 +142,7 @@ public class PlayerController : PhysicsEntity
             GhostJumpTimer = 0.11f;
 
             CanOrb = true;
+            CanAttackBoost = true;
         } else
         {
             GhostJumpTimer -= Time.deltaTime;
@@ -154,7 +162,7 @@ public class PlayerController : PhysicsEntity
 
         if (player.GetButtonDown(ORB) && CanOrb)
         {
-            if (player.GetAxisRaw(MOVEMENT_HORIZONTAL) > 0.1f || Mathf.Abs(player.GetAxisRaw(MOVEMENT_VERTICAL)) > 0.1f) {
+            if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f || Mathf.Abs(player.GetAxisRaw(MOVEMENT_VERTICAL)) > 0.1f) {
                 Velocity = new Vector2(player.GetAxisRaw(MOVEMENT_HORIZONTAL), player.GetAxisRaw(MOVEMENT_VERTICAL)).normalized * OrbPower;
                 if(Grounded)
                 {
@@ -179,6 +187,8 @@ public class PlayerController : PhysicsEntity
             img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
             img.transform.localScale = transform.GetChild(0).localScale;
 
+            Sound_OrbThrow.Post(gameObject);
+
         }
 
         if (Velocity.y > 0)
@@ -187,7 +197,11 @@ public class PlayerController : PhysicsEntity
         }
 
         Attack();
-        ComboNumber = Mathf.MoveTowards(ComboNumber, 1, Time.deltaTime * 10);
+        ComboTime = Mathf.MoveTowards(ComboTime, 0, Time.deltaTime * 10);
+        if(ComboTime == 0)
+        {
+            ComboNumber = 1;
+        }
         ComboNumber = Mathf.Clamp(ComboNumber, 1, 3);
 
     }
@@ -221,6 +235,7 @@ public class PlayerController : PhysicsEntity
             Orb = false;
             Bounce = false;
             Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity);
+            Sound_Materialize.Post(gameObject);
             CreateAfterImg = false;
         }
         if(stateMachine.TimeInState > 0.08f)
@@ -237,6 +252,7 @@ public class PlayerController : PhysicsEntity
             Orb = false;
             Bounce = false;
             Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity);
+            Sound_Materialize.Post(gameObject);
             CreateAfterImg = false;
         }
 
@@ -248,6 +264,7 @@ public class PlayerController : PhysicsEntity
             Orb = false;
             Bounce = false;
             Instantiate(MaterializeFX, transform.position + Vector3.back * 0.01f, Quaternion.identity);
+            Sound_Materialize.Post(gameObject);
             CreateAfterImg = false;
             AttackBuffer = 0.1f;
         }
@@ -288,25 +305,66 @@ public class PlayerController : PhysicsEntity
 
         if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f && !Grounded)
         {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * Time.deltaTime * TimeScale * (100 / 60) * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
+            Velocity.x = Mathf.MoveTowards(Velocity.x, player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed, Accel * Time.deltaTime * TimeScale * (60 / 60) * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         }
         else
         {
             if (Mathf.Abs(Velocity.x) > 0)
             {
-                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
-
-                if(Mathf.Abs(Velocity.x) < 0.1f)
-                {
-                    animationController.Stop();
-                }
-
+                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * (Grounded ? 1 : AirFrictionDivide) * (HurtState > 0 ? 0 : 1) * (Underwater ? UnderwaterDragScale : 1));
             }
         }
 
         //AnimatorClipInfo[] CurrentClipInfo;
         if (animationController.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle") ) {
             AttackEnd();
+        }
+
+        if (AttackLag)
+            return;
+
+        if (player.GetButtonDown(JUMP) && GhostJumpTimer > 0)
+        {
+            //transform.position += Vector3.up * 0.5f;
+            Grounded = false;
+            Velocity.y = JumpPower;
+            animationController.SetJump();
+            AllowShortJump = true;
+            GroundPoints.Clear();
+            stateMachine.SetState(State_Normal);
+            GhostJumpTimer = 0;
+        }
+
+        if (player.GetButtonDown(ORB) && CanOrb)
+        {
+            if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f || Mathf.Abs(player.GetAxisRaw(MOVEMENT_VERTICAL)) > 0.1f)
+            {
+                Velocity = new Vector2(player.GetAxisRaw(MOVEMENT_HORIZONTAL), player.GetAxisRaw(MOVEMENT_VERTICAL)).normalized * OrbPower;
+                if (Grounded)
+                {
+                    Velocity.y = Mathf.Clamp(Velocity.y, 2f, 100f);
+                }
+            }
+            else
+            {
+                Velocity = new Vector2(transform.GetChild(0).localScale.x, 0) * OrbPower;
+            }
+            stateMachine.SetState(State_Orb);
+
+
+            Grounded = false;
+            AllowShortJump = false;
+            GroundPoints.Clear();
+
+            CanOrb = false;
+            StartCoroutine(CreateAfterImgEnum());
+
+            GameObject img = Instantiate(DisintegrateFX, transform.position, Quaternion.identity);
+            img.GetComponent<SpriteRenderer>().sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+            img.transform.localScale = transform.GetChild(0).localScale;
+
+            Sound_OrbThrow.Post(gameObject);
+
         }
 
     }
@@ -373,6 +431,9 @@ public class PlayerController : PhysicsEntity
     {
         if(AttackBuffer > 0)
         {
+
+            AttackLag = true;
+
             if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f)
             {
                 
@@ -384,6 +445,11 @@ public class PlayerController : PhysicsEntity
             if (player.GetAxisRaw(MOVEMENT_VERTICAL) > 0.1f)
             {
                 animationController.SwordAttack(0, 2);
+                if(CanAttackBoost)
+                {
+                    CanAttackBoost = false;
+                    Velocity.y = 2.5f;
+                }
                 return;
             }
             if (player.GetAxisRaw(MOVEMENT_VERTICAL) < -0.1f)
@@ -394,7 +460,13 @@ public class PlayerController : PhysicsEntity
 
             animationController.SwordAttack(Mathf.CeilToInt(ComboNumber), 0);
             ComboNumber = Mathf.CeilToInt(ComboNumber) + 1;
-            
+            if(ComboNumber > 3)
+            {
+                ComboNumber = 1;
+                
+            }
+            ComboTime = 1;
+
         }
     }
     public override void HitResponse(GameObject attacker, GameObject Defender)
@@ -403,6 +475,9 @@ public class PlayerController : PhysicsEntity
 
         if (Velocity.y < 0)
             Velocity.y = 0;
+        else
+            Velocity.y /= 2;
+
         Velocity.x = 0;
         StartCoroutine(AttackPushback(Mathf.Sign(transform.GetChild(0).localScale.x)));
         if (attacker != null)

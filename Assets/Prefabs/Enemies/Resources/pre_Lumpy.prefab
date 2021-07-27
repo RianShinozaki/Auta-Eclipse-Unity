@@ -391,6 +391,11 @@ MonoBehaviour:
   Stop: 15
   MoveSpeed: 2.5
   CanStun: 1
+  MoneyDrop: {x: 1, y: 3}
+  Sound_WallSlam:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 489fa7e8d16409044a418d7962fc2207, type: 2}
   PatrolRegion: 5.67
   WaitTimeRandRange: {x: 0.8, y: 1.2}
   AttackDist: 2.5

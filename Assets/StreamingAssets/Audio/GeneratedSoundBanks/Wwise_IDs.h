@@ -13,7 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MATERIALIZE = 2205125440U;
+        static const AkUniqueID ORBTHROW = 4035672268U;
         static const AkUniqueID SMALLCOIN = 1164910237U;
+        static const AkUniqueID WALLSLAM = 1760723946U;
+        static const AkUniqueID WATERSPLASH = 777507535U;
     } // namespace EVENTS
 
     namespace BANKS

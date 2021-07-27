@@ -10,7 +10,63 @@
 								<Action Name="" ID="{7CA6A3EF-3D7A-43A7-A1AA-F56D13051650}" ShortID="419957204">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Coin" ID="{03F291B1-3244-4668-9FF2-713C4116CB98}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+											<ObjectRef Name="SmallCoin" ID="{6D024071-ADB0-47F0-8BAC-694E5D9DD59A}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Auta" ID="{B1C7AE6E-C203-4B38-92B6-419EF58CCC11}" ShortID="129014248">
+					<ChildrenList>
+						<Event Name="OrbThrow" ID="{E8E25929-0D6D-49B3-9FA7-4CC5EC010D19}">
+							<ChildrenList>
+								<Action Name="" ID="{1D40B5CF-C82D-4E27-8602-F7C84FEA8816}" ShortID="459924925">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OrbThrow" ID="{42573D5C-7B0E-4E2E-B7B6-2F7B5F11E1C4}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Materialize" ID="{25D1CF33-4AFB-4E24-B5C0-7DB731623E5D}">
+							<ChildrenList>
+								<Action Name="" ID="{6BAED861-FDBF-4FFB-8EE5-DA629EAB3ADF}" ShortID="961662084">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Materialize" ID="{B2F73E58-10BE-4431-A17E-A0CAFD03553C}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Combat" ID="{12896150-2F1B-4E50-B914-C6E9BA2AC9FB}" ShortID="14011305">
+					<ChildrenList>
+						<Event Name="WallSlam" ID="{290DCE61-081F-4124-AF45-7B6A5584B0BB}">
+							<ChildrenList>
+								<Action Name="" ID="{82F38EA4-B176-4C6C-A67B-852454ED2B25}" ShortID="585716884">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WallSlam" ID="{0045B633-ADD2-47FA-950D-E86486692B97}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{F9C1D628-8134-4BFE-9758-151C90A8D46D}" ShortID="348218480">
+					<ChildrenList>
+						<Event Name="WaterSplash" ID="{4023F77A-EB88-4124-93AE-5E081021407E}">
+							<ChildrenList>
+								<Action Name="" ID="{EF33F9CC-2C7C-4B11-A928-73B9DAF13ECD}" ShortID="707510315">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WaterSplash" ID="{C67CD4C5-D6C8-4218-AC71-1C331307175D}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

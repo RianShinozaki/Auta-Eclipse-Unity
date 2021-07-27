@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using AK.Wwise;
 
 public class BaseEnemy : PhysicsEntity
 {
@@ -23,15 +24,17 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Base Enemy Stats")] public float Stop;
     [FoldoutGroup("Base Enemy Stats")] public float MoveSpeed;
     [FoldoutGroup("Base Enemy Stats")] public bool CanStun;
+    [FoldoutGroup("Base Enemy Stats")] public Vector2Int MoneyDrop;
+
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_WallSlam;
+
+
     
     public override void Awake()
     {
         base.Awake();
         stateMachine = GetComponent<StateMachine>();
         Player = GameObject.Find("Auta");
-        
-        
-        CamVariables.Screenshake = 0.3f;
         
     }
 
@@ -42,6 +45,7 @@ public class BaseEnemy : PhysicsEntity
         if (stateMachine.CurrentState == State_Cannonball)
         {
             CamVariables.Screenshake = 0.2f;
+            Sound_WallSlam.Post(gameObject);
         }
     }
 
@@ -49,6 +53,14 @@ public class BaseEnemy : PhysicsEntity
     {
         GameObject hfx = Instantiate(HitFX, transform.position, Quaternion.identity);
         hfx.GetComponent<HitFXController>().type = DamageType.EnemyDeath;
+
+        int toDrop = Random.Range(MoneyDrop.x, MoneyDrop.y);
+        if(toDrop > 0 && toDrop < 5)
+        {
+            for(int i = 0; i < toDrop; i++)
+                ObjectPool.Instance.SpawnObject("Coin", transform.position, Quaternion.identity);
+        }
+
         Destroy(gameObject);
     }
 

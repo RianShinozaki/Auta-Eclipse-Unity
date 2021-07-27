@@ -1,6 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	777507535	WaterSplash			\Default Work Unit\Environment\WaterSplash	
 	1164910237	SmallCoin			\Default Work Unit\Items\SmallCoin	
+	1760723946	WallSlam			\Default Work Unit\Combat\WallSlam	
+	2205125440	Materialize			\Default Work Unit\Auta\Materialize	
+	4035672268	OrbThrow			\Default Work Unit\Auta\OrbThrow	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	36241984	Coin	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\SFX\Coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Coin		22874
+	39216514	Coin	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin		14928
+	359700596	Coin3	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin3		22366
+	504561771	WaterSplash	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_WaterSplash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Environment\WaterSplash		92930
+	637008990	OrbThrow	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_OrbThrow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\OrbThrow		13880
+	721530970	WallSlam	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_BurstAttack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Combat\WallSlam		33154
+	814570620	Coin2	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin2		18182
+	986107079	Materialize	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_Materialize_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Materialize		32844
 

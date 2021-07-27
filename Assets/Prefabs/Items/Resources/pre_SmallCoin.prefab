@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 65174246790118324}
   - component: {fileID: 8834237944916676675}
   - component: {fileID: 2706333542512566009}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: pre_SmallCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,4 +185,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f553592e62d2ce943a46fa2a58f96697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PoolName: 
+  PoolName: Coin

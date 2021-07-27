@@ -98,6 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 209960078}
   Clip: {fileID: 7400000, guid: 4634268379d4d7c45af6cc1c5d6db344, type: 2}
+  Sound_Splash:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2d7a4c83a19366c47af7a861515ea5e8, type: 2}
 --- !u!95 &209960078
 Animator:
   serializedVersion: 3

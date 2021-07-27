@@ -21,9 +21,6 @@ public class Lumpy : BaseEnemy {
         WaitTimeRand = Random.Range(WaitTimeRandRange.x, WaitTimeRandRange.y);
         initX = transform.position.x;
         Anim = GetComponent<Animator>();
-
-        ObjectPool.Instance.SpawnObject("Coin", transform.position, Quaternion.identity);
-
     }
 
     // Update is called once per frame
@@ -82,7 +79,16 @@ public class Lumpy : BaseEnemy {
             stateMachine.SetState(State_Decide);
         }
 
-        if(Grounded)
+        RaycastHit2D hit;
+        hit = Physics2D.Raycast(new Vector2(transform.position.x+0.5f * Mathf.Sign(Velocity.x), coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.5f, EnvironmentMask);
+
+        if (hit.collider == null) //Check for a collision
+        {
+            stateMachine.SetState(State_Decide);
+        }
+
+
+        if (Grounded)
             Velocity.x = Mathf.MoveTowards(Velocity.x, MoveSpeed * transform.localScale.x, Accel * Time.deltaTime * TimeScale);
 
         if(Vector2.Distance(new Vector2(transform.position.x, transform.position.y), new Vector2(Player.transform.position.x, Player.transform.position.y)) <= AttackDist && CanSeePlayer && Grounded) {

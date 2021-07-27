@@ -20,7 +20,7 @@ TagManager:
   - EnemyHurtBox
   - Interactable
   - PhysicsInteractable
-  - 
+  - Pickup
   - 
   - 
   - 

@@ -11,16 +11,56 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="968419141">
+		<SoundBank Id="393239870" Language="SFX" Hash="898569235">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1164910237" Name="SmallCoin" ObjectPath="\Events\Default Work Unit\Items\SmallCoin" DurationType="OneShot" DurationMin="0.258617" DurationMax="0.258617">
+				<Event Id="2205125440" Name="Materialize" ObjectPath="\Events\Default Work Unit\Auta\Materialize" DurationType="OneShot" DurationMin="0.371655" DurationMax="0.371655">
 					<IncludedMemoryFiles>
-						<File Id="36241984" Language="SFX">
-							<ShortName>SFX\Coin.wav</ShortName>
-							<Path>SFX\SFX\Coin_10C4C929.wem</Path>
+						<File Id="986107079" Language="SFX">
+							<ShortName>snd_Materialize.wav</ShortName>
+							<Path>SFX\snd_Materialize_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4035672268" Name="OrbThrow" ObjectPath="\Events\Default Work Unit\Auta\OrbThrow" DurationType="OneShot" DurationMin="0.156644" DurationMax="0.156644">
+					<IncludedMemoryFiles>
+						<File Id="637008990" Language="SFX">
+							<ShortName>snd_OrbThrow.wav</ShortName>
+							<Path>SFX\snd_OrbThrow_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1164910237" Name="SmallCoin" ObjectPath="\Events\Default Work Unit\Items\SmallCoin" DurationType="OneShot" DurationMin="0.154844" DurationMax="0.232313">
+					<IncludedMemoryFiles>
+						<File Id="39216514" Language="SFX">
+							<ShortName>Coin.wav</ShortName>
+							<Path>SFX\Coin_10C4C929.wem</Path>
+						</File>
+						<File Id="359700596" Language="SFX">
+							<ShortName>Coin3.wav</ShortName>
+							<Path>SFX\Coin3_10C4C929.wem</Path>
+						</File>
+						<File Id="814570620" Language="SFX">
+							<ShortName>Coin2.wav</ShortName>
+							<Path>SFX\Coin2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1760723946" Name="WallSlam" ObjectPath="\Events\Default Work Unit\Combat\WallSlam" DurationType="OneShot" DurationMin="0.375170" DurationMax="0.375170">
+					<IncludedMemoryFiles>
+						<File Id="721530970" Language="SFX">
+							<ShortName>snd_BurstAttack.wav</ShortName>
+							<Path>SFX\snd_BurstAttack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="777507535" Name="WaterSplash" ObjectPath="\Events\Default Work Unit\Environment\WaterSplash" DurationType="OneShot" DurationMin="1.052902" DurationMax="1.052902">
+					<IncludedMemoryFiles>
+						<File Id="504561771" Language="SFX">
+							<ShortName>snd_WaterSplash.wav</ShortName>
+							<Path>SFX\snd_WaterSplash_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

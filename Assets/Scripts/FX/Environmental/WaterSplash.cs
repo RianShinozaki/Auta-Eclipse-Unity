@@ -9,12 +9,15 @@ public class WaterSplash : MonoBehaviour
     public AnimationClip Clip;
 
     PlayableGraph playableGraph;
+
+    public AK.Wwise.Event Sound_Splash;
     // Update is called once per frame
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         AnimationPlayableUtilities.PlayClip(GetComponent<Animator>(), Clip, out playableGraph);
+        Sound_Splash.Post(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

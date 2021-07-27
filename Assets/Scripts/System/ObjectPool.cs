@@ -23,6 +23,8 @@ public class ObjectPool : MonoBehaviour {
             Instance = this;
         }
 
+        Objects = new Dictionary<string, Stack<ObjectPoolObject>>();
+
         foreach(Pool pool in Pools) {
             Objects.Add(pool.Name, new Stack<ObjectPoolObject>());
 

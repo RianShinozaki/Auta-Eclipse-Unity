@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3774185563427782452}
   - component: {fileID: 8073838623629544590}
   m_Layer: 0
-  m_Name: Pre_WaterCollision
+  m_Name: pre_WaterCollision
   m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

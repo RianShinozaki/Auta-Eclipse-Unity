@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8329935130700677019}
   - component: {fileID: 8329935130700677018}
   m_Layer: 6
-  m_Name: Pre_CamRoom
+  m_Name: pre_CamRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 5492783203385954759}
   - component: {fileID: 1604686792}
   m_Layer: 7
-  m_Name: Auta
+  m_Name: pre_Auta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 7342701581529692096}
   - component: {fileID: 4494141219498484679}
   m_Layer: 7
-  m_Name: Lumpy
+  m_Name: pre_Lumpy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

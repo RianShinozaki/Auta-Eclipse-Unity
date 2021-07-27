@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 631040877765853884}
   - component: {fileID: 631040877765853885}
   m_Layer: 0
-  m_Name: MaterializeFX
+  m_Name: pre_MaterializeFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

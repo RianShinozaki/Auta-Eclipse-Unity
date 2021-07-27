@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 5338617534438889293}
   - component: {fileID: 5995680905358595788}
   m_Layer: 6
-  m_Name: Pre_SlopeCollision
+  m_Name: pre_SlopeCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

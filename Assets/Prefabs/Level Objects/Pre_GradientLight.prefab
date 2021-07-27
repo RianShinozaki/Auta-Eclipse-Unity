@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 8711954854105617669}
   - component: {fileID: 4862121302665661306}
   m_Layer: 6
-  m_Name: Pre_GradientLight
+  m_Name: pre_GradientLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -13,9 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID GRAB = 906520831U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MATERIALIZE = 2205125440U;
         static const AkUniqueID ORBTHROW = 4035672268U;
+        static const AkUniqueID SLASH_ATTACK = 1665195303U;
+        static const AkUniqueID SLASH_IMPACT = 1652188405U;
         static const AkUniqueID SMALLCOIN = 1164910237U;
+        static const AkUniqueID THROW = 745179803U;
         static const AkUniqueID WALLSLAM = 1760723946U;
         static const AkUniqueID WATERSPLASH = 777507535U;
     } // namespace EVENTS

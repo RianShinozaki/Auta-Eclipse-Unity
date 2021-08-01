@@ -1,16 +1,28 @@
 Event	ID	Name			Wwise Object Path	Notes
+	674522502	Land			\Default Work Unit\Auta\Land	
+	745179803	Throw			\Default Work Unit\Auta\Throw	
 	777507535	WaterSplash			\Default Work Unit\Environment\WaterSplash	
+	906520831	Grab			\Default Work Unit\Auta\Grab	
 	1164910237	SmallCoin			\Default Work Unit\Items\SmallCoin	
+	1652188405	Slash_Impact			\Default Work Unit\Combat\Slash_Impact	
+	1665195303	Slash_Attack			\Default Work Unit\Combat\Slash_Attack	
 	1760723946	WallSlam			\Default Work Unit\Combat\WallSlam	
 	2205125440	Materialize			\Default Work Unit\Auta\Materialize	
+	3833651337	Jump			\Default Work Unit\Auta\Jump	
 	4035672268	OrbThrow			\Default Work Unit\Auta\OrbThrow	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39216514	Coin	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin		14928
+	243568462	Throw	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Throw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Throw		265352
+	331542118	Jump	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Jump		32292
 	359700596	Coin3	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin3		22366
+	424079755	Land	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Land		45400
 	504561771	WaterSplash	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_WaterSplash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Environment\WaterSplash		92930
 	637008990	OrbThrow	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_OrbThrow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\OrbThrow		13880
+	649110423	Grab	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\grabbity_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Grab		25466
 	721530970	WallSlam	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_BurstAttack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Combat\WallSlam		33154
+	784450246	Slice-Impact	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Slice-Impact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Combat\Slice-Impact		301872
 	814570620	Coin2	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Coin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Item\SmallCoin\Coin2		18182
 	986107079	Materialize	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\snd_Materialize_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Auta\Materialize		32844
+	1025062393	Slash-Attack	C:\Users\kaish\OneDrive\Documents\SPizza\Auta Eclipse Unity Repo\Auta-Eclipse-Unity\Auta-Eclipse-Unity_WwiseProject\.cache\Mac\SFX\Slash-Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Combat\Slash-Attack		265352
 

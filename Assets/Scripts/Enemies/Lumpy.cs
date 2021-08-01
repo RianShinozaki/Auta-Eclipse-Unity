@@ -40,7 +40,7 @@ public class Lumpy : BaseEnemy {
         if(HurtState > 0) {
             HurtState = Mathf.MoveTowards(HurtState, 0, Time.deltaTime * TimeScale * 60);
             stateMachine.SetRunState(false);
-            if(HurtState == 0 && Grounded) {
+            if(HurtState == 0) {
                 WaitTimeRand = Random.Range(WaitTimeRandRange.x, WaitTimeRandRange.y);
                 stateMachine.SetState(State_Decide);
                 stateMachine.SetRunState(true);
@@ -63,7 +63,7 @@ public class Lumpy : BaseEnemy {
                 rand -= 1;
 
                 if(MoveSpeed * WaitTimeRand > initX + PatrolRegion / 2 || MoveSpeed * WaitTimeRand < initX - PatrolRegion / 2) {
-                    rand *= -1;
+                    //rand *= -1;
                 }
 
                 transform.localScale = new Vector3(rand, 1, 1);
@@ -80,14 +80,27 @@ public class Lumpy : BaseEnemy {
         }
 
         RaycastHit2D hit;
-        hit = Physics2D.Raycast(new Vector2(transform.position.x+0.5f * Mathf.Sign(Velocity.x), coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.5f, EnvironmentMask);
+        hit = Physics2D.Raycast(new Vector2(transform.position.x + 0.5f * Mathf.Sign(Velocity.x), coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 1, EnvironmentMask);
 
-        if (hit.collider == null) //Check for a collision
+        if (Grounded)
         {
-            stateMachine.SetState(State_Decide);
+            if (hit.collider == null) //Check for a collision
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, 1, 1);
+                Velocity.x = -Velocity.x;
+            }
         }
 
+        hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right * Mathf.Sign(Velocity.x), 1);
 
+        if (!hit.transform.root.gameObject == gameObject)
+        {
+            if (hit.transform.root.GetComponent<Lumpy>())
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, 1, 1);
+                Velocity.x = -Velocity.x;
+            }
+        }
         if (Grounded)
             Velocity.x = Mathf.MoveTowards(Velocity.x, MoveSpeed * transform.localScale.x, Accel * Time.deltaTime * TimeScale);
 

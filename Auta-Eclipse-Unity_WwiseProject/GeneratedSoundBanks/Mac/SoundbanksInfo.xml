@@ -11,11 +11,35 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="898569235">
+		<SoundBank Id="393239870" Language="SFX" Hash="4287511895">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="906520831" Name="Grab" ObjectPath="\Events\Default Work Unit\Auta\Grab" DurationType="OneShot" DurationMin="0.288005" DurationMax="0.288005">
+					<IncludedMemoryFiles>
+						<File Id="649110423" Language="SFX">
+							<ShortName>grabbity.wav</ShortName>
+							<Path>SFX\grabbity_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Auta\Jump" DurationType="OneShot" DurationMin="0.182698" DurationMax="0.182698">
+					<IncludedMemoryFiles>
+						<File Id="331542118" Language="SFX">
+							<ShortName>Jump.wav</ShortName>
+							<Path>SFX\Jump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Auta\Land" DurationType="OneShot" DurationMin="0.257007" DurationMax="0.257007">
+					<IncludedMemoryFiles>
+						<File Id="424079755" Language="SFX">
+							<ShortName>Land.wav</ShortName>
+							<Path>SFX\Land_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2205125440" Name="Materialize" ObjectPath="\Events\Default Work Unit\Auta\Materialize" DurationType="OneShot" DurationMin="0.371655" DurationMax="0.371655">
 					<IncludedMemoryFiles>
 						<File Id="986107079" Language="SFX">
@@ -32,6 +56,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1665195303" Name="Slash_Attack" ObjectPath="\Events\Default Work Unit\Combat\Slash_Attack" DurationType="OneShot" DurationMin="1.503900" DurationMax="1.503900">
+					<IncludedMemoryFiles>
+						<File Id="1025062393" Language="SFX">
+							<ShortName>Slash-Attack.wav</ShortName>
+							<Path>SFX\Slash-Attack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1652188405" Name="Slash_Impact" ObjectPath="\Events\Default Work Unit\Combat\Slash_Impact" DurationType="OneShot" DurationMin="1.710930" DurationMax="1.710930">
+					<IncludedMemoryFiles>
+						<File Id="784450246" Language="SFX">
+							<ShortName>Slice-Impact.wav</ShortName>
+							<Path>SFX\Slice-Impact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1164910237" Name="SmallCoin" ObjectPath="\Events\Default Work Unit\Items\SmallCoin" DurationType="OneShot" DurationMin="0.154844" DurationMax="0.232313">
 					<IncludedMemoryFiles>
 						<File Id="39216514" Language="SFX">
@@ -45,6 +85,14 @@
 						<File Id="814570620" Language="SFX">
 							<ShortName>Coin2.wav</ShortName>
 							<Path>SFX\Coin2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="745179803" Name="Throw" ObjectPath="\Events\Default Work Unit\Auta\Throw" DurationType="OneShot" DurationMin="1.503900" DurationMax="1.503900">
+					<IncludedMemoryFiles>
+						<File Id="243568462" Language="SFX">
+							<ShortName>Throw.wav</ShortName>
+							<Path>SFX\Throw_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

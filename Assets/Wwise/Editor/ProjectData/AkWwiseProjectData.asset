@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 14744b459ef0084eb86d582001d1a11c
     GuidInternal: 
-    m_lastTime: -8585742478043202250
+    m_lastTime: -8585740061487973378
     List:
     - name: SFX
       guid: 41e2f2017a65a6428488af67f7cb61cb
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 770ceea5d5fe33439e2ec73083c67e5e
     GuidInternal: 
-    m_lastTime: -8585741961614446064
+    m_lastTime: -8585739944435248226
     List:
     - name: Auta
       guid: 6eaec7b103c2384b92b6419ef58ccc11
@@ -147,6 +147,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Grab
+      guid: 5fa0049fc1ca5545888a337e68af5fe1
+      id: 906520831
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Grab
+        ObjectType: 3
+        guid: 5fa0049fc1ca5545888a337e68af5fe1
+      Path: Events\Default Work Unit\Auta\Grab
+      maxAttenuation: 0
+      maxDuration: 0.288005
+      minDuration: 0.288005
     - name: Items
       guid: 28c276af93043f44a7239385eb8fbd46
       id: 2151963051
@@ -164,6 +184,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Jump
+      guid: 0e0176e8c6039948a64197e89b8d471c
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Jump
+        ObjectType: 3
+        guid: 0e0176e8c6039948a64197e89b8d471c
+      Path: Events\Default Work Unit\Auta\Jump
+      maxAttenuation: 0
+      maxDuration: 0.182698
+      minDuration: 0.182698
+    - name: Land
+      guid: 586ba905b8910a4e87110a76fc65d0bd
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Land
+        ObjectType: 3
+        guid: 586ba905b8910a4e87110a76fc65d0bd
+      Path: Events\Default Work Unit\Auta\Land
+      maxAttenuation: 0
+      maxDuration: 0.257007
+      minDuration: 0.257007
     - name: Materialize
       guid: 33cfd125fb4a244eb5c07db731623e5d
       id: 2205125440
@@ -204,6 +264,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.156644
       minDuration: 0.156644
+    - name: Slash_Attack
+      guid: c28b5414482c6f4aaa902d26a6e8ef74
+      id: 1665195303
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Combat
+        ObjectType: 4
+        guid: 506189121b2f504eb914c6e9ba2ac9fb
+      - ElementName: Slash_Attack
+        ObjectType: 3
+        guid: c28b5414482c6f4aaa902d26a6e8ef74
+      Path: Events\Default Work Unit\Combat\Slash_Attack
+      maxAttenuation: 0
+      maxDuration: 1.5039
+      minDuration: 1.5039
+    - name: Slash_Impact
+      guid: 8656c1d3a7a9784f80fd7557fc385764
+      id: 1652188405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Combat
+        ObjectType: 4
+        guid: 506189121b2f504eb914c6e9ba2ac9fb
+      - ElementName: Slash_Impact
+        ObjectType: 3
+        guid: 8656c1d3a7a9784f80fd7557fc385764
+      Path: Events\Default Work Unit\Combat\Slash_Impact
+      maxAttenuation: 0
+      maxDuration: 1.71093
+      minDuration: 1.71093
     - name: SmallCoin
       guid: ee51f3115581054e9bdc6a413ced482a
       id: 1164910237
@@ -224,6 +324,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.232313
       minDuration: 0.154844
+    - name: Throw
+      guid: 162d15097fcd2740a757945429cc7d52
+      id: 745179803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Throw
+        ObjectType: 3
+        guid: 162d15097fcd2740a757945429cc7d52
+      Path: Events\Default Work Unit\Auta\Throw
+      maxAttenuation: 0
+      maxDuration: 1.5039
+      minDuration: 1.5039
     - name: WallSlam
       guid: 61ce0d291f082441af457b6a5584b0bb
       id: 1760723946

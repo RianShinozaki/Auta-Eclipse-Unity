@@ -122,3 +122,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 81f35b79c8f848045928398b8ba837f3, type: 2}
   animator: {fileID: 7469896179650156128}
   type: 0
+  SlashImpact:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e0bb96d6584a9604e92aab38372b8bc1, type: 2}

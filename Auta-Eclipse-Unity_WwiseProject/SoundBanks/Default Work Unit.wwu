@@ -5,11 +5,17 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{01F2E241-657A-42A6-8488-AF67F7CB61CB}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Throw" ID="{09152D16-CD7F-4027-A757-945429CC7D52}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WallSlam" ID="{290DCE61-081F-4124-AF45-7B6A5584B0BB}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WaterSplash" ID="{4023F77A-EB88-4124-93AE-5E081021407E}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Grab" ID="{9F04A05F-CAC1-4555-888A-337E68AF5FE1}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{E876010E-03C6-4899-A641-97E89B8D471C}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OrbThrow" ID="{E8E25929-0D6D-49B3-9FA7-4CC5EC010D19}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slash_Attack" ID="{14548BC2-2C48-4A6F-AA90-2D26A6E8EF74}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SmallCoin" ID="{11F351EE-8155-4E05-9BDC-6A413CED482A}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Land" ID="{05A96B58-91B8-4E0A-8711-0A76FC65D0BD}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Materialize" ID="{25D1CF33-4AFB-4E24-B5C0-7DB731623E5D}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Slash_Impact" ID="{D3C15686-A9A7-4F78-80FD-7557FC385764}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

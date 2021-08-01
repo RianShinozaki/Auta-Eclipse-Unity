@@ -43,10 +43,11 @@ public class ObjectPool : MonoBehaviour {
         SpawnObject(Name, Parent.position, Parent.rotation, Parent);
     }
 
-    public void SpawnObject(string Name, Vector3 Position, Quaternion Rotation, Transform Parent = null) {
+    public GameObject SpawnObject(string Name, Vector3 Position, Quaternion Rotation, Transform Parent = null) {
+        GameObject objspawn;
         if(Objects[Name].Count == 1) {
-            Instantiate(Objects[Name].Peek().gameObject, Position, Rotation, Parent);
-            return;
+            objspawn = Instantiate(Objects[Name].Peek().gameObject, Position, Rotation, Parent);
+            return objspawn;
         }
 
         ObjectPoolObject obj = Objects[Name].Pop();
@@ -56,6 +57,8 @@ public class ObjectPool : MonoBehaviour {
         obj.transform.parent = Parent;
 
         obj.gameObject.SetActive(true);
+
+        return obj.gameObject;
     }
 
     public void RepoolObject(ObjectPoolObject obj) {

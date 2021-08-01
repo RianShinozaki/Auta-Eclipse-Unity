@@ -89,11 +89,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 2
   inflictYKnockback: 7
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &556482248
 GameObject:
@@ -596,11 +599,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 1
   inflictYKnockback: 10
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &2047762193
 GameObject:
@@ -684,11 +690,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 2
   inflictYKnockback: 5
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &2134361272
 GameObject:
@@ -1102,11 +1111,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 3
   inflictYKnockback: 2
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &3417009071497738506
 GameObject:
@@ -1311,11 +1323,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 5
   inflictYKnockback: 3
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &4829695373565955227
 GameObject:
@@ -1399,11 +1414,14 @@ MonoBehaviour:
   inflictHurtState: 15
   inflictXKnockback: 3
   inflictYKnockback: 2
+  TechnicalAdd: 0
   collisions: -1
   StoppedState: 0
   ActiveTime: -1
-  entityResponder: {fileID: 5492783203385954776}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!1 &5492783203385954779
 GameObject:
@@ -1471,6 +1489,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b7175424d48ca418494d73e582f55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Affinities:
+    Slash: 0
+    Bash: 0
+    Pierce: 0
+    Solar: 0
+    Crystal: 0
+    Sonic: 0
+    ElementalClass: 0
   Velocity: {x: 0, y: 0}
   Gravity: 18
   GravityCancelTime: 0
@@ -1493,10 +1519,15 @@ MonoBehaviour:
   Anim: {fileID: 5492783203451174449}
   Underwater: 0
   isCombatEntity: 1
-  HP: 17
+  HP: 20
   MaxHP: 20
   HitStun: 0
   HurtState: 0
+  BaseAttack: 0
+  BaseDefense: 0
+  BaseSturdiness: 0
+  KnockbackHurtstateThreshold: 0
+  BaseTechnical: 3
   Mode: 0
   SubMode: 0
   Landed: 0
@@ -1504,6 +1535,8 @@ MonoBehaviour:
   GrabTransform: {fileID: 2134361272}
   GrabBox: {fileID: 2839134833287991069}
   AimArrow: {fileID: 8785785648799902169}
+  MaxMP: 20
+  MP: 20
   MoveSpeed: 5.5
   Accel: 65
   Stop: 40
@@ -1517,6 +1550,8 @@ MonoBehaviour:
   Orb: 0
   OrbPower: 11
   GhostJumpTimer: 0.11
+  CanAttackBoost: 0
+  AttackLag: 0
   MaterializeFX: {fileID: 631040877765853874, guid: a3fcc0855be87c74daada1c170d1a5c2, type: 3}
   DisintegrateFX: {fileID: 8438200916652274541, guid: 4812193767c1ac54aac698409af82526, type: 3}
   PlayerID: 0
@@ -1536,6 +1571,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 674f72b9688817040b5bb0041315e953, type: 2}
+  Sound_Grab:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 331226343ac9d914a89acbba0a7a32b5, type: 2}
+  Sound_Throw:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a871423c370243d49a4a376e47126bf4, type: 2}
+  Sound_SlashAttack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7cd14892cd4186a44bfc492c95c1bedf, type: 2}
+  Sound_Jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ee7f2bb7af6a2c84caf3ac4a615cecbc, type: 2}
+  Sound_Land:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 886136252056c9d4692daaca779434e7, type: 2}
 --- !u!61 &5492783203385954756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1579,7 +1634,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4

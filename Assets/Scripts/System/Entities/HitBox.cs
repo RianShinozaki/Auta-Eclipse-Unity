@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum DamageType
+public enum EffectType
 {
     Slice,
     EnemyDeath,
@@ -11,6 +11,17 @@ public enum DamageType
     Burn,
     Zap
 }
+
+public enum InflictType
+{
+    Slash,
+    Bash,
+    Pierce,
+
+    Solar,
+    Crystal,
+    Sonic
+}
 public class HitBox : MonoBehaviour
 {
     public float inflictDamage;
@@ -18,11 +29,17 @@ public class HitBox : MonoBehaviour
     public float inflictHurtState;
     public float inflictXKnockback;
     public float inflictYKnockback;
+    public float TechnicalAdd;
+
     public int collisions = -1; //-1 means it will never deactivate
     public int StoppedState = 0;
     public int ActiveTime = -1;
-    public PhysicsEntity entityResponder;
-    public DamageType type;
+    public PhysicsEntity Entity;
+
+    public bool InflictRecoil = true;
+
+    public EffectType type;
+    public InflictType Affinity;
 
     public Collider2D coll;
 
@@ -30,7 +47,10 @@ public class HitBox : MonoBehaviour
     void Start()
     {
         coll = GetComponent<Collider2D>();
-        entityResponder = transform.root.GetComponent<PhysicsEntity>();
+        if (Entity == null)
+        {
+            Entity = transform.root.GetComponent<PhysicsEntity>();
+        }
     }
 
     private void OnEnable()
@@ -58,9 +78,9 @@ public class HitBox : MonoBehaviour
 
     public void AttackConnected(GameObject defender)
     {
-        if(entityResponder != null)
+        if(Entity != null && InflictRecoil)
         {
-            entityResponder.HitResponse(gameObject, defender);
+            Entity.HitResponse(gameObject, defender);
         }
 
     }

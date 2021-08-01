@@ -42,6 +42,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Grab" ID="{9F04A05F-CAC1-4555-888A-337E68AF5FE1}">
+							<ChildrenList>
+								<Action Name="" ID="{5137673D-1C66-4403-A4F7-88FCE8DA9951}" ShortID="730881352">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Grab" ID="{C8DFBD4E-2448-46E7-85FF-C64D0A2B0C33}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Throw" ID="{09152D16-CD7F-4027-A757-945429CC7D52}">
+							<ChildrenList>
+								<Action Name="" ID="{B681FAA9-2E57-4135-8891-C434546F5B3A}" ShortID="658413432">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Throw" ID="{6B16EBB6-1450-4BC7-9D7D-0BFE96224E18}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jump" ID="{E876010E-03C6-4899-A641-97E89B8D471C}">
+							<ChildrenList>
+								<Action Name="" ID="{B637BDB5-E797-4FB5-BB4A-30B00C2FB76B}" ShortID="793351798">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{90468CBF-D114-4C55-8901-33F27740FBF9}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Land" ID="{05A96B58-91B8-4E0A-8711-0A76FC65D0BD}">
+							<ChildrenList>
+								<Action Name="" ID="{EA95B1DB-27EA-4339-B0CE-2CB2649B93E9}" ShortID="557388977">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{B43FF672-5F9C-4748-817C-32F24245D420}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Combat" ID="{12896150-2F1B-4E50-B914-C6E9BA2AC9FB}" ShortID="14011305">
@@ -52,6 +96,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="WallSlam" ID="{0045B633-ADD2-47FA-950D-E86486692B97}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Slash_Attack" ID="{14548BC2-2C48-4A6F-AA90-2D26A6E8EF74}">
+							<ChildrenList>
+								<Action Name="" ID="{3D92D35A-6206-4662-AD5E-C5E59DF9D385}" ShortID="625085199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slash-Attack" ID="{D4B0E8D3-4B48-42B5-852F-BBD3D7E9BF13}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Slash_Impact" ID="{D3C15686-A9A7-4F78-80FD-7557FC385764}">
+							<ChildrenList>
+								<Action Name="" ID="{0A70C78D-61EF-47D2-99F7-533577C0A655}" ShortID="28930773">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slice-Impact" ID="{C9D1580A-E3EB-4712-9857-39CF72A70578}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

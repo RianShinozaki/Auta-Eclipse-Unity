@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca1991210dfe92458701d9d2307a763, type: 3}
+  m_Name: D3C15686-A9A7-4F78-80FD-7557FC385764
+  m_EditorClassIdentifier: 
+  objectName: Slash_Impact
+  id: 1652188405
+  guid: D3C15686-A9A7-4F78-80FD-7557FC385764

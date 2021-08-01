@@ -6,6 +6,7 @@ using AK.Wwise;
 
 public class BaseEnemy : PhysicsEntity
 {
+    
 
     [FoldoutGroup("Setup")] public StateMachine stateMachine;
     [FoldoutGroup("Setup")] public bool CanSeePlayer;
@@ -14,6 +15,7 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Setup")] public float StunTime;
     [FoldoutGroup("Setup")] public bool stunned;
     [FoldoutGroup("Setup")] public PlayerController GrabbedBy;
+
     [FoldoutGroup("Manual Setup")] public GameObject CannonballHitBox;
 
     [FoldoutGroup("Base Enemy Stats")] public float EyeDist;
@@ -29,7 +31,6 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_WallSlam;
 
 
-    
     public override void Awake()
     {
         base.Awake();
@@ -52,7 +53,7 @@ public class BaseEnemy : PhysicsEntity
     public virtual void DeathProcedure()
     {
         GameObject hfx = Instantiate(HitFX, transform.position, Quaternion.identity);
-        hfx.GetComponent<HitFXController>().type = DamageType.EnemyDeath;
+        hfx.GetComponent<HitFXController>().type = EffectType.EnemyDeath;
 
         int toDrop = Random.Range(MoneyDrop.x, MoneyDrop.y);
         if(toDrop > 0 && toDrop < 5)
@@ -164,3 +165,4 @@ public class BaseEnemy : PhysicsEntity
         }
     }
 }
+

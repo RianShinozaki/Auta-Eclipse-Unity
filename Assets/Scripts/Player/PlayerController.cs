@@ -16,6 +16,8 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Setup")] public GameObject GrabBox;
     [FoldoutGroup("Setup")] public GameObject AimArrow;
 
+    [FoldoutGroup("Combat")] public float MaxMP;
+    [FoldoutGroup("Combat")] public float MP;
     #region Movement Values
 
     [FoldoutGroup("Movement Values")] public float MoveSpeed;
@@ -60,6 +62,11 @@ public class PlayerController : PhysicsEntity
 
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_OrbThrow;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Materialize;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Grab;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Throw;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_SlashAttack;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Jump;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Land;
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
@@ -118,12 +125,14 @@ public class PlayerController : PhysicsEntity
             AttackBuffer = 0.1f;
         }
         animationController.SetSpeed(TimeScale);
-        
+
+        if (MP < MaxMP)
+            MP = Mathf.MoveTowards(MP, MaxMP, Time.deltaTime * 0.5f);
     }
 
     //STATES
 
-    void State_Normal(PhysicsEntity ent)
+    public void State_Normal(PhysicsEntity ent)
     {
         boxColl.size = CollisionSizes[0];
 
@@ -158,6 +167,7 @@ public class PlayerController : PhysicsEntity
             GroundPoints.Clear();
 
             GhostJumpTimer = 0;
+            Sound_Jump.Post(gameObject);
         }
 
         if (player.GetButtonDown(ORB) && CanOrb)
@@ -273,6 +283,9 @@ public class PlayerController : PhysicsEntity
 
     public void EnemyGrabbed(BaseEnemy enemy)
     {
+        Sound_Grab.Post(gameObject);
+        Debug.Log("test");
+
         Orb = false;
         Bounce = false;
 
@@ -295,7 +308,7 @@ public class PlayerController : PhysicsEntity
         CamVariables.Screenshake = 0.2f;
 
         GameObject hitfx = Instantiate(HitFX, transform.position, Quaternion.identity);
-        hitfx.GetComponent<HitFXController>().type = DamageType.Grab;
+        hitfx.GetComponent<HitFXController>().type = EffectType.Grab;
 
         animationController.GrabState(true);
     }
@@ -411,6 +424,8 @@ public class PlayerController : PhysicsEntity
             Time.timeScale = 1;
 
             AimArrow.SetActive(false);
+
+            Sound_Throw.Post(gameObject);
         }
     }
 
@@ -431,7 +446,7 @@ public class PlayerController : PhysicsEntity
     {
         if(AttackBuffer > 0)
         {
-
+            Sound_SlashAttack.Post(gameObject);
             AttackLag = true;
 
             if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f)
@@ -468,6 +483,21 @@ public class PlayerController : PhysicsEntity
             ComboTime = 1;
 
         }
+
+        if(player.GetButtonDown(SPECIAL))
+        {
+            if (MP > 2)
+            {
+                stateMachine.SetState(State_Attack);
+                animationController.GunAttack();
+                MP -= 2;
+                if(Grounded == false && CanAttackBoost)
+                {
+                    CanAttackBoost = false;
+                    Velocity.y = 2;
+                }
+            }
+        }
     }
     public override void HitResponse(GameObject attacker, GameObject Defender)
     {
@@ -487,7 +517,9 @@ public class PlayerController : PhysicsEntity
     }
     public override void OnLand()
     {
+        
         animationController.Land();
+        Sound_Land.Post(gameObject);
     }
 
     public void SetHitBoxes(int index)

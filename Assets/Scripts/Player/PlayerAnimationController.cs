@@ -8,6 +8,8 @@ public class PlayerAnimationController : MonoBehaviour
     PlayerController parent;
     Animator anim;
 
+    GameObject bullet;
+
     void Start()
     {
         parent = transform.root.GetComponent<PlayerController>();
@@ -25,7 +27,7 @@ public class PlayerAnimationController : MonoBehaviour
 
         anim.SetFloat("HurtState", parent.HurtState);
 
-        if(parent.Grounded && parent.Velocity.x != 0)
+        if(parent.Grounded && parent.stateMachine.CurrentState == parent.State_Normal && parent.Velocity.x != 0)
         {
             float prevScale = transform.localScale.x;
             transform.localScale = new Vector3( parent.Velocity.x > 0 ? 1 : -1, 1, 1);
@@ -55,6 +57,19 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetInteger("Attack Type", attackType);
         anim.SetBool("Grounded", parent.Grounded);
 
+    }
+
+    public void GunAttack()
+    {
+        anim.SetTrigger("Gun Attack");
+    }
+
+    public void GunFire()
+    {
+        parent.Velocity.x = -3 * transform.localScale.x;
+        GameObject bullet = ObjectPool.Instance.SpawnObject("AutaBullet", transform.position + new Vector3(transform.localScale.x * 0.4f, 0, 0), Quaternion.identity);
+        bullet.transform.localScale = transform.localScale;
+        bullet.gameObject.GetComponentInChildren<HitBox>().Entity = parent;
     }
 
     public void GrabState(bool active)

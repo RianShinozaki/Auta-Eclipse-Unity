@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using AK.Wwise;
+using Sirenix.OdinInspector;
 
 public class HitFXController : MonoBehaviour
 {
@@ -11,12 +13,15 @@ public class HitFXController : MonoBehaviour
     public Animator animator;
     PlayableGraph playableGraph;
 
-    public DamageType type;
+    public EffectType type;
+
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event SlashImpact;
 
     private void Start()
     {
         AnimationPlayableUtilities.PlayClip(animator, clips[(int)type], out playableGraph);
         transform.position += new Vector3(0, 0, -1);
+        SlashImpact.Post(gameObject);
     }
 
     public void AnimEnd()

@@ -27,8 +27,7 @@ public class PhysicsEntity : MonoBehaviour
 
     [FoldoutGroup("Resources")] public GameObject HitFX;
     [FoldoutGroup("Resources")] public GameObject SplashFX;
-    [FoldoutGroup("Resources")] public GameObject DamageDrawer;
-    GameObject DamageDrawerInstance;
+    
 
     [FoldoutGroup("Setup")] public float AfterIMGTimer = 0;
     [FoldoutGroup("Setup")] public bool CreateAfterImg = false;

@@ -36,7 +36,7 @@ public class HurtBox : MonoBehaviour
         {
             foreach(Collider2D testFor in ignores)
             {
-                if (testFor.gameObject.activeInHierarchy == false)
+                if (testFor.gameObject.activeInHierarchy == false || testFor.isActiveAndEnabled == false)
                 {
                     ignores.Remove(testFor);
                     Physics2D.IgnoreCollision(coll, testFor, false);
@@ -137,14 +137,7 @@ public class HurtBox : MonoBehaviour
                 DamageDrawerInstance = ObjectPool.Instance.SpawnObject("DamageDrawer", transform.position, Quaternion.identity); 
             }
 
-            if (CriticalMult != 1)
-            {
-                DamageDrawerInstance.GetComponent<DamageDrawer>().CriticalHit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense));
-            }
-            else
-            {
-                DamageDrawerInstance.GetComponent<DamageDrawer>().NormalHit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense));
-            }
+            DamageDrawerInstance.GetComponent<DamageDrawer>().Hit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense), CriticalMult != 1, affinity == AffinityData.Affinity.Weak);
 
             float TotalKnockback = new Vector2(hitbox.inflictXKnockback, hitbox.inflictYKnockback).magnitude;
 
@@ -171,7 +164,7 @@ public class HurtBox : MonoBehaviour
             hitbox.AttackConnected(gameObject);
 
             Physics2D.IgnoreCollision(coll, other, true);
-            //ignores.Add(other);
+            ignores.Add(other);
         }
     }
 }

@@ -71,11 +71,14 @@ MonoBehaviour:
   inflictHurtState: 50
   inflictXKnockback: 9
   inflictYKnockback: 9
+  TechnicalAdd: 0
   collisions: -36
   StoppedState: 0
   ActiveTime: 0
-  entityResponder: {fileID: 0}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 3
+  Affinity: 0
   coll: {fileID: 0}
 --- !u!58 &2009278628
 CircleCollider2D:
@@ -190,11 +193,14 @@ MonoBehaviour:
   inflictHurtState: 20
   inflictXKnockback: 6
   inflictYKnockback: 5
+  TechnicalAdd: 0
   collisions: -36
   StoppedState: 0
   ActiveTime: 0
-  entityResponder: {fileID: 0}
+  Entity: {fileID: 0}
+  InflictRecoil: 1
   type: 0
+  Affinity: 0
   coll: {fileID: 7342701579993842388}
 --- !u!1 &7342701581529692105
 GameObject:
@@ -346,6 +352,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c10ff62c8fdb044bb116d1d0b89b9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Affinities:
+    Slash: 0
+    Bash: 0
+    Pierce: 1
+    Solar: 0
+    Crystal: 2
+    Sonic: 1
+    ElementalClass: 0
   Velocity: {x: 0, y: 0}
   Gravity: 18
   GravityCancelTime: 0
@@ -372,6 +386,11 @@ MonoBehaviour:
   MaxHP: 16
   HitStun: 0
   HurtState: 0
+  BaseAttack: 0
+  BaseDefense: 0
+  BaseSturdiness: 0
+  KnockbackHurtstateThreshold: 0
+  BaseTechnical: 0
   Mode: 0
   SubMode: 0
   Landed: 0
@@ -383,7 +402,7 @@ MonoBehaviour:
   stunned: 0
   GrabbedBy: {fileID: 0}
   CannonballHitBox: {fileID: 2009278626}
-  EyeDist: 7
+  EyeDist: 7.42
   EyeAngleRange: 30
   MaxInterest: 15
   SeeThroughWalls: 0
@@ -396,17 +415,9 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 489fa7e8d16409044a418d7962fc2207, type: 2}
-  Affinities:
-    Slash: 0
-    Bash: 0
-    Pierce: 1
-    Solar: 0
-    Crystal: 2
-    Sonic: 1
-    ElementalClass: 0
   PatrolRegion: 5.67
   WaitTimeRandRange: {x: 0.8, y: 1.2}
-  AttackDist: 2.5
+  AttackDist: 3.73
   hb: {fileID: 7342701579993842387}
 --- !u!95 &7342701581529692106
 Animator:
@@ -531,6 +542,7 @@ MonoBehaviour:
   DefaultIgnores:
   - {fileID: 2009278628}
   coll: {fileID: 0}
+  DamageDrawerPrefab: {fileID: 0}
 --- !u!50 &7342701581853089531
 Rigidbody2D:
   serializedVersion: 4

@@ -58,7 +58,7 @@ public class Lumpy : BaseEnemy {
 
             }
             else {
-                int rand = Random.Range(0, 1);
+                int rand = Random.Range(0, 2);
                 rand *= 2;
                 rand -= 1;
 
@@ -122,7 +122,10 @@ public class Lumpy : BaseEnemy {
     }
 
     public void Strike() {
-        Velocity.x = MoveSpeed * 1.8f * transform.localScale.x;
+        Velocity.x = MoveSpeed * 2.4f * transform.localScale.x;
+        Velocity.y = 7;
+        Grounded = false;
+        GroundPoints.Clear();
         stateMachine.SetState(State_Attack);
 
     }

@@ -55,7 +55,7 @@ MonoBehaviour:
   ActiveTime: -1
   Entity: {fileID: 0}
   InflictRecoil: 1
-  type: 0
+  type: 4
   Affinity: 2
   coll: {fileID: 353402334518762320}
 --- !u!58 &3155921319743822738

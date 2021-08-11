@@ -8,6 +8,7 @@ public enum EffectType
     EnemyDeath,
     Grab,
     Bash,
+    Pierce,
     Burn,
     Zap
 }

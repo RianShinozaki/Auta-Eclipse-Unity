@@ -120,6 +120,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: d2ea6f6fa8da0b04ca2c0286565b50a8, type: 2}
   - {fileID: 7400000, guid: b3efcd8c889b1f346a8e40fe162f3739, type: 2}
   - {fileID: 7400000, guid: 81f35b79c8f848045928398b8ba837f3, type: 2}
+  - {fileID: 7400000, guid: e56550920e02c154bb2dc2aa22c1e636, type: 2}
   animator: {fileID: 7469896179650156128}
   type: 0
   SlashImpact:

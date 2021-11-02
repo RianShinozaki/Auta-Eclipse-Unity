@@ -59,6 +59,87 @@ TextureImporter:
   - first:
       213: 5732510781731523418
     second: AutaSwordFXSheet_18
+  - first:
+      213: 4691556179209442693
+    second: spr_AutaSwordFXSheet_0
+  - first:
+      213: 7440895137343274353
+    second: spr_AutaSwordFXSheet_1
+  - first:
+      213: 6512692060564702947
+    second: spr_AutaSwordFXSheet_2
+  - first:
+      213: -1646075010739883583
+    second: spr_AutaSwordFXSheet_3
+  - first:
+      213: -2797673817763528548
+    second: spr_AutaSwordFXSheet_4
+  - first:
+      213: 6908133267338803834
+    second: spr_AutaSwordFXSheet_5
+  - first:
+      213: -1633676428873406488
+    second: spr_AutaSwordFXSheet_6
+  - first:
+      213: 4887605545555008160
+    second: spr_AutaSwordFXSheet_7
+  - first:
+      213: -6980385763182338162
+    second: spr_AutaSwordFXSheet_8
+  - first:
+      213: 5968655727940674597
+    second: spr_AutaSwordFXSheet_9
+  - first:
+      213: 5369501831989745337
+    second: spr_AutaSwordFXSheet_10
+  - first:
+      213: -8932024941475210609
+    second: spr_AutaSwordFXSheet_11
+  - first:
+      213: 7997812685769017544
+    second: spr_AutaSwordFXSheet_12
+  - first:
+      213: -6758595195068196303
+    second: spr_AutaSwordFXSheet_13
+  - first:
+      213: 1604250128023493926
+    second: spr_AutaSwordFXSheet_14
+  - first:
+      213: 6563632728986570250
+    second: spr_AutaSwordFXSheet_15
+  - first:
+      213: 5710563873243833587
+    second: spr_AutaSwordFXSheet_16
+  - first:
+      213: 2491370899050892455
+    second: spr_AutaSwordFXSheet_17
+  - first:
+      213: -1630440758773770003
+    second: spr_AutaSwordFXSheet_18
+  - first:
+      213: -6362270834602938869
+    second: spr_AutaSwordFXSheet_19
+  - first:
+      213: -4416544609712074371
+    second: spr_AutaSwordFXSheet_20
+  - first:
+      213: 4797939874775636265
+    second: spr_AutaSwordFXSheet_21
+  - first:
+      213: 4435526688938488995
+    second: spr_AutaSwordFXSheet_22
+  - first:
+      213: 8338263703445345958
+    second: spr_AutaSwordFXSheet_23
+  - first:
+      213: 1427490946820721755
+    second: spr_AutaSwordFXSheet_24
+  - first:
+      213: 817201344043319320
+    second: spr_AutaSwordFXSheet_25
+  - first:
+      213: 3367921852517370576
+    second: spr_AutaSwordFXSheet_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +241,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AutaSwordFXSheet_0
+      name: spr_AutaSwordFXSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5855191fc71cb1140800000000000000
+      internalID: 4691556179209442693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 300
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17df64034be534760800000000000000
+      internalID: 7440895137343274353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 300
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e647716ceab16a50800000000000000
+      internalID: 6512692060564702947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 300
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1b33fbf77f729e0800000000000000
+      internalID: -1646075010739883583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 300
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c904bc64c7aac29d0800000000000000
+      internalID: -2797673817763528548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ab9c41b9e9edf50800000000000000
+      internalID: 6908133267338803834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7621b81f30459e0800000000000000
+      internalID: -1633676428873406488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa1909195344d340800000000000000
+      internalID: 4887605545555008160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f925ec120b02f90800000000000000
+      internalID: -6980385763182338162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5242182e2cce4d250800000000000000
+      internalID: 5968655727940674597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AutaSwordFXSheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07d27819772297620800000000000000
-      internalID: 2772284942561258864
+      spriteID: 9b6de84a77d448a40800000000000000
+      internalID: 5369501831989745337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_1
+      name: spr_AutaSwordFXSheet_11
       rect:
         serializedVersion: 2
         x: 60
@@ -195,14 +486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 286bc73ffca056d60800000000000000
-      internalID: 7882718611041465986
+      spriteID: f8ad07eb3a21b0480800000000000000
+      internalID: -8932024941475210609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_2
+      name: spr_AutaSwordFXSheet_12
       rect:
         serializedVersion: 2
         x: 120
@@ -216,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004a66c6360ffd4b0800000000000000
-      internalID: -5413343917264952320
+      spriteID: 8c800637340fdfe60800000000000000
+      internalID: 7997812685769017544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_3
+      name: spr_AutaSwordFXSheet_13
       rect:
         serializedVersion: 2
         x: 180
@@ -237,14 +528,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24df3a6e86b5786f0800000000000000
-      internalID: -682476312419107518
+      spriteID: 13a5c498a75a432a0800000000000000
+      internalID: -6758595195068196303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_4
+      name: spr_AutaSwordFXSheet_14
       rect:
         serializedVersion: 2
         x: 240
@@ -258,14 +549,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cb26a1cf056ca120800000000000000
-      internalID: 2426425417593662404
+      spriteID: 62d17b3edf0734610800000000000000
+      internalID: 1604250128023493926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_5
+      name: spr_AutaSwordFXSheet_15
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +570,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e89746c0cccf400800000000000000
-      internalID: 359386423880158829
+      spriteID: a0e4f5ff035b61b50800000000000000
+      internalID: 6563632728986570250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_6
+      name: spr_AutaSwordFXSheet_16
       rect:
         serializedVersion: 2
         x: 60
@@ -300,14 +591,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8db3c168353fd0b40800000000000000
-      internalID: 5408246267599666136
+      spriteID: 3f4a0eb369fff3f40800000000000000
+      internalID: 5710563873243833587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_7
+      name: spr_AutaSwordFXSheet_17
       rect:
         serializedVersion: 2
         x: 120
@@ -321,14 +612,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e8dd486b2aa8f70800000000000000
-      internalID: 9190336894399778408
+      spriteID: 7ac8ca102a0239220800000000000000
+      internalID: 2491370899050892455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_8
+      name: spr_AutaSwordFXSheet_18
       rect:
         serializedVersion: 2
         x: 180
@@ -342,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41b43bae77300fb0800000000000000
-      internalID: -4683682595287551667
+      spriteID: de898f1b4c28f59e0800000000000000
+      internalID: -1630440758773770003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_9
+      name: spr_AutaSwordFXSheet_19
       rect:
         serializedVersion: 2
         x: 240
@@ -363,14 +654,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff1b5433f1581810800000000000000
-      internalID: 1736227761348616176
+      spriteID: b0ee9aa726ca4b7a0800000000000000
+      internalID: -6362270834602938869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_10
+      name: spr_AutaSwordFXSheet_20
       rect:
         serializedVersion: 2
         x: 0
@@ -384,14 +675,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c979461235f2c650800000000000000
-      internalID: 6251828828214753736
+      spriteID: d71127bc31845b2c0800000000000000
+      internalID: -4416544609712074371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_11
+      name: spr_AutaSwordFXSheet_21
       rect:
         serializedVersion: 2
         x: 60
@@ -405,14 +696,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27b5f471f6298d240800000000000000
-      internalID: 4816760807302847346
+      spriteID: 9291fa145e4b59240800000000000000
+      internalID: 4797939874775636265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_12
+      name: spr_AutaSwordFXSheet_22
       rect:
         serializedVersion: 2
         x: 120
@@ -426,14 +717,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b62242d89a5506cc0800000000000000
-      internalID: -3719879105502240149
+      spriteID: 3a471fde5082e8d30800000000000000
+      internalID: 4435526688938488995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_13
+      name: spr_AutaSwordFXSheet_23
       rect:
         serializedVersion: 2
         x: 180
@@ -447,14 +738,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4c792cffa0f05330800000000000000
-      internalID: 3697719932711697484
+      spriteID: 6a6946709a677b370800000000000000
+      internalID: 8338263703445345958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_14
+      name: spr_AutaSwordFXSheet_24
       rect:
         serializedVersion: 2
         x: 240
@@ -468,14 +759,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65eb99061c57aa090800000000000000
-      internalID: -8022470312797290922
+      spriteID: b5cc555f3777fc310800000000000000
+      internalID: 1427490946820721755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_15
+      name: spr_AutaSwordFXSheet_25
       rect:
         serializedVersion: 2
         x: 0
@@ -489,59 +780,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6bb314b5ef192b40800000000000000
-      internalID: 5415895098318895980
+      spriteID: 8108cadea48475b00800000000000000
+      internalID: 817201344043319320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AutaSwordFXSheet_16
+      name: spr_AutaSwordFXSheet_26
       rect:
         serializedVersion: 2
         x: 60
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47e99832e60ae4300800000000000000
-      internalID: 238304225200283252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AutaSwordFXSheet_17
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c685c699e71565980800000000000000
-      internalID: -8550557238334564244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AutaSwordFXSheet_18
-      rect:
-        serializedVersion: 2
-        x: 180
         y: 0
         width: 60
         height: 60
@@ -552,8 +801,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5b44301f28fd8f40800000000000000
-      internalID: 5732510781731523418
+      spriteID: 0dac292b4134dbe20800000000000000
+      internalID: 3367921852517370576
       vertices: []
       indices: 
       edges: []

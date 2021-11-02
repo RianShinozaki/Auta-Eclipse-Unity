@@ -20,19 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: 0}
     - time: 0.054054055
-      value: {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: 0}
     - time: 0.10810811
-      value: {fileID: -682476312419107518, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: -1646075010739883583, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
     - time: 0.16216217
-      value: {fileID: 2426425417593662404, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: -2797673817763528548, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
     - time: 0.21621622
-      value: {fileID: 359386423880158829, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: 6908133267338803834, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
     - time: 0.2702703
-      value: {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: 0}
     - time: 0.31531534
-      value: {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+      value: {fileID: 0}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -52,13 +52,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: -682476312419107518, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: 2426425417593662404, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: 359386423880158829, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - {fileID: 5732510781731523418, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: -1646075010739883583, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+    - {fileID: -2797673817763528548, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+    - {fileID: 6908133267338803834, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -93,13 +93,6 @@ AnimationClip:
     messageOptions: 0
   - time: 0.1891892
     functionName: DeactivateHitBox
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.21621622
-    functionName: CancelLag
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

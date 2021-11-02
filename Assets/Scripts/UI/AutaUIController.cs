@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class AutaUIController : MonoBehaviour
 {
+    public static AutaUIController Instance;
     public PlayerController Player;
 
     public RectTransform Frame;
@@ -17,9 +18,12 @@ public class AutaUIController : MonoBehaviour
     float HealthBarInitWidth;
     float MPBarInitWidth;
 
+    public GameObject[] ScreenFX;
+
     // Update is called once per frame
     private void Start()
     {
+        Instance = this;
         FrameInitPos = Frame.position;
         HealthBarInitPos = HealthBar.position;
         HealthBarInitWidth = HealthBar.sizeDelta.x;
@@ -50,5 +54,9 @@ public class AutaUIController : MonoBehaviour
 
         HealthBar.sizeDelta = new Vector2(HealthBarInitWidth * (Player.HP / Player.MaxHP), HealthBar.sizeDelta.y);
         MPBar.sizeDelta = new Vector2(MPBarInitWidth * (Player.MP / Player.MaxMP), MPBar.sizeDelta.y);
+    }
+    public void ActivateScreenFX(int FX)
+    {
+        ScreenFX[FX].SetActive(true);
     }
 }

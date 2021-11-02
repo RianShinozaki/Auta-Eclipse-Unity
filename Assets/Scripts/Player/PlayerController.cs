@@ -33,7 +33,8 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Movement Values")] public float AimDir;
     #endregion
 
-    [FoldoutGroup("Abilities")] public bool CanOrb;
+    [FoldoutGroup("Abilities")] public bool OrbUnlocked;
+    [FoldoutGroup("Abilities")] bool CanOrb;
     [FoldoutGroup("Abilities")] public bool Orb;
     [FoldoutGroup("Abilities")] public float OrbPower = 10;
     [FoldoutGroup("Abilities")] public float GhostJumpTimer = 0;
@@ -42,6 +43,7 @@ public class PlayerController : PhysicsEntity
 
     [FoldoutGroup("FX")] public GameObject MaterializeFX;
     [FoldoutGroup("FX")] public GameObject DisintegrateFX;
+    [FoldoutGroup("FX")] public GameObject LandFX;
 
     public const int MOVEMENT_HORIZONTAL = 1;
     public const int MOVEMENT_VERTICAL = 2;
@@ -70,7 +72,7 @@ public class PlayerController : PhysicsEntity
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
-        new Vector2(0.45f,0.45f) //Orb Size
+        new Vector2(0.6f,0.6f) //Orb Size
         };
 
 
@@ -84,6 +86,8 @@ public class PlayerController : PhysicsEntity
         animationController = GetComponentInChildren<PlayerAnimationController>();
         stateMachine = GetComponent<StateMachine>();
         boxColl = GetComponent<BoxCollider2D>();
+
+        LandFX = Resources.Load<GameObject>("Player/pre_LandParticles");
     }
 
     private void Start()
@@ -107,7 +111,7 @@ public class PlayerController : PhysicsEntity
 
         stateMachine.SetRunState(HitStun == 0);
 
-        if (HitStun > 0)
+        if (HitStun > 0 && HurtState > 0)
         {
             animationController.SetSpeed(0);
             GetComponentInChildren<HurtBox>().InvincibleTime = 1;
@@ -150,7 +154,8 @@ public class PlayerController : PhysicsEntity
 
             GhostJumpTimer = 0.11f;
 
-            CanOrb = true;
+            
+            CanOrb = OrbUnlocked;
             CanAttackBoost = true;
         } else
         {
@@ -380,6 +385,12 @@ public class PlayerController : PhysicsEntity
 
         }
 
+        if (player.GetButtonDown(ATTACK))
+        {
+            stateMachine.SetState(State_Normal);
+            AttackBuffer = 0.1f;
+        }
+
     }
 
     public void State_GrabEnemy(PhysicsEntity ent)
@@ -460,7 +471,7 @@ public class PlayerController : PhysicsEntity
             if (player.GetAxisRaw(MOVEMENT_VERTICAL) > 0.1f)
             {
                 animationController.SwordAttack(0, 2);
-                if(CanAttackBoost)
+                if(CanAttackBoost && !Grounded && Velocity.y < 2.5f)
                 {
                     CanAttackBoost = false;
                     Velocity.y = 2.5f;
@@ -517,9 +528,14 @@ public class PlayerController : PhysicsEntity
     }
     public override void OnLand()
     {
-        
         animationController.Land();
         Sound_Land.Post(gameObject);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.up * 0.2f, Vector3.down, 1.5f, layerMask: EnvironmentMask);
+        if(hit)
+        {
+            Instantiate(LandFX, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
+        }
     }
 
     public void SetHitBoxes(int index)

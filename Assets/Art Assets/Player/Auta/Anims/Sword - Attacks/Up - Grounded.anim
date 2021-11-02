@@ -91,6 +91,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 4
     messageOptions: 0
+  - time: 0.2777778
+    functionName: CancelLag
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 1
   - time: 0.38888502
     functionName: AttackEnd
     data: 

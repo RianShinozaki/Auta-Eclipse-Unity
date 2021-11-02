@@ -107,4 +107,8 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetFloat("Anim Speed", Spd);
     }
 
+    void CancelLag()
+    {
+        parent.AttackLag = false;
+    }
 }

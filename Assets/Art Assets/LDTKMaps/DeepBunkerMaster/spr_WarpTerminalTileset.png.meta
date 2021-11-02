@@ -1238,6 +1238,72 @@ TextureImporter:
   - first:
       213: -2516111140167328578
     second: spr_WarpTerminalTileset_411
+  - first:
+      213: 3740332567354610758
+    second: spr_WarpTerminalTileset_412
+  - first:
+      213: -5576605430879438478
+    second: spr_WarpTerminalTileset_413
+  - first:
+      213: 8762350480757965752
+    second: spr_WarpTerminalTileset_414
+  - first:
+      213: 4755321262269751683
+    second: spr_WarpTerminalTileset_415
+  - first:
+      213: -6715730416502256517
+    second: spr_WarpTerminalTileset_416
+  - first:
+      213: 4772662903536207157
+    second: spr_WarpTerminalTileset_417
+  - first:
+      213: 8543336751692969044
+    second: spr_WarpTerminalTileset_418
+  - first:
+      213: -1119942788736109462
+    second: spr_WarpTerminalTileset_419
+  - first:
+      213: -1565296366507490531
+    second: spr_WarpTerminalTileset_420
+  - first:
+      213: 4998975798056983773
+    second: spr_WarpTerminalTileset_421
+  - first:
+      213: -4146691187046834466
+    second: spr_WarpTerminalTileset_422
+  - first:
+      213: 4320343458450934619
+    second: spr_WarpTerminalTileset_423
+  - first:
+      213: -1163959371188783005
+    second: spr_WarpTerminalTileset_424
+  - first:
+      213: 1107830321416440653
+    second: spr_WarpTerminalTileset_425
+  - first:
+      213: 4177911614268068145
+    second: spr_WarpTerminalTileset_426
+  - first:
+      213: 5106487090193373466
+    second: spr_WarpTerminalTileset_427
+  - first:
+      213: -175162632131822562
+    second: spr_WarpTerminalTileset_428
+  - first:
+      213: 2751869965362224464
+    second: spr_WarpTerminalTileset_429
+  - first:
+      213: 8330799025007317801
+    second: spr_WarpTerminalTileset_430
+  - first:
+      213: -7265871489736763352
+    second: spr_WarpTerminalTileset_431
+  - first:
+      213: 7771670130900909781
+    second: spr_WarpTerminalTileset_432
+  - first:
+      213: 2187983830832249899
+    second: spr_WarpTerminalTileset_433
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1343,7 +1409,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1364,7 +1430,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1385,7 +1451,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1406,7 +1472,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1427,7 +1493,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1448,7 +1514,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1469,7 +1535,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1490,7 +1556,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1511,7 +1577,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1532,7 +1598,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1553,7 +1619,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1574,7 +1640,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1595,7 +1661,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1616,7 +1682,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1637,7 +1703,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1658,7 +1724,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1679,7 +1745,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1700,7 +1766,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1721,7 +1787,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1742,7 +1808,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1763,7 +1829,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1784,7 +1850,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1805,7 +1871,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1826,7 +1892,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 256
+        y: 496
         width: 16
         height: 16
       alignment: 0
@@ -1847,7 +1913,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1868,7 +1934,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1889,7 +1955,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1910,7 +1976,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1931,7 +1997,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1952,7 +2018,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1973,7 +2039,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -1994,7 +2060,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2015,7 +2081,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2036,7 +2102,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2057,7 +2123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2078,7 +2144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2099,7 +2165,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2120,7 +2186,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2141,7 +2207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2162,7 +2228,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2183,7 +2249,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2204,7 +2270,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2225,7 +2291,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2246,7 +2312,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2267,7 +2333,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2288,7 +2354,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2309,7 +2375,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2330,7 +2396,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2351,7 +2417,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2372,7 +2438,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2393,7 +2459,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2414,7 +2480,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 240
+        y: 480
         width: 16
         height: 16
       alignment: 0
@@ -2435,7 +2501,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2456,7 +2522,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2477,7 +2543,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2498,7 +2564,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2519,7 +2585,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2540,7 +2606,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2561,7 +2627,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2582,7 +2648,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2603,7 +2669,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2624,7 +2690,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2645,7 +2711,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2666,7 +2732,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2687,7 +2753,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2708,7 +2774,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2729,7 +2795,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2750,7 +2816,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2771,7 +2837,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2792,7 +2858,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2813,7 +2879,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2834,7 +2900,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2855,7 +2921,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2876,7 +2942,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2897,7 +2963,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2918,7 +2984,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2939,7 +3005,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2960,7 +3026,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -2981,7 +3047,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -3002,7 +3068,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 224
+        y: 464
         width: 16
         height: 16
       alignment: 0
@@ -3023,7 +3089,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3044,7 +3110,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3065,7 +3131,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3086,7 +3152,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3107,7 +3173,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3128,7 +3194,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3149,7 +3215,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3170,7 +3236,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3191,7 +3257,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3212,7 +3278,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3233,7 +3299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3254,7 +3320,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3275,7 +3341,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3296,7 +3362,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3317,7 +3383,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3338,7 +3404,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3359,7 +3425,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3380,7 +3446,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3401,7 +3467,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3422,7 +3488,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3443,7 +3509,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3464,7 +3530,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3485,7 +3551,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3506,7 +3572,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3527,7 +3593,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3548,7 +3614,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3569,7 +3635,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3590,7 +3656,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3611,7 +3677,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 208
+        y: 448
         width: 16
         height: 16
       alignment: 0
@@ -3632,7 +3698,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3653,7 +3719,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3674,7 +3740,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3695,7 +3761,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3716,7 +3782,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3737,7 +3803,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3758,7 +3824,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3779,7 +3845,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3800,7 +3866,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3821,7 +3887,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3842,7 +3908,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3863,7 +3929,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3884,7 +3950,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3905,7 +3971,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3926,7 +3992,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3947,7 +4013,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3968,7 +4034,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -3989,7 +4055,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -4010,7 +4076,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -4031,7 +4097,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -4052,7 +4118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 192
+        y: 432
         width: 16
         height: 16
       alignment: 0
@@ -4073,7 +4139,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4094,7 +4160,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4115,7 +4181,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4136,7 +4202,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4157,7 +4223,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4178,7 +4244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4199,7 +4265,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4220,7 +4286,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4241,7 +4307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4262,7 +4328,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4283,7 +4349,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4304,7 +4370,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4325,7 +4391,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4346,7 +4412,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4367,7 +4433,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4388,7 +4454,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4409,7 +4475,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4430,7 +4496,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4451,7 +4517,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4472,7 +4538,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4493,7 +4559,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4514,7 +4580,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4535,7 +4601,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 368
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4556,7 +4622,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4577,7 +4643,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4598,7 +4664,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4619,7 +4685,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4640,7 +4706,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4661,7 +4727,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4682,7 +4748,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 176
+        y: 416
         width: 16
         height: 16
       alignment: 0
@@ -4703,7 +4769,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4724,7 +4790,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4745,7 +4811,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4766,7 +4832,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4787,7 +4853,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4808,7 +4874,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4829,7 +4895,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4850,7 +4916,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4871,7 +4937,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4892,7 +4958,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4913,7 +4979,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4934,7 +5000,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4955,7 +5021,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4976,7 +5042,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 160
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -4996,8 +5062,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_174
       rect:
         serializedVersion: 2
-        x: 272
-        y: 160
+        x: 224
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5017,8 +5083,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_175
       rect:
         serializedVersion: 2
-        x: 288
-        y: 160
+        x: 240
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5038,8 +5104,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_176
       rect:
         serializedVersion: 2
-        x: 304
-        y: 160
+        x: 256
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5059,8 +5125,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_177
       rect:
         serializedVersion: 2
-        x: 352
-        y: 160
+        x: 272
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5080,8 +5146,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_178
       rect:
         serializedVersion: 2
-        x: 368
-        y: 160
+        x: 288
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5101,8 +5167,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_179
       rect:
         serializedVersion: 2
-        x: 384
-        y: 160
+        x: 304
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5122,8 +5188,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_180
       rect:
         serializedVersion: 2
-        x: 400
-        y: 160
+        x: 352
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5143,8 +5209,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_181
       rect:
         serializedVersion: 2
-        x: 416
-        y: 160
+        x: 368
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5164,8 +5230,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_182
       rect:
         serializedVersion: 2
-        x: 432
-        y: 160
+        x: 384
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5185,8 +5251,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_183
       rect:
         serializedVersion: 2
-        x: 448
-        y: 160
+        x: 400
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5206,8 +5272,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_184
       rect:
         serializedVersion: 2
-        x: 464
-        y: 160
+        x: 416
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5227,8 +5293,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_185
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
+        x: 432
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5248,8 +5314,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_186
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 448
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5269,8 +5335,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_187
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 464
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5290,8 +5356,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_188
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 480
+        y: 400
         width: 16
         height: 16
       alignment: 0
@@ -5311,8 +5377,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_189
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 0
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5332,8 +5398,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_190
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 16
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5353,8 +5419,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_191
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 32
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5374,8 +5440,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_192
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
+        x: 48
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5395,8 +5461,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_193
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 64
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5416,8 +5482,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_194
       rect:
         serializedVersion: 2
-        x: 128
-        y: 144
+        x: 80
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5437,8 +5503,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_195
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 96
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5458,8 +5524,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_196
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
+        x: 112
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5479,8 +5545,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_197
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
+        x: 128
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5500,8 +5566,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_198
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
+        x: 144
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5521,8 +5587,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_199
       rect:
         serializedVersion: 2
-        x: 208
-        y: 144
+        x: 160
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5542,8 +5608,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_200
       rect:
         serializedVersion: 2
-        x: 256
-        y: 144
+        x: 176
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5563,8 +5629,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_201
       rect:
         serializedVersion: 2
-        x: 272
-        y: 144
+        x: 192
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5584,8 +5650,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_202
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
+        x: 208
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5605,8 +5671,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_203
       rect:
         serializedVersion: 2
-        x: 304
-        y: 144
+        x: 256
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5626,8 +5692,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_204
       rect:
         serializedVersion: 2
-        x: 320
-        y: 144
+        x: 272
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5647,8 +5713,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_205
       rect:
         serializedVersion: 2
-        x: 336
-        y: 144
+        x: 288
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5668,8 +5734,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_206
       rect:
         serializedVersion: 2
-        x: 352
-        y: 144
+        x: 304
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5689,8 +5755,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_207
       rect:
         serializedVersion: 2
-        x: 368
-        y: 144
+        x: 320
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5710,8 +5776,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_208
       rect:
         serializedVersion: 2
-        x: 384
-        y: 144
+        x: 336
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5731,8 +5797,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_209
       rect:
         serializedVersion: 2
-        x: 400
-        y: 144
+        x: 352
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5752,8 +5818,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_210
       rect:
         serializedVersion: 2
-        x: 416
-        y: 144
+        x: 368
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5773,8 +5839,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_211
       rect:
         serializedVersion: 2
-        x: 432
-        y: 144
+        x: 384
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5794,8 +5860,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_212
       rect:
         serializedVersion: 2
-        x: 448
-        y: 144
+        x: 400
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5815,8 +5881,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_213
       rect:
         serializedVersion: 2
-        x: 464
-        y: 144
+        x: 416
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5836,8 +5902,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_214
       rect:
         serializedVersion: 2
-        x: 480
-        y: 144
+        x: 432
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5857,8 +5923,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_215
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 448
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5878,8 +5944,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_216
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 464
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5899,8 +5965,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_217
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 480
+        y: 384
         width: 16
         height: 16
       alignment: 0
@@ -5920,8 +5986,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_218
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 0
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -5941,8 +6007,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_219
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 16
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -5962,8 +6028,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_220
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 32
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -5983,8 +6049,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_221
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 48
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6004,8 +6070,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_222
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
+        x: 64
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6025,8 +6091,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_223
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 80
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6046,8 +6112,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_224
       rect:
         serializedVersion: 2
-        x: 144
-        y: 128
+        x: 96
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6067,8 +6133,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_225
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 112
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6088,8 +6154,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_226
       rect:
         serializedVersion: 2
-        x: 176
-        y: 128
+        x: 128
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6109,8 +6175,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_227
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 144
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6130,8 +6196,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_228
       rect:
         serializedVersion: 2
-        x: 208
-        y: 128
+        x: 160
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6151,8 +6217,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_229
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
+        x: 176
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6172,8 +6238,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_230
       rect:
         serializedVersion: 2
-        x: 240
-        y: 128
+        x: 192
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6193,8 +6259,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_231
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 208
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6214,8 +6280,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_232
       rect:
         serializedVersion: 2
-        x: 272
-        y: 128
+        x: 224
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6235,8 +6301,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_233
       rect:
         serializedVersion: 2
-        x: 288
-        y: 128
+        x: 240
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6256,8 +6322,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_234
       rect:
         serializedVersion: 2
-        x: 304
-        y: 128
+        x: 256
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6277,8 +6343,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_235
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 272
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6298,8 +6364,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_236
       rect:
         serializedVersion: 2
-        x: 336
-        y: 128
+        x: 288
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6319,8 +6385,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_237
       rect:
         serializedVersion: 2
-        x: 352
-        y: 128
+        x: 304
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6340,8 +6406,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_238
       rect:
         serializedVersion: 2
-        x: 368
-        y: 128
+        x: 320
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6361,8 +6427,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_239
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
+        x: 336
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6382,8 +6448,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_240
       rect:
         serializedVersion: 2
-        x: 400
-        y: 128
+        x: 352
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6403,8 +6469,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_241
       rect:
         serializedVersion: 2
-        x: 416
-        y: 128
+        x: 368
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6424,8 +6490,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_242
       rect:
         serializedVersion: 2
-        x: 464
-        y: 128
+        x: 384
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6445,8 +6511,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_243
       rect:
         serializedVersion: 2
-        x: 480
-        y: 128
+        x: 400
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6466,8 +6532,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_244
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 416
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6487,8 +6553,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_245
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 464
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6508,8 +6574,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_246
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 480
+        y: 368
         width: 16
         height: 16
       alignment: 0
@@ -6529,8 +6595,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_247
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 0
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6550,8 +6616,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_248
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
+        x: 16
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6571,8 +6637,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_249
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
+        x: 32
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6592,8 +6658,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_250
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
+        x: 48
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6613,8 +6679,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_251
       rect:
         serializedVersion: 2
-        x: 112
-        y: 112
+        x: 64
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6634,8 +6700,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_252
       rect:
         serializedVersion: 2
-        x: 128
-        y: 112
+        x: 80
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6655,8 +6721,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_253
       rect:
         serializedVersion: 2
-        x: 144
-        y: 112
+        x: 96
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6676,8 +6742,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_254
       rect:
         serializedVersion: 2
-        x: 160
-        y: 112
+        x: 112
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6697,8 +6763,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_255
       rect:
         serializedVersion: 2
-        x: 176
-        y: 112
+        x: 128
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6718,8 +6784,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_256
       rect:
         serializedVersion: 2
-        x: 192
-        y: 112
+        x: 144
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6739,8 +6805,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_257
       rect:
         serializedVersion: 2
-        x: 208
-        y: 112
+        x: 160
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6760,8 +6826,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_258
       rect:
         serializedVersion: 2
-        x: 224
-        y: 112
+        x: 176
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6781,8 +6847,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_259
       rect:
         serializedVersion: 2
-        x: 240
-        y: 112
+        x: 192
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6802,8 +6868,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_260
       rect:
         serializedVersion: 2
-        x: 256
-        y: 112
+        x: 208
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6823,8 +6889,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_261
       rect:
         serializedVersion: 2
-        x: 272
-        y: 112
+        x: 224
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6844,8 +6910,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_262
       rect:
         serializedVersion: 2
-        x: 288
-        y: 112
+        x: 240
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6865,8 +6931,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_263
       rect:
         serializedVersion: 2
-        x: 304
-        y: 112
+        x: 256
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6886,8 +6952,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_264
       rect:
         serializedVersion: 2
-        x: 320
-        y: 112
+        x: 272
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6907,8 +6973,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_265
       rect:
         serializedVersion: 2
-        x: 336
-        y: 112
+        x: 288
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6928,8 +6994,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_266
       rect:
         serializedVersion: 2
-        x: 352
-        y: 112
+        x: 304
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6949,8 +7015,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_267
       rect:
         serializedVersion: 2
-        x: 368
-        y: 112
+        x: 320
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6970,8 +7036,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_268
       rect:
         serializedVersion: 2
-        x: 384
-        y: 112
+        x: 336
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6991,8 +7057,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_269
       rect:
         serializedVersion: 2
-        x: 400
-        y: 112
+        x: 352
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7012,8 +7078,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_270
       rect:
         serializedVersion: 2
-        x: 416
-        y: 112
+        x: 368
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7033,8 +7099,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_271
       rect:
         serializedVersion: 2
-        x: 448
-        y: 112
+        x: 384
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7054,8 +7120,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_272
       rect:
         serializedVersion: 2
-        x: 464
-        y: 112
+        x: 400
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7075,8 +7141,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_273
       rect:
         serializedVersion: 2
-        x: 480
-        y: 112
+        x: 416
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7096,8 +7162,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_274
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 448
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7117,8 +7183,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_275
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 464
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7138,8 +7204,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_276
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 480
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -7159,8 +7225,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_277
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 0
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7180,8 +7246,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_278
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 16
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7201,8 +7267,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_279
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 32
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7222,8 +7288,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_280
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 48
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7243,8 +7309,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_281
       rect:
         serializedVersion: 2
-        x: 112
-        y: 96
+        x: 64
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7264,8 +7330,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_282
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 80
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7285,8 +7351,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_283
       rect:
         serializedVersion: 2
-        x: 144
-        y: 96
+        x: 96
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7306,8 +7372,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_284
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
+        x: 112
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7327,8 +7393,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_285
       rect:
         serializedVersion: 2
-        x: 176
-        y: 96
+        x: 128
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7348,8 +7414,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_286
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
+        x: 144
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7369,8 +7435,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_287
       rect:
         serializedVersion: 2
-        x: 208
-        y: 96
+        x: 160
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7390,8 +7456,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_288
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
+        x: 176
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7411,8 +7477,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_289
       rect:
         serializedVersion: 2
-        x: 240
-        y: 96
+        x: 192
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7432,8 +7498,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_290
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
+        x: 208
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7453,8 +7519,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_291
       rect:
         serializedVersion: 2
-        x: 272
-        y: 96
+        x: 224
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7474,8 +7540,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_292
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
+        x: 240
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7495,8 +7561,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_293
       rect:
         serializedVersion: 2
-        x: 304
-        y: 96
+        x: 256
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7516,8 +7582,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_294
       rect:
         serializedVersion: 2
-        x: 320
-        y: 96
+        x: 272
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7537,8 +7603,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_295
       rect:
         serializedVersion: 2
-        x: 336
-        y: 96
+        x: 288
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7558,8 +7624,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_296
       rect:
         serializedVersion: 2
-        x: 352
-        y: 96
+        x: 304
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7579,8 +7645,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_297
       rect:
         serializedVersion: 2
-        x: 368
-        y: 96
+        x: 320
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7600,8 +7666,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_298
       rect:
         serializedVersion: 2
-        x: 384
-        y: 96
+        x: 336
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7621,8 +7687,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_299
       rect:
         serializedVersion: 2
-        x: 400
-        y: 96
+        x: 352
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7642,8 +7708,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_300
       rect:
         serializedVersion: 2
-        x: 416
-        y: 96
+        x: 368
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7663,8 +7729,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_301
       rect:
         serializedVersion: 2
-        x: 432
-        y: 96
+        x: 384
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7684,8 +7750,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_302
       rect:
         serializedVersion: 2
-        x: 448
-        y: 96
+        x: 400
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7705,8 +7771,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_303
       rect:
         serializedVersion: 2
-        x: 464
-        y: 96
+        x: 416
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7726,8 +7792,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_304
       rect:
         serializedVersion: 2
-        x: 480
-        y: 96
+        x: 432
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7747,8 +7813,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_305
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 448
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7768,8 +7834,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_306
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 464
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7789,8 +7855,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_307
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 480
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -7810,8 +7876,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_308
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 0
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7831,8 +7897,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_309
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
+        x: 16
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7852,8 +7918,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_310
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
+        x: 32
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7873,8 +7939,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_311
       rect:
         serializedVersion: 2
-        x: 96
-        y: 80
+        x: 48
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7894,8 +7960,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_312
       rect:
         serializedVersion: 2
-        x: 112
-        y: 80
+        x: 64
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7915,8 +7981,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_313
       rect:
         serializedVersion: 2
-        x: 128
-        y: 80
+        x: 80
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7936,8 +8002,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_314
       rect:
         serializedVersion: 2
-        x: 144
-        y: 80
+        x: 96
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7957,8 +8023,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_315
       rect:
         serializedVersion: 2
-        x: 160
-        y: 80
+        x: 112
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7978,8 +8044,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_316
       rect:
         serializedVersion: 2
-        x: 176
-        y: 80
+        x: 128
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7999,8 +8065,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_317
       rect:
         serializedVersion: 2
-        x: 192
-        y: 80
+        x: 144
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8020,8 +8086,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_318
       rect:
         serializedVersion: 2
-        x: 208
-        y: 80
+        x: 160
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8041,8 +8107,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_319
       rect:
         serializedVersion: 2
-        x: 224
-        y: 80
+        x: 176
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8062,8 +8128,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_320
       rect:
         serializedVersion: 2
-        x: 240
-        y: 80
+        x: 192
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8083,8 +8149,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_321
       rect:
         serializedVersion: 2
-        x: 256
-        y: 80
+        x: 208
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8104,8 +8170,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_322
       rect:
         serializedVersion: 2
-        x: 272
-        y: 80
+        x: 224
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8125,8 +8191,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_323
       rect:
         serializedVersion: 2
-        x: 288
-        y: 80
+        x: 240
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8146,8 +8212,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_324
       rect:
         serializedVersion: 2
-        x: 304
-        y: 80
+        x: 256
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8167,8 +8233,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_325
       rect:
         serializedVersion: 2
-        x: 320
-        y: 80
+        x: 272
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8188,8 +8254,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_326
       rect:
         serializedVersion: 2
-        x: 336
-        y: 80
+        x: 288
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8209,8 +8275,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_327
       rect:
         serializedVersion: 2
-        x: 352
-        y: 80
+        x: 304
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8230,8 +8296,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_328
       rect:
         serializedVersion: 2
-        x: 368
-        y: 80
+        x: 320
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8251,8 +8317,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_329
       rect:
         serializedVersion: 2
-        x: 384
-        y: 80
+        x: 336
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8272,8 +8338,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_330
       rect:
         serializedVersion: 2
-        x: 400
-        y: 80
+        x: 352
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8293,8 +8359,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_331
       rect:
         serializedVersion: 2
-        x: 416
-        y: 80
+        x: 368
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8314,8 +8380,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_332
       rect:
         serializedVersion: 2
-        x: 432
-        y: 80
+        x: 384
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8335,8 +8401,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_333
       rect:
         serializedVersion: 2
-        x: 448
-        y: 80
+        x: 400
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8356,8 +8422,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_334
       rect:
         serializedVersion: 2
-        x: 464
-        y: 80
+        x: 416
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8377,8 +8443,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_335
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 432
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8398,8 +8464,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_336
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 448
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8419,8 +8485,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_337
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 464
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -8440,8 +8506,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_338
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 0
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8461,8 +8527,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_339
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 16
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8482,8 +8548,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_340
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 32
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8503,8 +8569,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_341
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 48
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8524,8 +8590,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_342
       rect:
         serializedVersion: 2
-        x: 112
-        y: 64
+        x: 64
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8545,8 +8611,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_343
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 80
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8566,8 +8632,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_344
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
+        x: 96
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8587,8 +8653,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_345
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 112
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8608,8 +8674,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_346
       rect:
         serializedVersion: 2
-        x: 176
-        y: 64
+        x: 128
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8629,8 +8695,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_347
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 144
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8650,8 +8716,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_348
       rect:
         serializedVersion: 2
-        x: 208
-        y: 64
+        x: 160
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8671,8 +8737,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_349
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
+        x: 176
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8692,8 +8758,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_350
       rect:
         serializedVersion: 2
-        x: 240
-        y: 64
+        x: 192
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8713,8 +8779,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_351
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 208
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8734,8 +8800,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_352
       rect:
         serializedVersion: 2
-        x: 272
-        y: 64
+        x: 224
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8755,8 +8821,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_353
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
+        x: 240
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8776,8 +8842,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_354
       rect:
         serializedVersion: 2
-        x: 304
-        y: 64
+        x: 256
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8797,8 +8863,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_355
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
+        x: 272
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8818,8 +8884,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_356
       rect:
         serializedVersion: 2
-        x: 336
-        y: 64
+        x: 288
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8839,8 +8905,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_357
       rect:
         serializedVersion: 2
-        x: 352
-        y: 64
+        x: 304
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8860,8 +8926,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_358
       rect:
         serializedVersion: 2
-        x: 368
-        y: 64
+        x: 320
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8881,8 +8947,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_359
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
+        x: 336
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8902,8 +8968,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_360
       rect:
         serializedVersion: 2
-        x: 416
-        y: 64
+        x: 352
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8923,8 +8989,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_361
       rect:
         serializedVersion: 2
-        x: 448
-        y: 64
+        x: 368
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8944,8 +9010,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_362
       rect:
         serializedVersion: 2
-        x: 464
-        y: 64
+        x: 384
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8965,8 +9031,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_363
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 416
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -8986,8 +9052,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_364
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 448
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -9007,8 +9073,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_365
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 464
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -9028,8 +9094,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_366
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 0
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9049,8 +9115,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_367
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 16
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9070,8 +9136,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_368
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 32
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9091,8 +9157,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_369
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
+        x: 48
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9112,8 +9178,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_370
       rect:
         serializedVersion: 2
-        x: 112
-        y: 48
+        x: 64
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9133,8 +9199,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_371
       rect:
         serializedVersion: 2
-        x: 128
-        y: 48
+        x: 80
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9154,8 +9220,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_372
       rect:
         serializedVersion: 2
-        x: 144
-        y: 48
+        x: 96
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9175,8 +9241,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_373
       rect:
         serializedVersion: 2
-        x: 160
-        y: 48
+        x: 112
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9196,8 +9262,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_374
       rect:
         serializedVersion: 2
-        x: 176
-        y: 48
+        x: 128
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9217,8 +9283,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_375
       rect:
         serializedVersion: 2
-        x: 192
-        y: 48
+        x: 144
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9238,8 +9304,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_376
       rect:
         serializedVersion: 2
-        x: 208
-        y: 48
+        x: 160
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9259,8 +9325,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_377
       rect:
         serializedVersion: 2
-        x: 224
-        y: 48
+        x: 176
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9280,8 +9346,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_378
       rect:
         serializedVersion: 2
-        x: 240
-        y: 48
+        x: 192
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9301,8 +9367,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_379
       rect:
         serializedVersion: 2
-        x: 256
-        y: 48
+        x: 208
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9322,8 +9388,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_380
       rect:
         serializedVersion: 2
-        x: 272
-        y: 48
+        x: 224
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9343,8 +9409,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_381
       rect:
         serializedVersion: 2
-        x: 288
-        y: 48
+        x: 240
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9364,8 +9430,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_382
       rect:
         serializedVersion: 2
-        x: 304
-        y: 48
+        x: 256
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9385,8 +9451,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_383
       rect:
         serializedVersion: 2
-        x: 320
-        y: 48
+        x: 272
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9406,8 +9472,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_384
       rect:
         serializedVersion: 2
-        x: 336
-        y: 48
+        x: 288
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9427,8 +9493,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_385
       rect:
         serializedVersion: 2
-        x: 352
-        y: 48
+        x: 304
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9448,8 +9514,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_386
       rect:
         serializedVersion: 2
-        x: 368
-        y: 48
+        x: 320
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9469,8 +9535,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_387
       rect:
         serializedVersion: 2
-        x: 384
-        y: 48
+        x: 336
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9490,8 +9556,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_388
       rect:
         serializedVersion: 2
-        x: 400
-        y: 48
+        x: 352
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9511,8 +9577,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_389
       rect:
         serializedVersion: 2
-        x: 416
-        y: 48
+        x: 368
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9532,8 +9598,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_390
       rect:
         serializedVersion: 2
-        x: 432
-        y: 48
+        x: 384
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9553,8 +9619,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_391
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
+        x: 400
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9574,8 +9640,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_392
       rect:
         serializedVersion: 2
-        x: 208
-        y: 32
+        x: 416
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9595,8 +9661,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_393
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
+        x: 432
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -9616,8 +9682,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_394
       rect:
         serializedVersion: 2
-        x: 288
-        y: 32
+        x: 0
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9637,8 +9703,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_395
       rect:
         serializedVersion: 2
-        x: 304
-        y: 32
+        x: 16
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9658,8 +9724,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_396
       rect:
         serializedVersion: 2
-        x: 320
-        y: 32
+        x: 32
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9679,8 +9745,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_397
       rect:
         serializedVersion: 2
-        x: 336
-        y: 32
+        x: 48
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9700,8 +9766,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_398
       rect:
         serializedVersion: 2
-        x: 352
-        y: 32
+        x: 64
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9721,8 +9787,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_399
       rect:
         serializedVersion: 2
-        x: 368
-        y: 32
+        x: 80
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9742,8 +9808,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_400
       rect:
         serializedVersion: 2
-        x: 384
-        y: 32
+        x: 112
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9763,8 +9829,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_401
       rect:
         serializedVersion: 2
-        x: 400
-        y: 32
+        x: 128
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9784,8 +9850,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_402
       rect:
         serializedVersion: 2
-        x: 416
-        y: 32
+        x: 192
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9805,8 +9871,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_403
       rect:
         serializedVersion: 2
-        x: 432
-        y: 32
+        x: 208
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9826,8 +9892,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_404
       rect:
         serializedVersion: 2
-        x: 192
-        y: 16
+        x: 224
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9847,8 +9913,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_405
       rect:
         serializedVersion: 2
-        x: 208
-        y: 16
+        x: 240
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9868,8 +9934,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_406
       rect:
         serializedVersion: 2
-        x: 224
-        y: 16
+        x: 288
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9889,8 +9955,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_407
       rect:
         serializedVersion: 2
-        x: 288
-        y: 16
+        x: 304
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9910,8 +9976,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_408
       rect:
         serializedVersion: 2
-        x: 304
-        y: 16
+        x: 320
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9931,8 +9997,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_409
       rect:
         serializedVersion: 2
-        x: 320
-        y: 16
+        x: 336
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9952,8 +10018,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_410
       rect:
         serializedVersion: 2
-        x: 336
-        y: 16
+        x: 352
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9973,8 +10039,8 @@ TextureImporter:
       name: spr_WarpTerminalTileset_411
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 368
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -9986,6 +10052,468 @@ TextureImporter:
       bones: []
       spriteID: ebc5ceabf3af41dd0800000000000000
       internalID: -2516111140167328578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_412
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6441ff227a458e330800000000000000
+      internalID: 3740332567354610758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_413
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279baef18eaeb92b0800000000000000
+      internalID: -5576605430879438478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_414
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b34d0b565f1a9970800000000000000
+      internalID: 8762350480757965752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_415
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38163764e7b4ef140800000000000000
+      internalID: 4755321262269751683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_416
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cc81584ceecc2a0800000000000000
+      internalID: -6715730416502256517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_417
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535c5f5cf97eb3240800000000000000
+      internalID: 4772662903536207157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_418
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454f239d287009670800000000000000
+      internalID: 8543336751692969044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_419
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64bf94a7f92570f0800000000000000
+      internalID: -1119942788736109462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_420
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d138c1a7f33f64ae0800000000000000
+      internalID: -1565296366507490531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_421
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc16fba00eef5540800000000000000
+      internalID: 4998975798056983773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_422
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede94d2e55ef376c0800000000000000
+      internalID: -4146691187046834466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_423
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b86ac3c71f4fb30800000000000000
+      internalID: 4320343458450934619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_424
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3683e4b6e19c8dfe0800000000000000
+      internalID: -1163959371188783005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_425
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b0f6bcecdcf5f00800000000000000
+      internalID: 1107830321416440653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_426
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1315d674a7ceaf930800000000000000
+      internalID: 4177911614268068145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_427
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19181504f2edd640800000000000000
+      internalID: 5106487090193373466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_428
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c3cdd9382b19df0800000000000000
+      internalID: -175162632131822562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_429
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d5b79472b903620800000000000000
+      internalID: 2751869965362224464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_430
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235bb42391fc9370800000000000000
+      internalID: 8330799025007317801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_431
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8281a9650607a2b90800000000000000
+      internalID: -7265871489736763352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_432
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5debcd7dec48adb60800000000000000
+      internalID: 7771670130900909781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarpTerminalTileset_433
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cfd03a3b74d5e10800000000000000
+      internalID: 2187983830832249899
       vertices: []
       indices: 
       edges: []

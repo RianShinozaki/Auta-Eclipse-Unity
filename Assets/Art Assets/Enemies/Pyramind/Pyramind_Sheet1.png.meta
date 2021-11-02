@@ -1,0 +1,1038 @@
+fileFormatVersion: 2
+guid: 50cdeb57aaedf7a47ad12b338d3f59aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 980358165461687569
+    second: Pyra_Idle-sheet_0
+  - first:
+      213: 3308996252894060233
+    second: Pyra_Idle-sheet_1
+  - first:
+      213: -9157990924355642726
+    second: Pyra_Idle-sheet_2
+  - first:
+      213: -1014163068625849415
+    second: Pyra_Idle-sheet_3
+  - first:
+      213: 2548106514792723031
+    second: Pyra_Idle-sheet_4
+  - first:
+      213: -5704903603380159266
+    second: Pyra_Idle-sheet_5
+  - first:
+      213: 757948829410844959
+    second: Pyra_Idle-sheet_6
+  - first:
+      213: -1574329287857898500
+    second: Pyra_Idle-sheet_7
+  - first:
+      213: -6750422055195092784
+    second: Pyra_Idle-sheet_8
+  - first:
+      213: 9101420127683114977
+    second: Pyra_Idle-sheet_9
+  - first:
+      213: -2690766595065149132
+    second: Pyra_Idle-sheet_10
+  - first:
+      213: -2872357633796092000
+    second: Pyra_Idle-sheet_11
+  - first:
+      213: -4259472118543023887
+    second: Pyra_Idle-sheet_12
+  - first:
+      213: 3579339676097492209
+    second: Pyra_Idle-sheet_13
+  - first:
+      213: 6833641920400759182
+    second: Pyra_Idle-sheet_14
+  - first:
+      213: 8869662788229360325
+    second: Pyra_Idle-sheet_15
+  - first:
+      213: 1739603743582972932
+    second: Pyra_Idle-sheet_16
+  - first:
+      213: -7368780744656126126
+    second: Pyra_Idle-sheet_17
+  - first:
+      213: -5334143418428322889
+    second: Pyra_Idle-sheet_18
+  - first:
+      213: 8791300986414252487
+    second: Pyra_Idle-sheet_19
+  - first:
+      213: 842801017273972826
+    second: Pyra_Idle-sheet_20
+  - first:
+      213: 3221148126423714435
+    second: Pyra_Idle-sheet_21
+  - first:
+      213: 3486731590698225518
+    second: Pyra_Idle-sheet_22
+  - first:
+      213: 1161944623427392492
+    second: Pyra_Idle-sheet_23
+  - first:
+      213: -3660096265504375937
+    second: Pyra_Idle-sheet_24
+  - first:
+      213: -4159868594641314344
+    second: Pyra_Idle-sheet_25
+  - first:
+      213: 3406590429042092092
+    second: Pyra_Idle-sheet_26
+  - first:
+      213: 2027079953434073866
+    second: Pyra_Idle-sheet_27
+  - first:
+      213: -7244711662353463612
+    second: Pyra_Idle-sheet_28
+  - first:
+      213: -3018410331670324359
+    second: Pyra_Idle-sheet_29
+  - first:
+      213: 8233251159487779501
+    second: Pyra_Idle-sheet_30
+  - first:
+      213: -4326519069951859916
+    second: Pyra_Idle-sheet_31
+  - first:
+      213: -5581234869817541428
+    second: Pyra_Idle-sheet_32
+  - first:
+      213: -2169409199738810268
+    second: Pyra_Idle-sheet_33
+  - first:
+      213: -6872888679529239709
+    second: Pyramind_Sheet1_0
+  - first:
+      213: -7223418602903979402
+    second: Pyramind_Sheet1_1
+  - first:
+      213: -6692226679366030371
+    second: Pyramind_Sheet1_2
+  - first:
+      213: 2943676171789534190
+    second: Pyramind_Sheet1_3
+  - first:
+      213: 6707675874127035033
+    second: Pyramind_Sheet1_4
+  - first:
+      213: -8830726062705313088
+    second: Pyramind_Sheet1_5
+  - first:
+      213: -4124187966939499518
+    second: Pyramind_Sheet1_6
+  - first:
+      213: 4737567333066723614
+    second: Pyramind_Sheet1_7
+  - first:
+      213: 6133963207642965029
+    second: Pyramind_Sheet1_8
+  - first:
+      213: -5888624762039083472
+    second: Pyramind_Sheet1_9
+  - first:
+      213: 4571416941075089808
+    second: Pyramind_Sheet1_10
+  - first:
+      213: 8849033735080370140
+    second: Pyramind_Sheet1_11
+  - first:
+      213: 1457746237080320065
+    second: Pyramind_Sheet1_12
+  - first:
+      213: 8907665827856506928
+    second: Pyramind_Sheet1_13
+  - first:
+      213: 3289374244044258760
+    second: Pyramind_Sheet1_14
+  - first:
+      213: 2198668395172995940
+    second: Pyramind_Sheet1_15
+  - first:
+      213: -1049489475540324556
+    second: Pyramind_Sheet1_16
+  - first:
+      213: 8842352320429288271
+    second: Pyramind_Sheet1_17
+  - first:
+      213: 1995643023085785562
+    second: Pyramind_Sheet1_18
+  - first:
+      213: -8404524022136434015
+    second: Pyramind_Sheet1_19
+  - first:
+      213: -437717477334961173
+    second: Pyramind_Sheet1_20
+  - first:
+      213: -7041945890262420230
+    second: Pyramind_Sheet1_21
+  - first:
+      213: -6161308569340049344
+    second: Pyramind_Sheet1_22
+  - first:
+      213: 3293944302759901019
+    second: Pyramind_Sheet1_23
+  - first:
+      213: -2124036835924566606
+    second: Pyramind_Sheet1_24
+  - first:
+      213: 2883402502243207666
+    second: Pyramind_Sheet1_25
+  - first:
+      213: -5351215463312024324
+    second: Pyramind_Sheet1_26
+  - first:
+      213: -2778823301805608074
+    second: Pyramind_Sheet1_27
+  - first:
+      213: 6650741967506935867
+    second: Pyramind_Sheet1_28
+  - first:
+      213: 6796049130091713041
+    second: Pyramind_Sheet1_29
+  - first:
+      213: -2695982413016851884
+    second: Pyramind_Sheet1_30
+  - first:
+      213: 1036750823104601384
+    second: Pyramind_Sheet1_31
+  - first:
+      213: -8582560879471537392
+    second: Pyramind_Sheet1_32
+  - first:
+      213: 6551049880715555305
+    second: Pyramind_Sheet1_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b2bdbf8289e90a0800000000000000
+      internalID: -6872888679529239709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ab5fd4d0341cb90800000000000000
+      internalID: -7223418602903979402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbeef3ca4f6023a0800000000000000
+      internalID: -6692226679366030371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee30c49c1e90ad820800000000000000
+      internalID: 2943676171789534190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99abcc13ba3761d50800000000000000
+      internalID: 6707675874127035033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca7aa3ee65f27580800000000000000
+      internalID: -8830726062705313088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_6
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20471ab15e0f3c6c0800000000000000
+      internalID: -4124187966939499518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11dfe283683fb140800000000000000
+      internalID: 4737567333066723614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524efd8c907302550800000000000000
+      internalID: 6133963207642965029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e571b6af6674ea0800000000000000
+      internalID: -5888624762039083472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099cbfccc7fe07f30800000000000000
+      internalID: 4571416941075089808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfd9e04c451eca70800000000000000
+      internalID: 8849033735080370140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_12
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148b5d9aa74fa3410800000000000000
+      internalID: 1457746237080320065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 450
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030e54720e26e9b70800000000000000
+      internalID: 8907665827856506928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdb395727436ad20800000000000000
+      internalID: 3289374244044258760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4632a21a14d338e10800000000000000
+      internalID: 2198668395172995940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f68e6e1e67f61f0800000000000000
+      internalID: -1049489475540324556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_17
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4be90e269856ba70800000000000000
+      internalID: 8842352320429288271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1d38191c2f1bb10800000000000000
+      internalID: 1995643023085785562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_19
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a212525ee12d5b80800000000000000
+      internalID: -8404524022136434015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 360
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be33873064aece9f0800000000000000
+      internalID: -437717477334961173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4f26bc58bf54e90800000000000000
+      internalID: -7041945890262420230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_22
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0488aec0082ae7aa0800000000000000
+      internalID: -6161308569340049344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57fceb24e076bd20800000000000000
+      internalID: 3293944302759901019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_24
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd1fd850c7e582e0800000000000000
+      internalID: -2124036835924566606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_25
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9cda28c47e30820800000000000000
+      internalID: 2883402502243207666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.31, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc95b853e9acb5b0800000000000000
+      internalID: -5351215463312024324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_27
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 270
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.31, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6737c4a0ee2af69d0800000000000000
+      internalID: -2778823301805608074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.31, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b309802159e2c4c50800000000000000
+      internalID: 6650741967506935867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_29
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.31, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11218334daa605e50800000000000000
+      internalID: 6796049130091713041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_30
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a1e6f7742f59ad0800000000000000
+      internalID: -2695982413016851884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_31
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d5eb37167436e00800000000000000
+      internalID: 1036750823104601384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_32
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0135feb3a5e94e880800000000000000
+      internalID: -8582560879471537392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pyramind_Sheet1_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 180
+        width: 90
+        height: 90
+      alignment: 9
+      pivot: {x: 0.49, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e17ae558210aea50800000000000000
+      internalID: 6551049880715555305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,7 +15,9 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Setup")] public float StunTime;
     [FoldoutGroup("Setup")] public bool stunned;
     [FoldoutGroup("Setup")] public PlayerController GrabbedBy;
-
+    [FoldoutGroup("Manual Setup")] public Transform StaggerMeter;
+    [FoldoutGroup("Manual Setup")] public Transform HPMeter;
+    [FoldoutGroup("Manual Setup")] public GameObject AttackTitle;
     [FoldoutGroup("Manual Setup")] public GameObject CannonballHitBox;
 
     [FoldoutGroup("Base Enemy Stats")] public float EyeDist;
@@ -27,6 +29,7 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Base Enemy Stats")] public float MoveSpeed;
     [FoldoutGroup("Base Enemy Stats")] public bool CanStun;
     [FoldoutGroup("Base Enemy Stats")] public Vector2Int MoneyDrop;
+    [FoldoutGroup("Base Enemy Stats")] public bool ShowStats;
 
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_WallSlam;
 
@@ -68,6 +71,12 @@ public class BaseEnemy : PhysicsEntity
     public override void Update()
     {
         base.Update();
+
+        if(ShowStats)
+        {
+            StaggerMeter.transform.localScale = new Vector3(Mathf.Clamp(Stagger / MaxStagger, 0, 1), 1, 1);
+            HPMeter.transform.localScale = new Vector3(Mathf.Clamp(HP / MaxHP, 0, 1), 1, 1);
+        }
 
         if (Player == null)
             return;
@@ -162,6 +171,25 @@ public class BaseEnemy : PhysicsEntity
             {
                 defender.GetComponent<PhysicsEntity>().Velocity = Velocity * -1;
             }
+        }
+    }
+
+    public void Summon_AttackTitle(string name)
+    {
+        AttackTitle.SetActive(true);
+        AttackTitle.GetComponent<AttackTitle>().text = name;
+    }
+    public void Disable_AttackTitle()
+    {
+        AttackTitle.SetActive(false);
+    }
+    public override void HurtResponse()
+    {
+        base.HurtResponse();
+
+        if(!Staggered)
+        {
+            Anim.SetTrigger("Guard");
         }
     }
 }

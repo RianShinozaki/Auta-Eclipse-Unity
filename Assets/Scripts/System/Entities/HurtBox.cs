@@ -50,11 +50,20 @@ public class HurtBox : MonoBehaviour
     {
         if (other.GetComponent<HitBox>())
         {
+
+            Debug.Log("Full hit log -- Defender: " + entity.name + "| Attacker: " + other.gameObject.transform.root.name);
+
             if (!entity.isCombatEntity || InvincibleTime > 0)
+            {
+                Debug.Log("Not combat entity, or has iFrames");
                 return;
+            }
             HitBox hitbox = other.gameObject.GetComponent<HitBox>();
             if (hitbox == null)
+            {
+                Debug.Log("Error - No hitbox");
                 return;
+            }
 
             hitbox.collisions--;
 
@@ -129,7 +138,17 @@ public class HurtBox : MonoBehaviour
                 CriticalMult += 1.5f * (TechnicalChance == 15 ? 1 : 0);
             }
 
-            entity.HP -= ( (hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense);
+            if (!entity.Staggered)
+            {
+                entity.Stagger -= ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense);
+                if(entity.Stagger <= 0)
+                {
+                    entity.Staggered = true;
+                    entity.StaggerRecoverySpd = 1;
+                }
+            }
+
+            entity.HP -= ( (hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2);
             entity.HitStun = hitbox.inflictHitStun + (affinity == AffinityData.Affinity.Weak ? 2 : 0);
 
             if(DamageDrawerInstance == null || DamageDrawerInstance.activeInHierarchy == false )
@@ -137,18 +156,18 @@ public class HurtBox : MonoBehaviour
                 DamageDrawerInstance = ObjectPool.Instance.SpawnObject("DamageDrawer", transform.position, Quaternion.identity); 
             }
 
-            DamageDrawerInstance.GetComponent<DamageDrawer>().Hit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense), CriticalMult != 1, affinity == AffinityData.Affinity.Weak);
+            DamageDrawerInstance.GetComponent<DamageDrawer>().Hit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2), CriticalMult != 1, affinity == AffinityData.Affinity.Weak);
 
-            float TotalKnockback = new Vector2(hitbox.inflictXKnockback, hitbox.inflictYKnockback).magnitude;
+            float TotalKnockback = new Vector2(hitbox.inflictXKnockback, hitbox.inflictYKnockback).magnitude / (entity.Staggered ? 1 : 2);
 
-            if (TotalKnockback - entity.BaseSturdiness > entity.KnockbackHurtstateThreshold)
+            if (TotalKnockback - entity.BaseSturdiness > entity.KnockbackHurtstateThreshold || entity.Staggered)
             {
                 entity.HurtState = hitbox.inflictHurtState + (affinity == AffinityData.Affinity.Weak ? 30 : 0);
             }
 
-            entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * other.transform.parent.localScale.x;
+            entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * other.transform.parent.localScale.x / (entity.Staggered ? 1 : 4);
 
-            if (hitbox.inflictYKnockback > 0)
+            if (hitbox.inflictYKnockback > 0 && entity.Staggered)
             {
                 entity.Velocity.y = Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12);
 
@@ -162,9 +181,15 @@ public class HurtBox : MonoBehaviour
             hitfx.type = hitbox.type;
 
             hitbox.AttackConnected(gameObject);
+            entity.HurtResponse();
 
             Physics2D.IgnoreCollision(coll, other, true);
             ignores.Add(other);
+
+            if(entity.MaxStagger == 0)
+            {
+                entity.Staggered = false;
+            }
         }
     }
 }

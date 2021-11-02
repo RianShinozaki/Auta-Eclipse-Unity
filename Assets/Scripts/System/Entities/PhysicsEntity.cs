@@ -15,6 +15,8 @@ public class PhysicsEntity : MonoBehaviour
     [FoldoutGroup("Physics")] public float Gravity = 18;
     [FoldoutGroup("Physics")] public float GravityCancelTime;
     [FoldoutGroup("Physics")] public bool Grounded;
+    [FoldoutGroup("Physics")] public bool Groundray;
+    [FoldoutGroup("Physics")] public float UngroundedTimer;
     [FoldoutGroup("Physics")] public bool Bounce;
     [FoldoutGroup("Physics")] public float BounceMult = 0.9f;
     [FoldoutGroup("Physics")] public float maxFallSpeed = -10;
@@ -49,6 +51,11 @@ public class PhysicsEntity : MonoBehaviour
     [FoldoutGroup("Combat")] public float KnockbackHurtstateThreshold;
     [FoldoutGroup("Combat")] public float BaseTechnical;
 
+    [FoldoutGroup("Combat")] public float MaxStagger;
+    [FoldoutGroup("Combat")] public float Stagger;
+    [FoldoutGroup("Combat")] public bool Staggered;
+    [FoldoutGroup("Combat")] public float StaggerRecoverySpd;
+
     [FoldoutGroup("Collisions")] public List<ContactPoint2D> GroundPoints = new List<ContactPoint2D>();
     [FoldoutGroup("Collisions")] public List<ContactPoint2D> WallPoints = new List<ContactPoint2D>();
     [FoldoutGroup("Collisions")] public List<ContactPoint2D> CeilingPoints = new List<ContactPoint2D>();
@@ -63,7 +70,7 @@ public class PhysicsEntity : MonoBehaviour
         if (Bounce)
         {
             Velocity = Vector2.Reflect(Velocity, collision.contacts[0].normal) * BounceMult;
-
+            rb.velocity = new Vector3(Velocity.x, Velocity.y, 0);
         }
     }
     public virtual void OnCollisionStay2D(Collision2D collision)
@@ -73,21 +80,18 @@ public class PhysicsEntity : MonoBehaviour
             foreach (ContactPoint2D contact in collision.contacts)
             {
                 float angle = Vector2.SignedAngle(Vector2.up, contact.normal);
-                if (angle >= -45 && angle <= 45 && (Velocity.y <= 0 || Grounded))
-                {
-                    GroundPoints.Add(contact);
-                }
-                else if (angle > 135 || angle < -135)
+                if (angle > 135 || angle < -135)
                 {
                     CeilingPoints.Add(contact);
-                } 
-                else if( (angle > 45  && angle <= 135) || (angle >= -135 && angle < -45) )
+                }
+                else if ((angle > 45 && angle <= 135) || (angle >= -135 && angle < -45))
                 {
                     WallPoints.Add(contact);
                 }
 
             }
-        } else
+        }
+        else
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
@@ -125,6 +129,8 @@ public class PhysicsEntity : MonoBehaviour
     {
         
 
+
+
         if (rb == null)
         {
             rb = gameObject.GetComponent<Rigidbody2D>();
@@ -133,7 +139,7 @@ public class PhysicsEntity : MonoBehaviour
         if (!Bounce)
         {
             int wallPointsNum = 0;
-            float avgAngle = 0;
+            float avgAngle2 = 0;
 
 
             foreach (ContactPoint2D contact in WallPoints)
@@ -141,23 +147,23 @@ public class PhysicsEntity : MonoBehaviour
 
                 wallPointsNum++;
 
-                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
+                avgAngle2 += Vector2.SignedAngle(Vector2.up, contact.normal);
             }
             if (wallPointsNum > 0)
             {
-                avgAngle /= wallPointsNum;
-                if (avgAngle > 0)
+                avgAngle2 /= wallPointsNum;
+                if (avgAngle2 > 0)
                 {
-                    float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
+                    float toSpdx = Mathf.Cos(avgAngle2 * Mathf.Deg2Rad) * Velocity.y;
                     if (Velocity.x > toSpdx)
                     {
                         Velocity.x = toSpdx;
                     }
                 }
 
-                if (avgAngle < 0)
+                if (avgAngle2 < 0)
                 {
-                    float toSpdx = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.y;
+                    float toSpdx = Mathf.Cos(avgAngle2 * Mathf.Deg2Rad) * Velocity.y;
                     if (Velocity.x < toSpdx)
                     {
                         Velocity.x = toSpdx;
@@ -167,85 +173,91 @@ public class PhysicsEntity : MonoBehaviour
             }
 
             int ceilPointsNum = 0;
-            avgAngle = 0;
+            avgAngle2 = 0;
 
             foreach (ContactPoint2D contact in CeilingPoints)
             {
 
                 ceilPointsNum++;
 
-                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
+                avgAngle2 += Vector2.SignedAngle(Vector2.up, contact.normal);
             }
             if (ceilPointsNum > 0)
             {
-                avgAngle /= ceilPointsNum;
+                avgAngle2 /= ceilPointsNum;
 
-                if (Velocity.y > Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.y)
+                if (Velocity.y > Mathf.Sin(avgAngle2 * Mathf.Deg2Rad) * Velocity.y)
                 {
-                    Velocity.y = Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.y;
+                    Velocity.y = Mathf.Sin(avgAngle2 * Mathf.Deg2Rad) * Velocity.y;
                 }
 
             }
 
             int groundPointsNum = 0;
-            avgAngle = 0;
+            Vector2 avgAngle = new Vector3(0, 0);
+            float avgPos = 0;
 
-
-            foreach (ContactPoint2D contact in GroundPoints)
+            for(int i = 0; i < 3; i++)
             {
+                float xpos = coll.bounds.center.x - coll.bounds.extents.x + (coll.bounds.extents.x) * i;
+                float ypos = coll.bounds.center.y - coll.bounds.extents.y;
+                RaycastHit2D hit = Physics2D.Raycast(new Vector2(xpos, ypos), Vector2.down, (Grounded ? 0.5f : 0.2f), layerMask: EnvironmentMask);
+                Debug.DrawLine(new Vector3(xpos, ypos, 0), new Vector3(xpos, ypos - 0.1f, 0));
+                if (hit.collider != null)
+                {
+                    if (avgPos < hit.point.y) {
+                        avgPos = hit.point.y;
+                    }
+                    avgAngle += hit.normal;
+                    Debug.Log("Normal " + i.ToString() + ": " + hit.normal.ToString());
+                    groundPointsNum++;
 
-                groundPointsNum++;
-
-                avgAngle += Vector2.SignedAngle(Vector2.up, contact.normal);
+                    Debug.DrawRay(hit.point, hit.normal);
+                }
+                
             }
 
-            bool GroundRay = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.2f, layerMask: EnvironmentMask);
-
-            if(groundPointsNum > 0 || (GroundRay && (Velocity.y < 0 || Grounded)) )
+            if(groundPointsNum > 0)
             {
-                if (Grounded == false && Velocity.y < 0)
-                {
-                    RaycastHit2D hit;
-                    hit = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.2f, EnvironmentMask);
+                if(Velocity.y <= 1) {
+                    transform.position = new Vector2(transform.position.x, avgPos + (transform.position.y - coll.bounds.center.y) + coll.bounds.extents.y + 0.15f);
 
-                    if (hit.collider != null) //Check for a collision
+                    if (Grounded == false)
                     {
-                        transform.position = hit.point + new Vector2(0, coll.bounds.extents.y - coll.offset.y); //Move to collision point
-                        Debug.Log("ground2");
-
-                        if (Velocity.y < 0)
-                        {
-                            OnLand();
-                        }
-                        Velocity.y = 0;
+                        OnLand();
+                        rb.velocity = new Vector3(rb.velocity.x, 0, 0);
                     }
-                }
 
-                Grounded = true;
+                    Grounded = true;
+                    UngroundedTimer = 0;
 
-                if (groundPointsNum != 0)
-                {
+                    Debug.Log("AvgAngle before: " + avgAngle.ToString());
+
                     avgAngle /= groundPointsNum;
+
+                    Debug.Log("AvgAngle after: " + avgAngle.ToString());
+                    Velocity.y = 0;
+                    //Velocity.y = avgAngle.x * Velocity.x;
+                    //Velocity.x = avgAngle.y * Velocity.x;
                 }
-                else
-                {
-                    avgAngle = 0;
-                }
-                Velocity.y = Mathf.Sin(avgAngle * Mathf.Deg2Rad) * Velocity.x;
-                Velocity.x = Mathf.Cos(avgAngle * Mathf.Deg2Rad) * Velocity.x;
             } else
             {
                 Grounded = false;
+                /*UngroundedTimer += Time.deltaTime;
+                if (UngroundedTimer >= 0.0f)
+                {
+                    Grounded = false;
+                }
 
-                if (Velocity.y < 0) //If falling, look for collision as to land on it perfectly
+                if (Velocity.y <= 0) //If falling, look for collision as to land on it perfectly
                 {
 
                     RaycastHit2D hit;
-                    hit = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.2f, EnvironmentMask);
+                    hit = Physics2D.Raycast(new Vector2(transform.position.x, coll.bounds.center.y - coll.bounds.extents.y), Vector2.down, 0.4f, EnvironmentMask);
 
                     if (hit.collider != null) //Check for a collision
                     {
-                        transform.position = hit.point + new Vector2(0, coll.bounds.extents.y - coll.offset.y); //Move to collision point
+                        transform.position = hit.point + new Vector2(0, coll.bounds.extents.y - coll.offset.y - 0.1f); //Move to collision point
                         Debug.Log("ground1");
 
                         if (Velocity.y < 0)
@@ -254,8 +266,9 @@ public class PhysicsEntity : MonoBehaviour
                         }
                         Velocity.y = 0;
                         Grounded = true;
+                        UngroundedTimer = 0;
                     }
-                }
+                }*/
             }
         } 
         
@@ -274,6 +287,20 @@ public class PhysicsEntity : MonoBehaviour
         {
             HitStun = Mathf.MoveTowards(HitStun, 0, Time.deltaTime * TimeScale * 60);
             return;
+        }
+
+        if(Staggered)
+        {
+            Stagger += StaggerRecoverySpd * Time.deltaTime * MaxStagger * (Grounded ? 1 : 0.6f) / 15;
+            StaggerRecoverySpd += 2 * Time.deltaTime;
+            if(Stagger >= MaxStagger)
+            {
+                Staggered = false;
+                Stagger = MaxStagger;
+            } else
+            {
+                HurtState = 30;
+            }
         }
 
         if(!Grounded)
@@ -301,25 +328,28 @@ public class PhysicsEntity : MonoBehaviour
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.CompareTag("Water"))
         {
+            Debug.Log("Test1");
             Instantiate(SplashFX, other.ClosestPoint(transform.position), Quaternion.identity);
         }
     }
 
     public virtual void OnTriggerExit2D(Collider2D other)
     {
-        if(other.CompareTag("Water"))
+        
+        if (other.CompareTag("Water"))
         {
+            Debug.Log("Test2");
             Underwater = false;
             Instantiate(SplashFX, other.ClosestPoint(transform.position), Quaternion.identity);
         }
     }
 
-    public virtual void HitResponse(GameObject attacker, GameObject Defender)
-    {
+    public virtual void HitResponse(GameObject attacker, GameObject Defender) { }
 
-    }
+    public virtual void HurtResponse() { }
 
     public virtual void StartCreatingAfterImgs()
     {

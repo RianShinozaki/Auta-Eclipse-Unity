@@ -34,7 +34,7 @@ public class HitBox : MonoBehaviour
 
     public int collisions = -1; //-1 means it will never deactivate
     public int StoppedState = 0;
-    public int ActiveTime = -1;
+    public float ActiveTime = -1;
     public PhysicsEntity Entity;
 
     public bool InflictRecoil = true;
@@ -69,7 +69,7 @@ public class HitBox : MonoBehaviour
         if(ActiveTime > 0)
         {
             coll.enabled = true;
-            ActiveTime--;
+            ActiveTime = Mathf.MoveTowards(ActiveTime, 0, 60* Time.deltaTime);
             if(ActiveTime == 0)
             {
                 coll.enabled = false;

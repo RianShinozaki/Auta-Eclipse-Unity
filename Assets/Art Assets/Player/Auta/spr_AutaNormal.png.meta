@@ -138,6 +138,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1060,6 +1061,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Auta-Move_29: 8283403813912907714
+      Auta-Move_34: 862923072671012168
+      Auta-Move_3: 5842701902853678945
+      Auta-Move_9: 2304862450409364072
+      Auta-Move_33: 640125824163534800
+      Auta-Move_36: 6565833887545245028
+      Auta-Move_17: 6099342757354219003
+      Auta-Move_4: 8141803875404089276
+      Auta-Move_0: -5558269532123051130
+      Auta-Move_7: -5823611302500883211
+      Auta-Move_14: -9071376921468194211
+      Auta-Move_23: 2798177661822091686
+      Auta-Move_15: -9192594198885042232
+      Auta-Move_22: -5279628366646807879
+      Auta-Move_6: 1199484229480981476
+      Auta-Move_19: -5932324161285969756
+      Auta-Move_35: 6189544952579841989
+      Auta-Move_37: -3709646529073851009
+      Auta-Move_12: 2117295049956057868
+      Auta-Move_2: -6238155903860183963
+      Auta-Move_13: -4727921886805083974
+      Auta-Move_26: -777612551698839058
+      Auta-Move_10: 1019101191120068969
+      Auta-Move_25: -2152841506046213024
+      Auta-Move_8: 2026088126638494704
+      Auta-Move_20: 8069557928482348987
+      Auta-Move_27: 34745508540055847
+      Auta-Move_31: -8635007707227561033
+      Auta-Move_11: 2048146899998693562
+      Auta-Move_1: 8977058016579563808
+      Auta-Move_21: 6293336410592338520
+      Auta-Move_32: 7528617049773928021
+      Auta-Move_18: 7806134103726124428
+      Auta-Move_5: 6446622062596386692
+      Auta-Move_16: 6289307257071130339
+      Auta-Move_24: 6114660874185438543
+      Auta-Move_30: 3887075327952931527
+      Auta-Move_28: 6435313544067776187
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

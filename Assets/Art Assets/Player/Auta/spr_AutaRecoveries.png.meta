@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -736,6 +737,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AutaRecoveries_11: -875266929061659997
+      AutaRecoveries_6: 3630231580194647404
+      AutaRecoveries_14: -2786297062462762976
+      AutaRecoveries_8: 1927771351783592130
+      AutaRecoveries_9: 2382576542061696157
+      AutaRecoveries_23: -1920277209985405662
+      AutaRecoveries_24: 4948003215020781964
+      AutaRecoveries_17: -7615680729220685785
+      AutaRecoveries_7: 8108385706923497723
+      AutaRecoveries_0: -3512765278851477191
+      AutaRecoveries_2: 9142514850335836527
+      AutaRecoveries_12: 7188143099282258490
+      AutaRecoveries_5: -8588617853154458159
+      AutaRecoveries_15: -6418369258652527777
+      AutaRecoveries_20: 3753044793602925152
+      AutaRecoveries_4: -7200637045972798855
+      AutaRecoveries_18: 8136477389510045852
+      AutaRecoveries_13: -8921323836974942250
+      AutaRecoveries_22: 1819044218934807462
+      AutaRecoveries_21: -5606951341212680953
+      AutaRecoveries_3: -909872989412542907
+      AutaRecoveries_25: 3376321149934452649
+      AutaRecoveries_16: 5304332089671091867
+      AutaRecoveries_10: 8192263664038945193
+      AutaRecoveries_19: -9047966793382728249
+      AutaRecoveries_1: 8561656140643797833
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

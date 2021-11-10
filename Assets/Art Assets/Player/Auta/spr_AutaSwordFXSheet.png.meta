@@ -162,6 +162,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -817,6 +818,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_AutaSwordFXSheet_24: 1427490946820721755
+      spr_AutaSwordFXSheet_2: 6512692060564702947
+      spr_AutaSwordFXSheet_21: 4797939874775636265
+      spr_AutaSwordFXSheet_9: 5968655727940674597
+      spr_AutaSwordFXSheet_7: 4887605545555008160
+      spr_AutaSwordFXSheet_10: 5369501831989745337
+      spr_AutaSwordFXSheet_12: 7997812685769017544
+      spr_AutaSwordFXSheet_26: 3367921852517370576
+      spr_AutaSwordFXSheet_11: -8932024941475210609
+      spr_AutaSwordFXSheet_4: -2797673817763528548
+      spr_AutaSwordFXSheet_1: 7440895137343274353
+      spr_AutaSwordFXSheet_14: 1604250128023493926
+      spr_AutaSwordFXSheet_16: 5710563873243833587
+      spr_AutaSwordFXSheet_25: 817201344043319320
+      spr_AutaSwordFXSheet_19: -6362270834602938869
+      spr_AutaSwordFXSheet_13: -6758595195068196303
+      spr_AutaSwordFXSheet_18: -1630440758773770003
+      spr_AutaSwordFXSheet_23: 8338263703445345958
+      spr_AutaSwordFXSheet_8: -6980385763182338162
+      spr_AutaSwordFXSheet_6: -1633676428873406488
+      spr_AutaSwordFXSheet_17: 2491370899050892455
+      spr_AutaSwordFXSheet_3: -1646075010739883583
+      spr_AutaSwordFXSheet_20: -4416544609712074371
+      spr_AutaSwordFXSheet_15: 6563632728986570250
+      spr_AutaSwordFXSheet_0: 4691556179209442693
+      spr_AutaSwordFXSheet_22: 4435526688938488995
+      spr_AutaSwordFXSheet_5: 6908133267338803834
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

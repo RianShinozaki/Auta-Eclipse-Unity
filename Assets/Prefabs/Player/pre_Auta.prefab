@@ -246,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694386891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.010002136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5492783203385954758}
@@ -1712,6 +1712,7 @@ GameObject:
   - component: {fileID: 5492783203385954756}
   - component: {fileID: 5492783203385954759}
   - component: {fileID: 1604686792}
+  - component: {fileID: 1418934949}
   m_Layer: 7
   m_Name: pre_Auta
   m_TagString: Untagged
@@ -1827,7 +1828,7 @@ MonoBehaviour:
   AllowShortJump: 0
   ThrowPower: 11
   AimDir: 0
-  CanOrb: 1
+  OrbUnlocked: 1
   Orb: 0
   OrbPower: 11
   GhostJumpTimer: 0.11
@@ -1947,6 +1948,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.33, y: 1.42}
   m_EdgeRadius: 0
+--- !u!114 &1418934949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5492783203385954779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 39fd90dc83eeb304790b9cc777df6611, type: 2}
+    - {fileID: 11400000, guid: 1f183db4d9095ae42b63897924b9d07a, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5492783203385954776}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: ShowSelf
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5492783203385954776}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: HideSelf
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5492783203451174450
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,7 +2117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5492783203451174450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -2093,7 +2139,7 @@ MonoBehaviour:
   - {x: -0.32057, y: 0.59626245, z: 0}
   m_ShapePathHash: -839620315
   m_Mesh: {fileID: 0}
-  m_InstanceId: -212950
+  m_InstanceId: -667550
 --- !u!1 &7164057996053165388
 GameObject:
   m_ObjectHideFlags: 0

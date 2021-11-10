@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_BashEffect_strip6_3: -1635798785994125182
+      spr_BashEffect_strip6_4: 7529017116257024317
+      spr_BashEffect_strip6_0: 4023133556501752095
+      spr_BashEffect_strip6_2: 4325920248555322771
+      spr_BashEffect_strip6_1: -349015370159262557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

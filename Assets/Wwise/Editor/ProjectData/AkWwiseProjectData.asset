@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 14744b459ef0084eb86d582001d1a11c
     GuidInternal: 
-    m_lastTime: -8585740061487973378
+    m_lastTime: -8585657231859084453
     List:
     - name: SFX
       guid: 41e2f2017a65a6428488af67f7cb61cb
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 770ceea5d5fe33439e2ec73083c67e5e
     GuidInternal: 
-    m_lastTime: -8585739944435248226
+    m_lastTime: -8585656355203418499
     List:
     - name: Auta
       guid: 6eaec7b103c2384b92b6419ef58ccc11
@@ -127,6 +127,49 @@ MonoBehaviour:
         ObjectType: 4
         guid: 506189121b2f504eb914c6e9ba2ac9fb
       Path: Events\Default Work Unit\Combat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Cutscenes
+      guid: fb3f082fa761914b93f828eac7080efc
+      id: 3765803840
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 28d6c1f93481fe4b9758151c90a8d46d
+      - ElementName: Cutscenes
+        ObjectType: 4
+        guid: fb3f082fa761914b93f828eac7080efc
+      Path: Events\Default Work Unit\Environment\Cutscenes
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DeepBunker
+      guid: b5dd66a1bb35924ea4c919f7b32c8458
+      id: 1417384108
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 28d6c1f93481fe4b9758151c90a8d46d
+      - ElementName: Cutscenes
+        ObjectType: 4
+        guid: fb3f082fa761914b93f828eac7080efc
+      - ElementName: DeepBunker
+        ObjectType: 4
+        guid: b5dd66a1bb35924ea4c919f7b32c8458
+      Path: Events\Default Work Unit\Environment\Cutscenes\DeepBunker
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -244,6 +287,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.371655
       minDuration: 0.371655
+    - name: Music
+      guid: 13f53ef6df247041af9479e43e050279
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 13f53ef6df247041af9479e43e050279
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: OrbThrow
       guid: 2959e2e86d0db3499fa74cc5ec010d19
       id: 4035672268
@@ -344,6 +404,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5039
       minDuration: 1.5039
+    - name: TrainArrive
+      guid: c0f677edc84a8f499cde023fdf403af6
+      id: 310239620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 28d6c1f93481fe4b9758151c90a8d46d
+      - ElementName: Cutscenes
+        ObjectType: 4
+        guid: fb3f082fa761914b93f828eac7080efc
+      - ElementName: DeepBunker
+        ObjectType: 4
+        guid: b5dd66a1bb35924ea4c919f7b32c8458
+      - ElementName: TrainArrive
+        ObjectType: 3
+        guid: c0f677edc84a8f499cde023fdf403af6
+      Path: Events\Default Work Unit\Environment\Cutscenes\DeepBunker\TrainArrive
+      maxAttenuation: 0
+      maxDuration: 6.863385
+      minDuration: 6.863385
     - name: WallSlam
       guid: 61ce0d291f082441af457b6a5584b0bb
       id: 1760723946
@@ -441,7 +527,7 @@ MonoBehaviour:
     m_lastTime: -8585742954758711799
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000002600000027000000890000008a0000008d0000008b010000ae0600001b0a0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

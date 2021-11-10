@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -490,6 +491,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_AutaSpecials_1: -1320182156660070675
+      spr_AutaSpecials_10: 8557930707492545402
+      spr_AutaSpecials_9: -5937152471097987579
+      spr_AutaSpecials_6: -6004792911389338521
+      spr_AutaSpecials_4: 3982878473275728509
+      spr_AutaSpecials_11: 6612644045708311656
+      spr_AutaSpecials_3: -2198383118989181737
+      spr_AutaSpecials_0: 4032506526876259010
+      spr_AutaSpecials_12: 3138736357007020168
+      spr_AutaSpecials_8: 3386914078360708213
+      spr_AutaSpecials_13: -666479352033054438
+      spr_AutaSpecials_2: -6453649660967853872
+      spr_AutaSpecials_5: 2876478034104164003
+      spr_AutaSpecials_7: 6310092819089021215
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

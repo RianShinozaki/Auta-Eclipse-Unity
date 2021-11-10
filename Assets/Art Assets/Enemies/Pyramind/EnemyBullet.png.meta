@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_TrainAgoraEye_AttackParticle1_strip5_3: 4115093708617684779
+      spr_TrainAgoraEye_AttackParticle1_strip5_0: -8969693153939982013
+      spr_TrainAgoraEye_AttackParticle1_strip5_1: -8231482171362493801
+      spr_TrainAgoraEye_AttackParticle1_strip5_2: -7205413836516659373
+      spr_TrainAgoraEye_AttackParticle1_strip5_4: -5344366663417786658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

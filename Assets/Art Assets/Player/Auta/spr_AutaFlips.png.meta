@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AutaFlips_9: 5237419410612603822
+      AutaFlips_17: 1063952933385048247
+      AutaFlips_11: 6085977930222285623
+      AutaFlips_0: 647866390936631740
+      AutaFlips_15: -1466109054780537079
+      AutaFlips_10: 8233731308479969994
+      AutaFlips_1: -6365865689710037646
+      AutaFlips_12: 8864556634656612810
+      AutaFlips_8: 4702308619894096552
+      AutaFlips_13: -8201064686822379474
+      AutaFlips_18: -4856112662502828871
+      AutaFlips_19: -742676768050828442
+      AutaFlips_14: 5424617221742009397
+      AutaFlips_4: -5361839110307072718
+      AutaFlips_7: -3925993006019109543
+      AutaFlips_16: 8294144871977626525
+      AutaFlips_2: -8098947767295382119
+      AutaFlips_6: 8723579920588911182
+      AutaFlips_5: 7483233064970706724
+      AutaFlips_3: -8659987760386667526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

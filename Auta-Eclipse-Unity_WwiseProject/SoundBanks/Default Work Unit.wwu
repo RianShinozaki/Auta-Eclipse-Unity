@@ -10,6 +10,7 @@
 						<ObjectRef Name="WaterSplash" ID="{4023F77A-EB88-4124-93AE-5E081021407E}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grab" ID="{9F04A05F-CAC1-4555-888A-337E68AF5FE1}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{E876010E-03C6-4899-A641-97E89B8D471C}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TrainArrive" ID="{ED77F6C0-4AC8-498F-9CDE-023FDF403AF6}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OrbThrow" ID="{E8E25929-0D6D-49B3-9FA7-4CC5EC010D19}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Slash_Attack" ID="{14548BC2-2C48-4A6F-AA90-2D26A6E8EF74}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SmallCoin" ID="{11F351EE-8155-4E05-9BDC-6A413CED482A}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>

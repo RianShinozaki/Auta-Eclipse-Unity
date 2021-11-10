@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_AutaThrowing_strip8_7: -3952700703954016341
+      spr_AutaThrowing_strip8_6: -367345704062730343
+      spr_AutaThrowing_strip8_4: 3859014827843804434
+      spr_AutaThrowing_strip8_3: 1731708180215961829
+      spr_AutaThrowing_strip8_1: 8437233551141223056
+      spr_AutaThrowing_strip8_0: -4283564280009657703
+      spr_AutaThrowing_strip8_2: 3580033605267491748
+      spr_AutaThrowing_strip8_5: -8447380185637414000
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

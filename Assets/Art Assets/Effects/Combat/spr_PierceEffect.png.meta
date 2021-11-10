@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_PierceEffect_3: -7467108425900356757
+      spr_PierceEffect_0: 3703382964558860773
+      spr_PierceEffect_2: 8282766501230766895
+      spr_PierceEffect_4: 7646321948770545143
+      spr_PierceEffect_1: -5059928047388288009
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

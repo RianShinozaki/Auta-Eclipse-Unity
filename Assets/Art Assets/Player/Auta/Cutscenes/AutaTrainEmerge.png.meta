@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 101a5fa7a35daee4c90a77b6851b5ea8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3534848999479285437
+    second: AutaTrainEmerge_0
+  - first:
+      213: 2401601499372643531
+    second: AutaTrainEmerge_1
+  - first:
+      213: 2868578354083686364
+    second: AutaTrainEmerge_2
+  - first:
+      213: -476946110451995591
+    second: AutaTrainEmerge_3
+  - first:
+      213: -3356067558317296578
+    second: AutaTrainEmerge_4
+  - first:
+      213: 681068632829747770
+    second: AutaTrainEmerge_5
+  - first:
+      213: 6209375274988753053
+    second: AutaTrainEmerge_6
+  - first:
+      213: 4820643376559999735
+    second: AutaTrainEmerge_7
+  - first:
+      213: -3067319607168735489
+    second: AutaTrainEmerge_8
+  - first:
+      213: -368962414667366309
+    second: AutaTrainEmerge_9
+  - first:
+      213: -5268785094537437739
+    second: AutaTrainEmerge_10
+  - first:
+      213: 7417908281147768344
+    second: AutaTrainEmerge_11
+  - first:
+      213: 5745364055847016062
+    second: AutaTrainEmerge_12
+  - first:
+      213: -1247158017086618716
+    second: AutaTrainEmerge_13
+  - first:
+      213: 3131491940267109758
+    second: AutaTrainEmerge_14
+  - first:
+      213: -7368526774328609747
+    second: AutaTrainEmerge_15
+  - first:
+      213: -5282278730842118537
+    second: AutaTrainEmerge_16
+  - first:
+      213: 4267093009479745126
+    second: AutaTrainEmerge_17
+  - first:
+      213: -8111000594519776210
+    second: AutaTrainEmerge_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AutaTrainEmerge_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 135
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db69b94cf6e4e0130800000000000000
+      internalID: 3534848999479285437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 135
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4e626e6d3345120800000000000000
+      internalID: 2401601499372643531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 135
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7688d80dc3fc720800000000000000
+      internalID: 2868578354083686364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 135
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c218d1a0c8169f0800000000000000
+      internalID: -476946110451995591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34f840465adc61d0800000000000000
+      internalID: -3356067558317296578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 90
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326a772054a37900800000000000000
+      internalID: 681068632829747770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 90
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d905cc6f9e12c2650800000000000000
+      internalID: 6209375274988753053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 90
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fac2b03c9d56e240800000000000000
+      internalID: 4820643376559999735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 90
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6ed129111be65d0800000000000000
+      internalID: -3067319607168735489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50084283ae21eaf0800000000000000
+      internalID: -368962414667366309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 45
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd193a2fd381e6b0800000000000000
+      internalID: -5268785094537437739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 45
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ebd3aa744b1f660800000000000000
+      internalID: 7417908281147768344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 45
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e761f062b22abbf40800000000000000
+      internalID: 5745364055847016062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 45
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a385c4246431bee0800000000000000
+      internalID: -1247158017086618716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dae9c045b457b20800000000000000
+      internalID: 3131491940267109758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24303a50fbbdb990800000000000000
+      internalID: -7368526774328609747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_16
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776ed832b7391b6b0800000000000000
+      internalID: -5282278730842118537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66eb79deb72c73b30800000000000000
+      internalID: 4267093009479745126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AutaTrainEmerge_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 45
+      alignment: 9
+      pivot: {x: 0.6, y: 0.2666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24aaa6eeefef6f80800000000000000
+      internalID: -8111000594519776210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AutaTrainEmerge_17: 4267093009479745126
+      AutaTrainEmerge_18: -8111000594519776210
+      AutaTrainEmerge_4: -3356067558317296578
+      AutaTrainEmerge_2: 2868578354083686364
+      AutaTrainEmerge_5: 681068632829747770
+      AutaTrainEmerge_13: -1247158017086618716
+      AutaTrainEmerge_9: -368962414667366309
+      AutaTrainEmerge_8: -3067319607168735489
+      AutaTrainEmerge_11: 7417908281147768344
+      AutaTrainEmerge_3: -476946110451995591
+      AutaTrainEmerge_6: 6209375274988753053
+      AutaTrainEmerge_12: 5745364055847016062
+      AutaTrainEmerge_0: 3534848999479285437
+      AutaTrainEmerge_7: 4820643376559999735
+      AutaTrainEmerge_1: 2401601499372643531
+      AutaTrainEmerge_14: 3131491940267109758
+      AutaTrainEmerge_16: -5282278730842118537
+      AutaTrainEmerge_10: -5268785094537437739
+      AutaTrainEmerge_15: -7368526774328609747
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

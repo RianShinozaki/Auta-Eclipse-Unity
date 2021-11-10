@@ -228,6 +228,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1030,6 +1031,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pyramind_Sheet1_10: 4571416941075089808
+      Pyramind_Sheet1_28: 6650741967506935867
+      Pyramind_Sheet1_24: -2124036835924566606
+      Pyramind_Sheet1_1: -7223418602903979402
+      Pyramind_Sheet1_8: 6133963207642965029
+      Pyramind_Sheet1_20: -437717477334961173
+      Pyramind_Sheet1_31: 1036750823104601384
+      Pyramind_Sheet1_12: 1457746237080320065
+      Pyramind_Sheet1_16: -1049489475540324556
+      Pyramind_Sheet1_9: -5888624762039083472
+      Pyramind_Sheet1_23: 3293944302759901019
+      Pyramind_Sheet1_27: -2778823301805608074
+      Pyramind_Sheet1_26: -5351215463312024324
+      Pyramind_Sheet1_4: 6707675874127035033
+      Pyramind_Sheet1_33: 6551049880715555305
+      Pyramind_Sheet1_2: -6692226679366030371
+      Pyramind_Sheet1_11: 8849033735080370140
+      Pyramind_Sheet1_15: 2198668395172995940
+      Pyramind_Sheet1_21: -7041945890262420230
+      Pyramind_Sheet1_7: 4737567333066723614
+      Pyramind_Sheet1_18: 1995643023085785562
+      Pyramind_Sheet1_29: 6796049130091713041
+      Pyramind_Sheet1_0: -6872888679529239709
+      Pyramind_Sheet1_17: 8842352320429288271
+      Pyramind_Sheet1_19: -8404524022136434015
+      Pyramind_Sheet1_3: 2943676171789534190
+      Pyramind_Sheet1_14: 3289374244044258760
+      Pyramind_Sheet1_32: -8582560879471537392
+      Pyramind_Sheet1_30: -2695982413016851884
+      Pyramind_Sheet1_6: -4124187966939499518
+      Pyramind_Sheet1_5: -8830726062705313088
+      Pyramind_Sheet1_13: 8907665827856506928
+      Pyramind_Sheet1_22: -6161308569340049344
+      Pyramind_Sheet1_25: 2883402502243207666
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

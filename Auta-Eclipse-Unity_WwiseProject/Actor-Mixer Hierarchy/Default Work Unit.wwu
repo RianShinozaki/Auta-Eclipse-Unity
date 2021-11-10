@@ -452,10 +452,42 @@
 										<ActiveSource Name="snd_WaterSplash" ID="{03D584C8-6D23-4FC7-A967-963137FC8D97}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Folder Name="Cutscene" ID="{2AD6D98C-C855-4123-9F4E-0811A9E83325}" ShortID="303630235">
+									<ChildrenList>
+										<Folder Name="DeepBunker" ID="{432B4A2F-8A24-41CD-A633-C2A4A77FC32B}" ShortID="330254616">
+											<ChildrenList>
+												<Sound Name="TrainArrive" ID="{765FC0CC-1A1F-40E1-ADE3-8AF4945D43D9}" ShortID="46253829">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{469F2E5F-881F-4426-BA7B-303DCCDCC506}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{03F2ED03-1B72-465B-8FDB-ABBE90A971F1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TrainArrive" ID="{ECC6E773-5BDF-4845-9286-F6AB794D9D11}">
+															<Language>SFX</Language>
+															<AudioFile>TrainArrive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="441340455"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="TrainArrive" ID="{ECC6E773-5BDF-4845-9286-F6AB794D9D11}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{B8FEAD00-9200-406B-AD22-B7956EC777CA}" ShortID="567665779"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

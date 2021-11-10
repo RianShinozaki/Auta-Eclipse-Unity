@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_LargeBurst_strip7_0: 9144893626287433442
+      spr_LargeBurst_strip7_3: 1094341223217544382
+      spr_LargeBurst_strip7_5: 4034408001116396607
+      spr_LargeBurst_strip7_2: 7074704670974172587
+      spr_LargeBurst_strip7_1: -8791829888087071829
+      spr_LargeBurst_strip7_4: -2767119790605015127
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

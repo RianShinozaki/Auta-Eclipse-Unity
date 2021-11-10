@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ElectricFence_1: -2567671638028032437
+      ElectricFence_2: 5045833312823832436
+      ElectricFence_4: 9074761592722440940
+      ElectricFence_0: 6238051302343858986
+      ElectricFence_5: 123739748021851362
+      ElectricFence_3: -1568882154921194623
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

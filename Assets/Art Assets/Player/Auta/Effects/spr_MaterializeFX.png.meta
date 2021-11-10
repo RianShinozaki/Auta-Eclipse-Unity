@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      spr_AutaMaterialize_strip6_4: -9096637603817504668
+      spr_AutaMaterialize_strip6_5: -5787117358799631451
+      spr_AutaMaterialize_strip6_3: 8159052324193511039
+      spr_AutaMaterialize_strip6_2: 7774918962669340700
+      spr_AutaMaterialize_strip6_1: 1356265734155153035
+      spr_AutaMaterialize_strip6_0: -2849866678121428546
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

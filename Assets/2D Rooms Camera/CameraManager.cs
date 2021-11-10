@@ -124,6 +124,11 @@ public class CameraManager : MonoBehaviour {
         Gizmos.DrawCube(new Vector3(transform.position.x, transform.position.y, 0f), DeadZoneSize * 2f);
     }
 
+    public void SetTarget(Transform target)
+    {
+        CameraTarget = target;
+    }
+
     public void SetRoom(CameraRoom room) {
         CurrentRoom = room;
     }

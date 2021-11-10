@@ -553,5 +553,14 @@ public class PlayerController : PhysicsEntity
         stateMachine.SetState(State_Normal);
     }
 
-    
+    public void HideSelf()
+    {
+        Anim.gameObject.SetActive(false);
+        stateMachine.SetRunState(false);
+    }
+    public void ShowSelf()
+    {
+        Anim.gameObject.SetActive(true);
+        stateMachine.SetRunState(true);
+    }
 }

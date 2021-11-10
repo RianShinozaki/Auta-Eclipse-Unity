@@ -24,6 +24,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1225,6 +1226,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AutaSwordSheet_49: 8349998274513688407
+      AutaSwordSheet_14: 7929799400572899002
+      AutaSwordSheet_23: 4744278263790100882
+      AutaSwordSheet_9: 7229406375593869279
+      AutaSwordSheet_32: -7535649276095858908
+      AutaSwordSheet_26: 5119338931513700709
+      AutaSwordSheet_13: 7423655903136933586
+      AutaSwordSheet_43: -7501055889281787348
+      AutaSwordSheet_42: -6389141859511169463
+      AutaSwordSheet_6: -2311874611458854640
+      AutaSwordSheet_37: 1329350465178479030
+      AutaSwordSheet_29: 5128305969893831122
+      AutaSwordSheet_45: 2971414890384367720
+      AutaSwordSheet_25: 2990452287014523115
+      AutaSwordSheet_1: -2756127150867747384
+      AutaSwordSheet_48: -7394780679474300531
+      AutaSwordSheet_11: -8591292989911311890
+      AutaSwordSheet_17: 1141444963021611406
+      AutaSwordSheet_28: 3930496673151203233
+      AutaSwordSheet_7: 2154309677878347070
+      AutaSwordSheet_36: -5344600551014352172
+      AutaSwordSheet_4: 7629337845597779966
+      AutaSwordSheet_21: 7267755676472975802
+      AutaSwordSheet_22: 1071315768207858530
+      AutaSwordSheet_2: -6328476954252288005
+      AutaSwordSheet_40: 8376368443540271511
+      AutaSwordSheet_51: 6971957324036910139
+      AutaSwordSheet_39: -5991374551610135197
+      AutaSwordSheet_31: 4505439954630011022
+      AutaSwordSheet_20: -5132292344937876533
+      AutaSwordSheet_24: 3381178625996000551
+      AutaSwordSheet_41: 959943203692975424
+      AutaSwordSheet_34: 1526380978297814613
+      AutaSwordSheet_3: -7192126273143752176
+      AutaSwordSheet_38: 4208747998173347990
+      AutaSwordSheet_50: 2512245850364150371
+      AutaSwordSheet_30: 1991346117979701644
+      AutaSwordSheet_18: -7476874301371355965
+      AutaSwordSheet_10: -7413903569782699080
+      AutaSwordSheet_8: -6823760206941569832
+      AutaSwordSheet_46: -7897632414633779685
+      AutaSwordSheet_12: 8985103561188960147
+      AutaSwordSheet_47: 7035651916734425913
+      AutaSwordSheet_15: -1193329878090988200
+      AutaSwordSheet_33: -3302265920201981784
+      AutaSwordSheet_16: -8077519154152308468
+      AutaSwordSheet_19: 874374120003447907
+      AutaSwordSheet_27: 8284605985481172669
+      AutaSwordSheet_44: -3120734035244097369
+      AutaSwordSheet_52: 6987908631724052059
+      AutaSwordSheet_35: -856708942875774373
+      AutaSwordSheet_5: -3649182362080594787
+      AutaSwordSheet_0: -7371201178043328132
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

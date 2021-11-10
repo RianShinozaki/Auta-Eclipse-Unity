@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class LightBurst : MonoBehaviour
 {
     // Start is called before the first frame update
-    Light2D thisLight;
+    UnityEngine.Rendering.Universal.Light2D thisLight;
     public int Preset;
 
     ObjectPoolObject opo;
 
     public void Awake()
     {
-        thisLight = GetComponent<Light2D>();
+        thisLight = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         opo = GetComponent<ObjectPoolObject>();
     }
     public void OnEnable()

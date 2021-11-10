@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class GradientLightFlicker : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class GradientLightFlicker : MonoBehaviour
     public float FlickerFalloffMult;
 
     public SpriteRenderer Sprite;
-    public Light2D ThisLight;
+    public UnityEngine.Rendering.Universal.Light2D ThisLight;
 
     Color ogColor;
     float ogIntensity;

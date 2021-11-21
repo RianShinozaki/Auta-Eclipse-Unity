@@ -32,12 +32,15 @@ public class HitBox : MonoBehaviour
     public float inflictYKnockback;
     public float TechnicalAdd;
 
+    public float inflictInvincTime = 1;
+
     public int collisions = -1; //-1 means it will never deactivate
     public int StoppedState = 0;
     public float ActiveTime = -1;
     public PhysicsEntity Entity;
 
     public bool InflictRecoil = true;
+    public bool AddToIgnores = true;
 
     public EffectType type;
     public InflictType Affinity;

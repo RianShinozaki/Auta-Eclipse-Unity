@@ -20,8 +20,10 @@ public class Lumpy : BaseEnemy {
         stateMachine.SetRunState(true);
         WaitTimeRand = Random.Range(WaitTimeRandRange.x, WaitTimeRandRange.y);
         initX = transform.position.x;
-        Anim = GetComponent<Animator>();
+        Anim = GetComponentInChildren<Animator>();
     }
+
+    
 
     // Update is called once per frame
     public override void Update() {

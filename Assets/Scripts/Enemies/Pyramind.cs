@@ -20,7 +20,7 @@ public class Pyramind : BaseEnemy
     public const int BULLET_SLICE = 3;
 
 
-    [FoldoutGroup("Manual Setup")] public HitBox hb;
+    [FoldoutGroup("Manual Setup")] public HitBox[] hb;
 
     public void Start()
     {
@@ -267,7 +267,7 @@ public class Pyramind : BaseEnemy
         if (Grounded)
             Velocity.x = Mathf.MoveTowards(Velocity.x, MoveSpeed * transform.localScale.x, Accel * Time.deltaTime * TimeScale);
 
-        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.y), new Vector2(Player.transform.position.x, Player.transform.position.y)) <= AttackDist && CanSeePlayer)
+        if (Mathf.Abs(transform.position.x - Player.transform.position.x) <= AttackDist && CanSeePlayer)
         {
             if (AttackQueued == BASIC_ATTACK)
             {
@@ -312,18 +312,22 @@ public class Pyramind : BaseEnemy
 
     }
 
-    public void Strike()
+    public void Strike(int ind)
     {
         if (Grounded)
-            Velocity.x = MoveSpeed * transform.localScale.x*0.2f;
+        {
+            transform.localScale = new Vector3(Player.transform.position.x > transform.position.x ? 1 : -1, 1, 1);
+            Velocity.x = MoveSpeed * transform.localScale.x;
+        }
+            
         stateMachine.SetState(State_Attack);
 
-        hb.ActiveTime = 5;
+        hb[ind].ActiveTime = 5;
     }
 
     public void BulletStrike()
     {
-        hb.ActiveTime = 5;
+        hb[2].ActiveTime = 5;
         for (int i = 0; i < 3; i++)
         {
             GameObject bullet = ObjectPool.Instance.SpawnObject("EnemyBullet", transform.position + new Vector3(0, -0.25f, 0), Quaternion.identity);
@@ -369,7 +373,7 @@ public class Pyramind : BaseEnemy
     void State_Shotgun2(PhysicsEntity ent)
     {
         Velocity.x = MoveSpeed * 3 * transform.localScale.x;
-        hb.ActiveTime = 5;
+        hb[0].ActiveTime = 5;
     }
 
     public void Shotgun_Finished()
@@ -391,9 +395,9 @@ public class Pyramind : BaseEnemy
 
     }
 
-    public override void HurtResponse()
+    public override void HurtResponse(float damage = 0, float knockbackx = 0, float knockbacky = 0)
     {
-        base.HurtResponse();
+        base.HurtResponse(damage, knockbackx, knockbacky);
 
         CreateAfterImg = false;
 

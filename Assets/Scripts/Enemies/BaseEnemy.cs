@@ -30,15 +30,23 @@ public class BaseEnemy : PhysicsEntity
     [FoldoutGroup("Base Enemy Stats")] public bool CanStun;
     [FoldoutGroup("Base Enemy Stats")] public Vector2Int MoneyDrop;
     [FoldoutGroup("Base Enemy Stats")] public bool ShowStats;
+    [FoldoutGroup("Base Enemy Stats")] public bool LightEnemy;
+    [FoldoutGroup("Base Enemy Stats")] public bool Tumble;
+    [FoldoutGroup("Base Enemy Stats")] public float TumbleSpeed;
 
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_WallSlam;
 
+    public ParticleSystem bloodPsys;
+
+    GameObject affinityHUD;
 
     public override void Awake()
     {
         base.Awake();
         stateMachine = GetComponent<StateMachine>();
         Player = GameObject.Find("Auta");
+        affinityHUD = Resources.Load<GameObject>("pre_AffinityHUD");
+        Instantiate(affinityHUD, transform);
         
     }
 
@@ -131,6 +139,37 @@ public class BaseEnemy : PhysicsEntity
 
         }
 
+        if (LightEnemy)
+        {
+            if (Tumble && stateMachine.CurrentState != State_Cannonball)
+            {
+                Bounce = true;
+                Anim.transform.eulerAngles -= new Vector3(0, 0, TumbleSpeed) * Time.deltaTime;
+                HurtState = 15;
+            }
+            else
+            {
+                Anim.transform.eulerAngles = new Vector3(0, 0, Mathf.MoveTowardsAngle(Anim.transform.eulerAngles.z, 0, 360 * Time.deltaTime)); 
+            }
+        }
+
+    }
+
+    public override void OnBounce()
+    {
+        base.OnBounce();
+
+        if(Tumble)
+        {
+            Velocity.x = Velocity.x / 2;
+            Velocity.y = Velocity.y / 2;
+            if(Mathf.Abs(Velocity.x) < 2 && Mathf.Abs(Velocity.y) < 4)
+            {
+                Tumble = false;
+                TumbleSpeed = 0;
+                Bounce = false;
+            }
+        }
     }
 
     public void State_Cannonball(PhysicsEntity ent)
@@ -183,14 +222,22 @@ public class BaseEnemy : PhysicsEntity
     {
         AttackTitle.SetActive(false);
     }
-    public override void HurtResponse()
+    public override void HurtResponse(float damage = 0, float knockbackx = 0, float knockbacky = 0)
     {
-        base.HurtResponse();
+        base.HurtResponse(damage, knockbackx, knockbacky);
 
         if(!Staggered)
         {
             Anim.SetTrigger("Guard");
         }
+
+        if(LightEnemy && Grounded == false || Mathf.Abs(knockbackx) > 3)
+        {
+            Tumble = true;
+            TumbleSpeed = Mathf.Clamp(Velocity.x + Velocity.y * Mathf.Sign(Velocity.x), -3, 3) * 60;
+        }
+
+        bloodPsys.Emit(Mathf.CeilToInt(damage));
     }
 }
 

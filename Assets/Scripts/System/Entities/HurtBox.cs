@@ -46,7 +46,7 @@ public class HurtBox : MonoBehaviour
     }
 
     // Update is called once per frame
-    public virtual void OnTriggerEnter2D(Collider2D other)
+    public virtual void OnTriggerStay2D(Collider2D other)
     {
         if (other.GetComponent<HitBox>())
         {
@@ -181,11 +181,13 @@ public class HurtBox : MonoBehaviour
             hitfx.type = hitbox.type;
 
             hitbox.AttackConnected(gameObject);
-            entity.HurtResponse();
+            entity.HurtResponse(((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2), Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * other.transform.parent.localScale.x / (entity.Staggered ? 1 : 4), Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12));
 
-            Physics2D.IgnoreCollision(coll, other, true);
-            ignores.Add(other);
-
+            if (hitbox.AddToIgnores)
+            {
+                Physics2D.IgnoreCollision(coll, other, true);
+                ignores.Add(other);
+            }
             if(entity.MaxStagger == 0)
             {
                 entity.Staggered = false;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
@@ -20,6 +21,8 @@ public class CameraManager : MonoBehaviour {
     Camera cam;
     float lastCameraSize;
 
+    public Volume AnalysisVol;
+
     private void Awake() {
         if(!Instance) {
             Instance = this;
@@ -27,6 +30,44 @@ public class CameraManager : MonoBehaviour {
 
         cam = GetComponent<Camera>();
         SetCameraSizes();
+    }
+
+    public void Start()
+    {
+        GameManager.SetAnalysisState += OnAnalysisState;
+    }
+
+    public void OnDestroy()
+    {
+        GameManager.SetAnalysisState -= OnAnalysisState;
+    }
+
+    public void OnAnalysisState(bool mode)
+    {
+        StartCoroutine(AnalysisTransition(mode));
+    }
+
+    public IEnumerator AnalysisTransition(bool mode)
+    {
+        if (mode == false)
+        {
+            while (AnalysisVol.weight > 0.01f && mode == true)
+            {
+                AnalysisVol.weight += (0 - AnalysisVol.weight) * 0.2f;
+                yield return null;
+            }
+            AnalysisVol.weight = 0;
+
+        }
+        else
+        {
+            while (AnalysisVol.weight < 0.99f && mode == false)
+            {
+                AnalysisVol.weight += (1 - AnalysisVol.weight) * 0.2f;
+                yield return null;
+            }
+            AnalysisVol.weight = 1;
+        }
     }
 
     private void Update() {

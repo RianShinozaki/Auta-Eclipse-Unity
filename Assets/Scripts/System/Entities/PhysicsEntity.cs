@@ -50,11 +50,13 @@ public class PhysicsEntity : MonoBehaviour
     [FoldoutGroup("Combat")] public float BaseSturdiness;
     [FoldoutGroup("Combat")] public float KnockbackHurtstateThreshold;
     [FoldoutGroup("Combat")] public float BaseTechnical;
-
     [FoldoutGroup("Combat")] public float MaxStagger;
     [FoldoutGroup("Combat")] public float Stagger;
     [FoldoutGroup("Combat")] public bool Staggered;
     [FoldoutGroup("Combat")] public float StaggerRecoverySpd;
+
+    [FoldoutGroup("Identity")] public string Name = "";
+    [FoldoutGroup("Identity")] public float Level = 1;
 
     [FoldoutGroup("Collisions")] public List<ContactPoint2D> GroundPoints = new List<ContactPoint2D>();
     [FoldoutGroup("Collisions")] public List<ContactPoint2D> WallPoints = new List<ContactPoint2D>();
@@ -71,6 +73,9 @@ public class PhysicsEntity : MonoBehaviour
         {
             Velocity = Vector2.Reflect(Velocity, collision.contacts[0].normal) * BounceMult;
             rb.velocity = new Vector3(Velocity.x, Velocity.y, 0);
+
+            Debug.Log("Bounce");
+            OnBounce();
         }
     }
     public virtual void OnCollisionStay2D(Collision2D collision)
@@ -118,10 +123,8 @@ public class PhysicsEntity : MonoBehaviour
         //StartCoroutine(CreateAfterImgEnum());
     }
 
-    public virtual void OnLand()
-    {
-
-    }
+    public virtual void OnLand() { }
+    public virtual void OnBounce() { }
 
 
     // Update is called once per frame
@@ -212,6 +215,11 @@ public class PhysicsEntity : MonoBehaviour
                     Debug.Log("Normal " + i.ToString() + ": " + hit.normal.ToString());
                     groundPointsNum++;
 
+                    if (hit.rigidbody != null)
+                    {
+                        transform.position += new Vector3(hit.rigidbody.velocity.x, hit.rigidbody.velocity.y, 0) * Time.deltaTime * 0.5f;
+                        transform.position += new Vector3(-hit.rigidbody.angularVelocity * Vector2.Distance(hit.point, hit.collider.transform.position) * Mathf.Cos(Mathf.Deg2Rad * Vector2.SignedAngle(hit.point, hit.collider.transform.position)) * Time.deltaTime, hit.rigidbody.angularVelocity * Vector2.Distance(hit.point, hit.collider.transform.position) * Mathf.Cos(Mathf.Deg2Rad * Vector2.SignedAngle(hit.point, hit.collider.transform.position)) * Time.deltaTime, 0) * Time.deltaTime * 0.5f;
+                    }
                     Debug.DrawRay(hit.point, hit.normal);
                 }
                 
@@ -349,7 +357,7 @@ public class PhysicsEntity : MonoBehaviour
 
     public virtual void HitResponse(GameObject attacker, GameObject Defender) { }
 
-    public virtual void HurtResponse() { }
+    public virtual void HurtResponse(float damage = 0, float knockbackx = 0, float knockbacky = 0) { }
 
     public virtual void StartCreatingAfterImgs()
     {

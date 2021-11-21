@@ -9,7 +9,7 @@ using AK.Wwise;
 public class PlayerController : PhysicsEntity
 {
 
-    PlayerAnimationController animationController;
+    [HideInInspector] public PlayerAnimationController animationController;
 
     [FoldoutGroup("Setup")] public BaseEnemy Grabbed;
     [FoldoutGroup("Setup")] public GameObject GrabTransform;
@@ -51,6 +51,7 @@ public class PlayerController : PhysicsEntity
     public const int ATTACK = 4;
     public const int ORB = 5;
     public const int SPECIAL = 6;
+    public const int ANALYSISMODE = 7;
     public int PlayerID;
     [FoldoutGroup("Manual Setup")] public Player player;
     [FoldoutGroup("Manual Setup")] public StateMachine stateMachine;
@@ -62,6 +63,10 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Combat")] public GameObject[] HitBoxSets;
     [FoldoutGroup("Combat")] public GameObject currentHitBox = null;
 
+    [FoldoutGroup("Equipment")] public int currentPowerChip;
+    
+    GameObject PowerChipCodeRunner;
+
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_OrbThrow;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Materialize;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Grab;
@@ -69,6 +74,11 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_SlashAttack;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Jump;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Land;
+
+    public delegate void OnPowerChipUse(PlayerController player);
+
+    public event OnPowerChipUse PowerChipUse;
+    public PCContainer powerChipMaster;
 
     Vector2[] CollisionSizes = new[] {
         new Vector2(0.63f,1.42f), //Normal Size
@@ -95,6 +105,7 @@ public class PlayerController : PhysicsEntity
         stateMachine.SetState(State_Normal);
         stateMachine.SetRunState(true);
         ComboNumber = 1;
+        SetPowerChipCodeRunner();
     }
 
     
@@ -132,6 +143,11 @@ public class PlayerController : PhysicsEntity
 
         if (MP < MaxMP)
             MP = Mathf.MoveTowards(MP, MaxMP, Time.deltaTime * 0.5f);
+
+        if (player.GetButtonDown(ANALYSISMODE) && GameManager.CanSwapAnalysis && GameManager.AnalysisActive)
+        {
+            GameManager.Instance.OnAnalysisState(false);
+        }
     }
 
     //STATES
@@ -218,6 +234,11 @@ public class PlayerController : PhysicsEntity
             ComboNumber = 1;
         }
         ComboNumber = Mathf.Clamp(ComboNumber, 1, 3);
+
+        if (player.GetButtonDown(ANALYSISMODE) && GameManager.CanSwapAnalysis)
+        {
+            GameManager.Instance.OnAnalysisState(!GameManager.AnalysisActive);
+        }
 
     }
 
@@ -497,19 +518,13 @@ public class PlayerController : PhysicsEntity
 
         if(player.GetButtonDown(SPECIAL))
         {
-            if (MP > 2)
+            if (MP > powerChipMaster.Data[currentPowerChip].MPCost)
             {
-                stateMachine.SetState(State_Attack);
-                animationController.GunAttack();
-                MP -= 2;
-                if(Grounded == false && CanAttackBoost)
-                {
-                    CanAttackBoost = false;
-                    Velocity.y = 2;
-                }
+                PowerChipUse?.Invoke(this);
             }
         }
     }
+
     public override void HitResponse(GameObject attacker, GameObject Defender)
     {
         base.HitResponse(attacker, Defender);
@@ -551,6 +566,16 @@ public class PlayerController : PhysicsEntity
     public void AttackEnd()
     {
         stateMachine.SetState(State_Normal);
+    }
+
+    public void SetPowerChipCodeRunner()
+    {
+        if(PowerChipCodeRunner != null)
+        {
+            Destroy(PowerChipCodeRunner);
+        }
+        PowerChipCodeRunner = Instantiate(powerChipMaster.Data[currentPowerChip].CodeRunner, transform);
+        PowerChipCodeRunner.GetComponent<PowerChipMaster>().Player = this;
     }
 
     public void HideSelf()

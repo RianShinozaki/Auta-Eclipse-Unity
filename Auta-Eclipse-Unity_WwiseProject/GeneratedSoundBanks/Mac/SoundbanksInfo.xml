@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="2024917625">
+		<SoundBank Id="393239870" Language="SFX" Hash="1455563187">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -48,11 +48,51 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3002670220" Name="OrbBounce" ObjectPath="\Events\Default Work Unit\Auta\OrbBounce" DurationType="OneShot" DurationMin="2.253011" DurationMax="2.253011">
+					<IncludedMemoryFiles>
+						<File Id="918068624" Language="SFX">
+							<ShortName>OrbBounce.wav</ShortName>
+							<Path>SFX\OrbBounce_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4035672268" Name="OrbThrow" ObjectPath="\Events\Default Work Unit\Auta\OrbThrow" DurationType="OneShot" DurationMin="0.156644" DurationMax="0.156644">
 					<IncludedMemoryFiles>
 						<File Id="637008990" Language="SFX">
 							<ShortName>snd_OrbThrow.wav</ShortName>
 							<Path>SFX\snd_OrbThrow_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2688248395" Name="Play_DeepBunker" ObjectPath="\Events\Default Work Unit\Music\Play_DeepBunker" DurationType="OneShot" DurationMin="105.089294" DurationMax="105.089294">
+					<IncludedMemoryFiles>
+						<File Id="992641531" Language="SFX">
+							<ShortName>auta_ambient_2 (1).wav</ShortName>
+							<Path>SFX\auta_ambient_2 (1)_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1359302546" Name="PowerBurst" ObjectPath="\Events\Default Work Unit\Enemy\PowerBurst" DurationType="OneShot" DurationMin="2.501417" DurationMax="2.501417">
+					<IncludedMemoryFiles>
+						<File Id="70770440" Language="SFX">
+							<ShortName>Big Blast 4.wav</ShortName>
+							<Path>SFX\Big Blast 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3038207054" Name="Shoot" ObjectPath="\Events\Default Work Unit\Combat\Shoot" DurationType="OneShot" DurationMin="0.300726" DurationMax="0.300726">
+					<IncludedMemoryFiles>
+						<File Id="322412272" Language="SFX">
+							<ShortName>Shot.wav</ShortName>
+							<Path>SFX\Shot_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3128853520" Name="SkidStop" ObjectPath="\Events\Default Work Unit\Enemy\SkidStop" DurationType="OneShot" DurationMin="0.646871" DurationMax="0.646871">
+					<IncludedMemoryFiles>
+						<File Id="1028392250" Language="SFX">
+							<ShortName>SkidStop.wav</ShortName>
+							<Path>SFX\SkidStop_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -64,11 +104,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1652188405" Name="Slash_Impact" ObjectPath="\Events\Default Work Unit\Combat\Slash_Impact" DurationType="OneShot" DurationMin="1.710930" DurationMax="1.710930">
+				<Event Id="1652188405" Name="Slash_Impact" ObjectPath="\Events\Default Work Unit\Combat\Slash_Impact" DurationType="OneShot" DurationMin="0.384059" DurationMax="0.384059">
 					<IncludedMemoryFiles>
-						<File Id="784450246" Language="SFX">
-							<ShortName>Slice-Impact.wav</ShortName>
-							<Path>SFX\Slice-Impact_10C4C929.wem</Path>
+						<File Id="514484368" Language="SFX">
+							<ShortName>SlashImpact1.wav</ShortName>
+							<Path>SFX\SlashImpact1_10C4C929.wem</Path>
+						</File>
+						<File Id="592257446" Language="SFX">
+							<ShortName>SlashImpact2.wav</ShortName>
+							<Path>SFX\SlashImpact2_10C4C929.wem</Path>
+						</File>
+						<File Id="992787853" Language="SFX">
+							<ShortName>SlashImpact3.wav</ShortName>
+							<Path>SFX\SlashImpact3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -85,6 +133,31 @@
 						<File Id="814570620" Language="SFX">
 							<ShortName>Coin2.wav</ShortName>
 							<Path>SFX\Coin2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="621108255" Name="Step" ObjectPath="\Events\Default Work Unit\Auta\Step" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="204068977" Language="SFX">
+							<ShortName>Step2.wav</ShortName>
+							<Path>SFX\Step2_10C4C929.wem</Path>
+						</File>
+						<File Id="1070597896" Language="SFX">
+							<ShortName>Step1.wav</ShortName>
+							<Path>SFX\Step1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1513255049" Name="Stop_DeepBunker" ObjectPath="\Events\Default Work Unit\Music\Stop_DeepBunker" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1328934038" Name="SwordSwing" ObjectPath="\Events\Default Work Unit\Enemy\SwordSwing" DurationType="OneShot" DurationMin="0.300794" DurationMax="0.300794">
+					<IncludedMemoryFiles>
+						<File Id="829765841" Language="SFX">
+							<ShortName>Sword1.wav</ShortName>
+							<Path>SFX\Sword1_10C4C929.wem</Path>
+						</File>
+						<File Id="866961945" Language="SFX">
+							<ShortName>Sword2.wav</ShortName>
+							<Path>SFX\Sword2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -117,6 +190,14 @@
 						<File Id="504561771" Language="SFX">
 							<ShortName>snd_WaterSplash.wav</ShortName>
 							<Path>SFX\snd_WaterSplash_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3099361103" Name="Woosh" ObjectPath="\Events\Default Work Unit\Enemy\Woosh" DurationType="OneShot" DurationMin="0.300794" DurationMax="0.300794">
+					<IncludedMemoryFiles>
+						<File Id="599692842" Language="SFX">
+							<ShortName>QuickJump.wav</ShortName>
+							<Path>SFX\QuickJump_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

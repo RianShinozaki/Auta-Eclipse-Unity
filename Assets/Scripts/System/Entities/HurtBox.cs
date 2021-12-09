@@ -98,7 +98,7 @@ public class HurtBox : MonoBehaviour
             float AffinityDamageMult = 1;
             float AffinityTechnicalMult = 1;
 
-            if(affinity == AffinityData.Affinity.Weak)
+            if (affinity == AffinityData.Affinity.Weak)
             {
                 AffinityDamageMult = 1.5f;
                 AffinityTechnicalMult = 2;
@@ -117,7 +117,7 @@ public class HurtBox : MonoBehaviour
             float CriticalMult = 1;
 
             float netAttackerTechnical = hitbox.TechnicalAdd;
-            if(hitbox.Entity != null)
+            if (hitbox.Entity != null)
             {
                 netAttackerTechnical += hitbox.Entity.BaseTechnical;
             }
@@ -126,7 +126,7 @@ public class HurtBox : MonoBehaviour
 
             netAttackerTechnical -= entity.BaseTechnical;
 
-            if(netAttackerTechnical > 0)
+            if (netAttackerTechnical > 0)
             {
                 int attktechint = Mathf.Clamp(Mathf.CeilToInt(netAttackerTechnical), 1, 15);
 
@@ -141,31 +141,39 @@ public class HurtBox : MonoBehaviour
             if (!entity.Staggered)
             {
                 entity.Stagger -= ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense);
-                if(entity.Stagger <= 0)
+                if (entity.Stagger <= 0)
                 {
                     entity.Staggered = true;
                     entity.StaggerRecoverySpd = 1;
                 }
             }
 
-            entity.HP -= ( (hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2);
+            entity.HP -= ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 1.5f);
             entity.HitStun = hitbox.inflictHitStun + (affinity == AffinityData.Affinity.Weak ? 2 : 0);
 
-            if(DamageDrawerInstance == null || DamageDrawerInstance.activeInHierarchy == false )
+            if (DamageDrawerInstance == null || DamageDrawerInstance.activeInHierarchy == false)
             {
-                DamageDrawerInstance = ObjectPool.Instance.SpawnObject("DamageDrawer", transform.position, Quaternion.identity); 
+                DamageDrawerInstance = ObjectPool.Instance.SpawnObject("DamageDrawer", transform.position, Quaternion.identity);
             }
 
-            DamageDrawerInstance.GetComponent<DamageDrawer>().Hit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2), CriticalMult != 1, affinity == AffinityData.Affinity.Weak);
+            DamageDrawerInstance.GetComponent<DamageDrawer>().Hit(transform.position, ((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 1.5f), CriticalMult != 1, affinity == AffinityData.Affinity.Weak);
 
-            float TotalKnockback = new Vector2(hitbox.inflictXKnockback, hitbox.inflictYKnockback).magnitude / (entity.Staggered ? 1 : 2);
+            float TotalKnockback = new Vector2(hitbox.inflictXKnockback, hitbox.inflictYKnockback).magnitude / (entity.Staggered ? 1 : 1.5f);
 
             if (TotalKnockback - entity.BaseSturdiness > entity.KnockbackHurtstateThreshold || entity.Staggered)
             {
                 entity.HurtState = hitbox.inflictHurtState + (affinity == AffinityData.Affinity.Weak ? 30 : 0);
             }
 
-            entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * other.transform.parent.localScale.x / (entity.Staggered ? 1 : 4);
+            if (hitbox.transform.parent == null)
+            {
+                float mult = hitbox.transform.position.x > transform.position.x ? -1 : 1;
+                entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * mult / (entity.Staggered ? 1 : 4);
+            }
+            else
+            {
+                entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * Mathf.Sign(hitbox.transform.parent.localScale.x) / (entity.Staggered ? 1 : 4);
+            }
 
             if (hitbox.inflictYKnockback > 0 && entity.Staggered)
             {
@@ -180,14 +188,16 @@ public class HurtBox : MonoBehaviour
             HitFXController hitfx = Instantiate(HitFX, transform.position, Quaternion.identity).GetComponent<HitFXController>();
             hitfx.type = hitbox.type;
 
-            hitbox.AttackConnected(gameObject);
-            entity.HurtResponse(((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 2), Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * other.transform.parent.localScale.x / (entity.Staggered ? 1 : 4), Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12));
-
             if (hitbox.AddToIgnores)
             {
                 Physics2D.IgnoreCollision(coll, other, true);
                 ignores.Add(other);
             }
+
+            hitbox.AttackConnected(gameObject);
+            entity.HurtResponse(((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 1.5f), Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) / (entity.Staggered ? 1 : 4), Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12));
+
+            
             if(entity.MaxStagger == 0)
             {
                 entity.Staggered = false;

@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: PCContainer
   m_EditorClassIdentifier: 
   Data:
-  - Name: Pierce Gun
+  - Name: Multi-Shot
     Description: 
-    MPCost: 4
+    MPCost: 8
     CodeRunner: {fileID: 7360646566959593349, guid: d9403c702b00dbe478ac205a34ce3552, type: 3}
+  - Name: Solar Burst
+    Description: 
+    MPCost: 12
+    CodeRunner: {fileID: 7360646566959593349, guid: f96d78907ed3af54ea332ec5bb3285de, type: 3}
+  - Name: Nano-Sword
+    Description: 
+    MPCost: 15
+    CodeRunner: {fileID: 7360646566959593349, guid: 36d6cee5490e2f44294ee87b7c61fbd0, type: 3}

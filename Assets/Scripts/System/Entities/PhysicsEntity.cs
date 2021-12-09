@@ -212,7 +212,7 @@ public class PhysicsEntity : MonoBehaviour
                         avgPos = hit.point.y;
                     }
                     avgAngle += hit.normal;
-                    Debug.Log("Normal " + i.ToString() + ": " + hit.normal.ToString());
+                    //Debug.Log("Normal " + i.ToString() + ": " + hit.normal.ToString());
                     groundPointsNum++;
 
                     if (hit.rigidbody != null)
@@ -239,11 +239,11 @@ public class PhysicsEntity : MonoBehaviour
                     Grounded = true;
                     UngroundedTimer = 0;
 
-                    Debug.Log("AvgAngle before: " + avgAngle.ToString());
+                    //Debug.Log("AvgAngle before: " + avgAngle.ToString());
 
                     avgAngle /= groundPointsNum;
 
-                    Debug.Log("AvgAngle after: " + avgAngle.ToString());
+                    //Debug.Log("AvgAngle after: " + avgAngle.ToString());
                     Velocity.y = 0;
                     //Velocity.y = avgAngle.x * Velocity.x;
                     //Velocity.x = avgAngle.y * Velocity.x;
@@ -309,6 +309,9 @@ public class PhysicsEntity : MonoBehaviour
             {
                 HurtState = 30;
             }
+        } else
+        {
+            Stagger = Mathf.MoveTowards(Stagger, MaxStagger, 0.025f * Time.deltaTime * MaxStagger * (Grounded ? 1 : 0.6f));
         }
 
         if(!Grounded)
@@ -366,6 +369,7 @@ public class PhysicsEntity : MonoBehaviour
     public IEnumerator CreateAfterImgEnum()
     {
         CreateAfterImg = true;
+        AfterIMGTimer = 0;
         while (CreateAfterImg)
         {
             AfterIMGTimer += Time.deltaTime;

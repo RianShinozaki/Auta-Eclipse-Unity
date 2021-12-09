@@ -38,9 +38,13 @@ public class MoneyPickup : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerController player = collision.transform.parent.GetComponent<PlayerController>();
+        if(other == null)
+        {
+            return;
+        }
+        PlayerController player = other.transform.parent.GetComponent<PlayerController>();
         if (player != null)
         { 
             //GameObject soundHelper = new GameObject("Sound Helper");

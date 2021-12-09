@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlayerAnimationController : MonoBehaviour
 {
     // Start is called before the first frame update
-    PlayerController parent;
-    Animator anim;
+    public PlayerController parent;
+    public  Animator anim;
 
     GameObject bullet;
+
+    public delegate void OnPowerChipUseAnim(PlayerAnimationController player);
+    public event OnPowerChipUseAnim PowerChipUseAnim;
 
     void Start()
     {
@@ -63,13 +66,19 @@ public class PlayerAnimationController : MonoBehaviour
     {
         anim.SetTrigger("Gun Attack");
     }
+    public void MultiGunAttack()
+    {
+        anim.SetTrigger("Multi Gun Attack");
+    }
 
     public void GunFire()
     {
-        parent.Velocity.x = -3 * transform.localScale.x;
-        GameObject bullet = ObjectPool.Instance.SpawnObject("AutaBullet", transform.position + new Vector3(transform.localScale.x * 0.4f, 0, 0), Quaternion.identity);
-        bullet.transform.localScale = transform.localScale;
-        bullet.gameObject.GetComponentInChildren<HitBox>().Entity = parent;
+        PowerChipUseAnim?.Invoke(this);
+    }
+
+    public void GunSummon()
+    {
+        anim.SetTrigger("Gun Summon");
     }
 
     public void GrabState(bool active)
@@ -100,6 +109,19 @@ public class PlayerAnimationController : MonoBehaviour
     public void Stop()
     {
         anim.SetTrigger("Stop");
+    }
+
+    public void Step()
+    {
+        parent.Step();
+    }
+    public void Swoosh()
+    {
+        parent.Swoosh();
+    }
+    public void Shot()
+    {
+        parent.Shot();
     }
 
     public void SetSpeed(float Spd)

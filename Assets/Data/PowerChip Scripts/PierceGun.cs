@@ -8,7 +8,16 @@ public class PierceGun : PowerChipMaster
     public override void OnCallPowerChip(PlayerController player)
     {
         Player.stateMachine.SetState(Player.State_Attack);
-        Player.animationController.GunAttack();
-        Player.MP -= 4;
+        Player.animationController.MultiGunAttack();
+    }
+
+    public override void OnCallPowerChipAnim(PlayerAnimationController playerAnim)
+    {
+        playerAnim.parent.Velocity.x = -3 * playerAnim.transform.localScale.x;
+        GameObject bullet = ObjectPool.Instance.SpawnObject("AutaBullet", playerAnim.transform.position + new Vector3(playerAnim.transform.localScale.x * 0.4f, 0, 0), Quaternion.identity);
+        bullet.transform.localScale = playerAnim.transform.localScale;
+        bullet.gameObject.GetComponentInChildren<HitBox>().Entity = playerAnim.parent;
+        playerAnim.Shot();
+
     }
 }

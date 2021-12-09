@@ -54,11 +54,7 @@ public class BaseEnemy : PhysicsEntity
     {
         base.OnCollisionEnter2D(collision);
 
-        if (stateMachine.CurrentState == State_Cannonball)
-        {
-            CamVariables.Screenshake = 0.2f;
-            Sound_WallSlam.Post(gameObject);
-        }
+        
     }
 
     public virtual void DeathProcedure()
@@ -78,12 +74,16 @@ public class BaseEnemy : PhysicsEntity
 
     public override void Update()
     {
+        Debug.Log(stateMachine.CurrentState);
         base.Update();
 
         if(ShowStats)
         {
-            StaggerMeter.transform.localScale = new Vector3(Mathf.Clamp(Stagger / MaxStagger, 0, 1), 1, 1);
-            HPMeter.transform.localScale = new Vector3(Mathf.Clamp(HP / MaxHP, 0, 1), 1, 1);
+            StaggerMeter.transform.localScale = new Vector3(Mathf.Clamp(Stagger / MaxStagger, 0, 1) * Mathf.Sign(transform.localScale.x), 1, 1);
+            HPMeter.transform.localScale = new Vector3(Mathf.Clamp(HP / MaxHP, 0, 1) * Mathf.Sign(transform.localScale.x), 1, 1);
+
+            StaggerMeter.transform.localPosition = new Vector3(0.5f * Mathf.Sign(transform.localScale.x), 0, -0.92f);
+            HPMeter.transform.localPosition = new Vector3(0.5f * Mathf.Sign(transform.localScale.x), 0, -0.92f);
         }
 
         if (Player == null)
@@ -139,9 +139,9 @@ public class BaseEnemy : PhysicsEntity
 
         }
 
-        if (LightEnemy)
+        if (LightEnemy && stateMachine.CurrentState != State_Cannonball)
         {
-            if (Tumble && stateMachine.CurrentState != State_Cannonball)
+            if (Tumble )
             {
                 Bounce = true;
                 Anim.transform.eulerAngles -= new Vector3(0, 0, TumbleSpeed) * Time.deltaTime;
@@ -170,10 +170,18 @@ public class BaseEnemy : PhysicsEntity
                 Bounce = false;
             }
         }
+
+        if (stateMachine.CurrentState == State_Cannonball && Velocity.magnitude > 4)
+        {
+            CamVariables.Screenshake = 0.2f;
+            Sound_WallSlam.Post(gameObject);
+        }
     }
 
     public void State_Cannonball(PhysicsEntity ent)
     {
+        Debug.Log("cannonball");
+
         CannonballHitBox.GetComponent<HitBox>().ActiveTime = 5;
 
         Bounce = true;
@@ -213,15 +221,28 @@ public class BaseEnemy : PhysicsEntity
         }
     }
 
-    public void Summon_AttackTitle(string name)
+    public void Summon_AttackTitle(string name, float time = 1.5f)
     {
         AttackTitle.SetActive(true);
         AttackTitle.GetComponent<AttackTitle>().text = name;
+        StartCoroutine(AttackTitleTimer(time));
+    }
+
+    public IEnumerator AttackTitleTimer(float time)
+    {
+        float t = 0;
+        while (t < time)
+        {
+            t += Time.deltaTime;
+            yield return null;
+        }
+        Disable_AttackTitle();
     }
     public void Disable_AttackTitle()
     {
         AttackTitle.SetActive(false);
     }
+
     public override void HurtResponse(float damage = 0, float knockbackx = 0, float knockbacky = 0)
     {
         base.HurtResponse(damage, knockbackx, knockbacky);

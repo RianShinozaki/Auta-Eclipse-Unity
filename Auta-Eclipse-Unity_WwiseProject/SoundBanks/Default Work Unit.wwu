@@ -8,15 +8,24 @@
 						<ObjectRef Name="Throw" ID="{09152D16-CD7F-4027-A757-945429CC7D52}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WallSlam" ID="{290DCE61-081F-4124-AF45-7B6A5584B0BB}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WaterSplash" ID="{4023F77A-EB88-4124-93AE-5E081021407E}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Step" ID="{456005AD-1420-4179-B858-3CC0947F93BF}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DeepBunker" ID="{08765803-62EA-41FA-B513-45EB752882BB}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SwordSwing" ID="{1BA36A4A-0F34-420C-B9B2-4F4F9AD94638}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="OrbBounce" ID="{755AE361-777B-44D3-B2B5-F8BE572BE488}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Grab" ID="{9F04A05F-CAC1-4555-888A-337E68AF5FE1}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Woosh" ID="{49806411-A299-4745-A795-E4E9700940FF}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{E876010E-03C6-4899-A641-97E89B8D471C}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SkidStop" ID="{513E845A-238D-4917-9022-83BC29DCECA5}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TrainArrive" ID="{ED77F6C0-4AC8-498F-9CDE-023FDF403AF6}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OrbThrow" ID="{E8E25929-0D6D-49B3-9FA7-4CC5EC010D19}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Slash_Attack" ID="{14548BC2-2C48-4A6F-AA90-2D26A6E8EF74}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PowerBurst" ID="{A3171C66-DC8B-4BD1-A04C-1FADD63B68C9}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SmallCoin" ID="{11F351EE-8155-4E05-9BDC-6A413CED482A}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Land" ID="{05A96B58-91B8-4E0A-8711-0A76FC65D0BD}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_DeepBunker" ID="{182E715B-4F81-4E17-AE13-C6179E6DC760}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Materialize" ID="{25D1CF33-4AFB-4E24-B5C0-7DB731623E5D}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Slash_Impact" ID="{D3C15686-A9A7-4F78-80FD-7557FC385764}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Shoot" ID="{5F369AB2-FC99-4FDB-81BE-F279CA10B57C}" WorkUnitID="{A5EE0C77-FED5-4333-9E2E-C73083C67E5E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

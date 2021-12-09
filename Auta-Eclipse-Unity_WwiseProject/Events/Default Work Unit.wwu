@@ -86,6 +86,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="OrbBounce" ID="{755AE361-777B-44D3-B2B5-F8BE572BE488}">
+							<ChildrenList>
+								<Action Name="" ID="{6C4313CF-2F96-400E-8EB2-78EF61029EC5}" ShortID="157384453">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OrbBounce" ID="{8F5ED683-0301-440B-A3F9-A68A9527705F}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Step" ID="{456005AD-1420-4179-B858-3CC0947F93BF}">
+							<ChildrenList>
+								<Action Name="" ID="{F079B73F-698E-4D11-AD75-3AEAC215FFAF}" ShortID="81086465">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step" ID="{FBF13317-0A77-42EB-8203-1FAD4F00237F}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Combat" ID="{12896150-2F1B-4E50-B914-C6E9BA2AC9FB}" ShortID="14011305">
@@ -114,10 +136,21 @@
 						</Event>
 						<Event Name="Slash_Impact" ID="{D3C15686-A9A7-4F78-80FD-7557FC385764}">
 							<ChildrenList>
-								<Action Name="" ID="{0A70C78D-61EF-47D2-99F7-533577C0A655}" ShortID="28930773">
+								<Action Name="" ID="{5153ED99-6754-4FD6-9CF9-B946267911E4}" ShortID="431609129">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Slice-Impact" ID="{C9D1580A-E3EB-4712-9857-39CF72A70578}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+											<ObjectRef Name="Slash-Impact" ID="{97542D6A-A6F0-4E66-805F-225DB321BD3D}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Shoot" ID="{5F369AB2-FC99-4FDB-81BE-F279CA10B57C}">
+							<ChildrenList>
+								<Action Name="" ID="{82314DD1-C5C6-4DFB-92BD-262DBDF0A797}" ShortID="978830601">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shoot" ID="{0583CB21-72C3-4AF4-A154-C7BAC647EFED}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -159,7 +192,79 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Music" ID="{F63EF513-24DF-4170-AF94-79E43E050279}" ShortID="116166857"/>
+				<Folder Name="Music" ID="{F63EF513-24DF-4170-AF94-79E43E050279}" ShortID="116166857">
+					<ChildrenList>
+						<Event Name="Play_DeepBunker" ID="{08765803-62EA-41FA-B513-45EB752882BB}">
+							<ChildrenList>
+								<Action Name="" ID="{A8636D88-BCDE-41B7-B0DC-3DEDAC84960F}" ShortID="819968103">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DeepBunker" ID="{F563B95E-2F90-4A60-9277-77D9C62DE4DD}" WorkUnitID="{8AAF87E1-0402-4470-8AC5-2C3EC1788F7C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_DeepBunker" ID="{182E715B-4F81-4E17-AE13-C6179E6DC760}">
+							<ChildrenList>
+								<Action Name="" ID="{F0DF1D65-A170-4035-8C31-2F47C59B7066}" ShortID="299597090">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{071CA04C-1907-40D3-AC03-233D0D764196}" ShortID="347357236">
+					<ChildrenList>
+						<Event Name="SwordSwing" ID="{1BA36A4A-0F34-420C-B9B2-4F4F9AD94638}">
+							<ChildrenList>
+								<Action Name="" ID="{B7B417D3-E385-4595-B9D6-959A9F3B7D23}" ShortID="211335550">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SwordSwing" ID="{019D216D-BEC1-467E-9911-0ED7211E2260}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Woosh" ID="{49806411-A299-4745-A795-E4E9700940FF}">
+							<ChildrenList>
+								<Action Name="" ID="{88AC7E24-B822-4B57-9F1F-35233244B297}" ShortID="8842930">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Woosh" ID="{B1F9D656-EAC2-4CDF-B224-AAA07CB8AFDC}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PowerBurst" ID="{A3171C66-DC8B-4BD1-A04C-1FADD63B68C9}">
+							<ChildrenList>
+								<Action Name="" ID="{FA9A5440-CD24-48C2-AD44-1CBD64B73E2D}" ShortID="1041414736">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PowerBurst" ID="{0A3904CD-81C8-4C00-A5F2-E6F250451D6D}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SkidStop" ID="{513E845A-238D-4917-9022-83BC29DCECA5}">
+							<ChildrenList>
+								<Action Name="" ID="{F02E15C0-B686-4C65-88E6-B28803406C25}" ShortID="211832375">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SkidStop" ID="{036A0994-2320-4877-9686-3E45D85A140E}" WorkUnitID="{ED58E924-F6BE-45D0-9B21-78C88BA6399E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

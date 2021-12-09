@@ -19,7 +19,7 @@ public class AutaDisintegrateController : MonoBehaviour
     {
         Timer += (1 - Timer) * Time.deltaTime * 6;
 
-        material.SetFloat("_GlitchAmount", Timer * 0.015f);
+        material.SetFloat("_GlitchAmount", Timer);
         if (Timer > 1)
         {
             Destroy(gameObject);

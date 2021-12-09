@@ -27,7 +27,7 @@ AnimationClip:
       value: {fileID: -5888624762039083472, guid: 50cdeb57aaedf7a47ad12b338d3f59aa, type: 3}
     - time: 0.25
       value: {fileID: 4571416941075089808, guid: 50cdeb57aaedf7a47ad12b338d3f59aa, type: 3}
-    - time: 0.31666666
+    - time: 0.31666663
       value: {fileID: 4571416941075089808, guid: 50cdeb57aaedf7a47ad12b338d3f59aa, type: 3}
     attribute: m_Sprite
     path: 
@@ -58,7 +58,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.3333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,4 +77,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1e-45
+    functionName: Step
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

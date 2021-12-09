@@ -55,6 +55,8 @@ public class PlayerController : PhysicsEntity
     public int PlayerID;
     [FoldoutGroup("Manual Setup")] public Player player;
     [FoldoutGroup("Manual Setup")] public StateMachine stateMachine;
+    [FoldoutGroup("Manual Setup")] public GameObject AttackTitle;
+
     BoxCollider2D boxColl;
 
     float ComboNumber;
@@ -74,6 +76,10 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_SlashAttack;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Jump;
     [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Land;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Step;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_OrbBounce;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Swoosh;
+    [FoldoutGroup("Sounds")] public AK.Wwise.Event Sound_Shot;
 
     public delegate void OnPowerChipUse(PlayerController player);
 
@@ -105,7 +111,7 @@ public class PlayerController : PhysicsEntity
         stateMachine.SetState(State_Normal);
         stateMachine.SetRunState(true);
         ComboNumber = 1;
-        SetPowerChipCodeRunner();
+        SetPowerChipCodeRunner(false);
     }
 
     
@@ -137,14 +143,14 @@ public class PlayerController : PhysicsEntity
         AttackBuffer = Mathf.MoveTowards(AttackBuffer, 0, Time.deltaTime);
         if(player.GetButtonDown(ATTACK))
         {
-            AttackBuffer = 0.1f;
+            AttackBuffer = 0.2f;
         }
         animationController.SetSpeed(TimeScale);
 
         if (MP < MaxMP)
-            MP = Mathf.MoveTowards(MP, MaxMP, Time.deltaTime * 0.5f);
+            MP = Mathf.MoveTowards(MP, MaxMP, Time.deltaTime * 0.2f);
 
-        if (player.GetButtonDown(ANALYSISMODE) && GameManager.CanSwapAnalysis && GameManager.AnalysisActive)
+        if (!player.GetButton(ANALYSISMODE) && GameManager.CanSwapAnalysis && GameManager.AnalysisActive)
         {
             GameManager.Instance.OnAnalysisState(false);
         }
@@ -235,9 +241,9 @@ public class PlayerController : PhysicsEntity
         }
         ComboNumber = Mathf.Clamp(ComboNumber, 1, 3);
 
-        if (player.GetButtonDown(ANALYSISMODE) && GameManager.CanSwapAnalysis)
+        if (player.GetButton(ANALYSISMODE) && GameManager.CanSwapAnalysis && !GameManager.AnalysisActive)
         {
-            GameManager.Instance.OnAnalysisState(!GameManager.AnalysisActive);
+            GameManager.Instance.OnAnalysisState(true);
         }
 
     }
@@ -257,7 +263,7 @@ public class PlayerController : PhysicsEntity
         }
         else
         {
-            Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
+            //Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Stop * Time.deltaTime * TimeScale * (100 / 60) * 0.15f * (Grounded ? 1 : AirFrictionDivide) * (Underwater ? UnderwaterDragScale : 1));
         }
 
         if(stateMachine.TimeInState > 0.4f && !player.GetButton(ORB) )
@@ -355,7 +361,8 @@ public class PlayerController : PhysicsEntity
         }
 
         //AnimatorClipInfo[] CurrentClipInfo;
-        if (animationController.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle") ) {
+        if (animationController.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
             AttackEnd();
         }
 
@@ -387,6 +394,10 @@ public class PlayerController : PhysicsEntity
             else
             {
                 Velocity = new Vector2(transform.GetChild(0).localScale.x, 0) * OrbPower;
+                if (Grounded)
+                {
+                    Velocity.y = Mathf.Clamp(Velocity.y, 2f, 100f);
+                }
             }
             stateMachine.SetState(State_Orb);
 
@@ -476,58 +487,109 @@ public class PlayerController : PhysicsEntity
 
     public void Attack()
     {
-        if(AttackBuffer > 0)
+        if (GameManager.AnalysisActive)
         {
-            Sound_SlashAttack.Post(gameObject);
-            AttackLag = true;
-
-            if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f)
+            if (player.GetButton(SPECIAL))
             {
-                
-                transform.GetChild(0).localScale = new Vector3(Mathf.Sign(player.GetAxisRaw(MOVEMENT_HORIZONTAL)), 1, 1);
-                Velocity.x = player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed * 1.5f;
+                if (player.GetAxisRaw(MOVEMENT_HORIZONTAL) == -1)
+                {
+                    currentPowerChip = 0;
+                    SetPowerChipCodeRunner(true);
+                }
+                if (player.GetAxisRaw(MOVEMENT_VERTICAL) == 1)
+                {
+                    currentPowerChip = 1;
+                    SetPowerChipCodeRunner(true);
+                }
+                if (player.GetAxisRaw(MOVEMENT_HORIZONTAL) == 1)
+                {
+                    currentPowerChip = 2;
+                    SetPowerChipCodeRunner(true);
+                }
             }
+        }
+        else
+        {
+            if (AttackBuffer > 0)
+            {
+                Sound_SlashAttack.Post(gameObject);
+                AttackLag = true;
+
+                if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f)
+                {
+
+                    transform.GetChild(0).localScale = new Vector3(Mathf.Sign(player.GetAxisRaw(MOVEMENT_HORIZONTAL)), 1, 1);
+                    Velocity.x = player.GetAxisRaw(MOVEMENT_HORIZONTAL) * MoveSpeed * 1.5f;
+                }
                 stateMachine.SetState(State_Attack);
 
-            if (player.GetAxisRaw(MOVEMENT_VERTICAL) > 0.1f)
-            {
-                animationController.SwordAttack(0, 2);
-                if(CanAttackBoost && !Grounded && Velocity.y < 2.5f)
+                if (player.GetAxisRaw(MOVEMENT_VERTICAL) > 0.1f)
                 {
-                    CanAttackBoost = false;
-                    Velocity.y = 2.5f;
+                    animationController.SwordAttack(0, 2);
+                    if (CanAttackBoost && !Grounded && Velocity.y < 2.5f)
+                    {
+                        CanAttackBoost = false;
+                        Velocity.y = 2.5f;
+                    }
+                    return;
                 }
-                return;
-            }
-            if (player.GetAxisRaw(MOVEMENT_VERTICAL) < -0.1f)
-            {
-                animationController.SwordAttack(0, 1);
-                return;
+                if (player.GetAxisRaw(MOVEMENT_VERTICAL) < -0.1f)
+                {
+                    animationController.SwordAttack(0, 1);
+                    return;
+                }
+
+                animationController.SwordAttack(Mathf.CeilToInt(ComboNumber), 0);
+
+
             }
 
-            animationController.SwordAttack(Mathf.CeilToInt(ComboNumber), 0);
-            ComboNumber = Mathf.CeilToInt(ComboNumber) + 1;
-            if(ComboNumber > 3)
+            if (player.GetButtonDown(SPECIAL))
             {
-                ComboNumber = 1;
-                
-            }
-            ComboTime = 1;
+                if (Mathf.Abs(player.GetAxisRaw(MOVEMENT_HORIZONTAL)) > 0.1f)
+                {
+                    transform.GetChild(0).localScale = new Vector3(Mathf.Sign(player.GetAxisRaw(MOVEMENT_HORIZONTAL)), 1, 1);
+                }
 
+                if (MP > powerChipMaster.Data[currentPowerChip].MPCost)
+                {
+                    MP -= powerChipMaster.Data[currentPowerChip].MPCost;
+                    PowerChipUse?.Invoke(this);
+                }
+            }
+        }
         }
 
-        if(player.GetButtonDown(SPECIAL))
-        {
-            if (MP > powerChipMaster.Data[currentPowerChip].MPCost)
-            {
-                PowerChipUse?.Invoke(this);
-            }
-        }
+    public override void OnBounce()
+    {
+        base.OnBounce();
+        Sound_OrbBounce.Post(gameObject);
+    }
+
+    public void Step()
+    {
+        Sound_Step.Post(gameObject);
+    }
+    public void Shot()
+    {
+        Sound_Shot.Post(gameObject);
+    }
+    public void Swoosh()
+    {
+        Sound_Swoosh.Post(gameObject);
     }
 
     public override void HitResponse(GameObject attacker, GameObject Defender)
     {
         base.HitResponse(attacker, Defender);
+
+        ComboNumber = Mathf.CeilToInt(ComboNumber) + 1;
+        if (ComboNumber > 3)
+        {
+            ComboNumber = 1;
+
+        }
+        ComboTime = 1;
 
         if (Velocity.y < 0)
             Velocity.y = 0;
@@ -539,6 +601,12 @@ public class PlayerController : PhysicsEntity
         if (attacker != null)
         {
             HitStun = attacker.GetComponent<HitBox>().inflictHitStun;
+        }
+
+        MP += 1;
+        if(MP > MaxMP)
+        {
+            MP = MaxMP;
         }
     }
     public override void OnLand()
@@ -568,7 +636,7 @@ public class PlayerController : PhysicsEntity
         stateMachine.SetState(State_Normal);
     }
 
-    public void SetPowerChipCodeRunner()
+    public void SetPowerChipCodeRunner(bool showTitle = false)
     {
         if(PowerChipCodeRunner != null)
         {
@@ -576,6 +644,12 @@ public class PlayerController : PhysicsEntity
         }
         PowerChipCodeRunner = Instantiate(powerChipMaster.Data[currentPowerChip].CodeRunner, transform);
         PowerChipCodeRunner.GetComponent<PowerChipMaster>().Player = this;
+        PowerChipCodeRunner.GetComponent<PowerChipMaster>().PlayerAnim = animationController;
+
+        if(showTitle)
+        {
+            Summon_AttackTitle(powerChipMaster.Data[currentPowerChip].Name);
+        }
     }
 
     public void HideSelf()
@@ -588,4 +662,28 @@ public class PlayerController : PhysicsEntity
         Anim.gameObject.SetActive(true);
         stateMachine.SetRunState(true);
     }
+
+    public void Summon_AttackTitle(string name, float time = 1.5f)
+    {
+        AttackTitle.SetActive(true);
+        AttackTitle.GetComponent<AttackTitle>().OnAwaken();
+        AttackTitle.GetComponent<AttackTitle>().text = name;
+        StartCoroutine(AttackTitleTimer(time));
+    }
+
+    public IEnumerator AttackTitleTimer(float time)
+    {
+        float t = 0;
+        while(t < time)
+        {
+            t += Time.deltaTime;
+            yield return null;
+        }
+        Disable_AttackTitle();
+    }
+    public void Disable_AttackTitle()
+    {
+        AttackTitle.SetActive(false);
+    }
+
 }

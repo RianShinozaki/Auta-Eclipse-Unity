@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 14744b459ef0084eb86d582001d1a11c
     GuidInternal: 
-    m_lastTime: -8585657231859084453
+    m_lastTime: -8585626982180765986
     List:
     - name: SFX
       guid: 41e2f2017a65a6428488af67f7cb61cb
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 770ceea5d5fe33439e2ec73083c67e5e
     GuidInternal: 
-    m_lastTime: -8585656355203418499
+    m_lastTime: -8585626982180605989
     List:
     - name: Auta
       guid: 6eaec7b103c2384b92b6419ef58ccc11
@@ -170,6 +170,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: b5dd66a1bb35924ea4c919f7b32c8458
       Path: Events\Default Work Unit\Environment\Cutscenes\DeepBunker
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy
+      guid: 4ca01c070719d340ac03233d0d764196
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 4ca01c070719d340ac03233d0d764196
+      Path: Events\Default Work Unit\Enemy
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -304,6 +321,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: OrbBounce
+      guid: 61e35a757b77d344b2b5f8be572be488
+      id: 3002670220
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: OrbBounce
+        ObjectType: 3
+        guid: 61e35a757b77d344b2b5f8be572be488
+      Path: Events\Default Work Unit\Auta\OrbBounce
+      maxAttenuation: 0
+      maxDuration: 2.253011
+      minDuration: 2.253011
     - name: OrbThrow
       guid: 2959e2e86d0db3499fa74cc5ec010d19
       id: 4035672268
@@ -324,6 +361,86 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.156644
       minDuration: 0.156644
+    - name: Play_DeepBunker
+      guid: 03587608ea62fa41b51345eb752882bb
+      id: 2688248395
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 13f53ef6df247041af9479e43e050279
+      - ElementName: Play_DeepBunker
+        ObjectType: 3
+        guid: 03587608ea62fa41b51345eb752882bb
+      Path: Events\Default Work Unit\Music\Play_DeepBunker
+      maxAttenuation: 0
+      maxDuration: 105.089294
+      minDuration: 105.089294
+    - name: PowerBurst
+      guid: 661c17a38bdcd14ba04c1fadd63b68c9
+      id: 1359302546
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 4ca01c070719d340ac03233d0d764196
+      - ElementName: PowerBurst
+        ObjectType: 3
+        guid: 661c17a38bdcd14ba04c1fadd63b68c9
+      Path: Events\Default Work Unit\Enemy\PowerBurst
+      maxAttenuation: 0
+      maxDuration: 2.501417
+      minDuration: 2.501417
+    - name: Shoot
+      guid: b29a365f99fcdb4f81bef279ca10b57c
+      id: 3038207054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Combat
+        ObjectType: 4
+        guid: 506189121b2f504eb914c6e9ba2ac9fb
+      - ElementName: Shoot
+        ObjectType: 3
+        guid: b29a365f99fcdb4f81bef279ca10b57c
+      Path: Events\Default Work Unit\Combat\Shoot
+      maxAttenuation: 0
+      maxDuration: 0.300726
+      minDuration: 0.300726
+    - name: SkidStop
+      guid: 5a843e518d231749902283bc29dceca5
+      id: 3128853520
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 4ca01c070719d340ac03233d0d764196
+      - ElementName: SkidStop
+        ObjectType: 3
+        guid: 5a843e518d231749902283bc29dceca5
+      Path: Events\Default Work Unit\Enemy\SkidStop
+      maxAttenuation: 0
+      maxDuration: 0.646871
+      minDuration: 0.646871
     - name: Slash_Attack
       guid: c28b5414482c6f4aaa902d26a6e8ef74
       id: 1665195303
@@ -362,8 +479,8 @@ MonoBehaviour:
         guid: 8656c1d3a7a9784f80fd7557fc385764
       Path: Events\Default Work Unit\Combat\Slash_Impact
       maxAttenuation: 0
-      maxDuration: 1.71093
-      minDuration: 1.71093
+      maxDuration: 0.384059
+      minDuration: 0.384059
     - name: SmallCoin
       guid: ee51f3115581054e9bdc6a413ced482a
       id: 1164910237
@@ -384,6 +501,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.232313
       minDuration: 0.154844
+    - name: Step
+      guid: ad05604520147941b8583cc0947f93bf
+      id: 621108255
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Auta
+        ObjectType: 4
+        guid: 6eaec7b103c2384b92b6419ef58ccc11
+      - ElementName: Step
+        ObjectType: 3
+        guid: ad05604520147941b8583cc0947f93bf
+      Path: Events\Default Work Unit\Auta\Step
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_DeepBunker
+      guid: 5b712e18814f174eae13c6179e6dc760
+      id: 1513255049
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 13f53ef6df247041af9479e43e050279
+      - ElementName: Stop_DeepBunker
+        ObjectType: 3
+        guid: 5b712e18814f174eae13c6179e6dc760
+      Path: Events\Default Work Unit\Music\Stop_DeepBunker
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SwordSwing
+      guid: 4a6aa31b340f0c42b9b24f4f9ad94638
+      id: 1328934038
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 4ca01c070719d340ac03233d0d764196
+      - ElementName: SwordSwing
+        ObjectType: 3
+        guid: 4a6aa31b340f0c42b9b24f4f9ad94638
+      Path: Events\Default Work Unit\Enemy\SwordSwing
+      maxAttenuation: 0
+      maxDuration: 0.300794
+      minDuration: 0.300794
     - name: Throw
       guid: 162d15097fcd2740a757945429cc7d52
       id: 745179803
@@ -470,6 +647,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.052902
       minDuration: 1.052902
+    - name: Woosh
+      guid: 1164804999a24547a795e4e9700940ff
+      id: 3099361103
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 770ceea5d5fe33439e2ec73083c67e5e
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 4ca01c070719d340ac03233d0d764196
+      - ElementName: Woosh
+        ObjectType: 3
+        guid: 1164804999a24547a795e4e9700940ff
+      Path: Events\Default Work Unit\Enemy\Woosh
+      maxAttenuation: 0
+      maxDuration: 0.300794
+      minDuration: 0.300794
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -527,7 +724,7 @@ MonoBehaviour:
     m_lastTime: -8585742954758711799
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000002600000027000000890000008a0000008d0000008b010000ae0600001b0a0000
+  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000008000000090000000c0000002600000027000000890000008a0000008d0000008b010000ae0600001b0a000041910200
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -39,7 +39,7 @@ public class Lumpy : BaseEnemy {
         if(HitStun > 0)
             return;
 
-        if(HurtState > 0) {
+        if(HurtState > 0 && stateMachine.CurrentState != State_Cannonball) {
             HurtState = Mathf.MoveTowards(HurtState, 0, Time.deltaTime * TimeScale * 60);
             stateMachine.SetRunState(false);
             if(HurtState == 0) {

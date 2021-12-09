@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ab983d0c5834b418894cd64137d52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inflictDamage: 8
+  inflictDamage: 12
   inflictHitStun: 5
   inflictHurtState: 50
   inflictXKnockback: 9
@@ -5270,8 +5270,8 @@ MonoBehaviour:
   Anim: {fileID: 0}
   Underwater: 0
   isCombatEntity: 1
-  HP: 30
-  MaxHP: 30
+  HP: 15
+  MaxHP: 15
   HitStun: 0
   HurtState: 0
   BaseAttack: 0

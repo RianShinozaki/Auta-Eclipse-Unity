@@ -17,17 +17,17 @@ public class AttackTitle : MonoBehaviour
     {
         Text = GetComponentInChildren<TextMeshPro>();
         initY = transform.localPosition.y;
+
     }
 
-    // Update is called once per frame
-    private void OnEnable()
+    public void OnAwaken()
     {
         ySpeed = 1;
-       
+        Text.text = text;
         TimeAlive = 0;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Text.text = text;
         if(transform.parent.transform.localScale.x == -1)
@@ -41,7 +41,7 @@ public class AttackTitle : MonoBehaviour
         if (transform.localPosition.y > initY || ySpeed != 0)
         {
             transform.position += new Vector3(0, ySpeed, 0) * 0.05f;
-            ySpeed -= Time.deltaTime * 18;
+            ySpeed -= Time.fixedDeltaTime * 18;
             if(transform.localPosition.y <= initY)
             {
                 ySpeed = 0;

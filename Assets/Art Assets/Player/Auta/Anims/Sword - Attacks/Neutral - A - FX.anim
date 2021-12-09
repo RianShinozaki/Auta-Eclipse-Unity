@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 0}
-    - time: 0.05504587
+    - time: 0.08256881
       value: {fileID: 0}
-    - time: 0.11009174
+    - time: 0.16513762
       value: {fileID: 4691556179209442693, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.1651376
+    - time: 0.22018349
       value: {fileID: 7440895137343274353, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.22018348
+    - time: 0.27522936
       value: {fileID: 6512692060564702947, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.27522933
+    - time: 0.33027524
       value: {fileID: 0}
-    - time: 0.3211009
+    - time: 0.40366974
       value: {fileID: 0}
     attribute: m_Sprite
     path: 
@@ -64,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3302752
+    m_StopTime: 0.41284406
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,14 +84,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.110091746
+  - time: 0.16513762
     functionName: CallHitBox
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.19266056
+  - time: 0.24770643
     functionName: DeactivateHitBox
     data: 
     objectReferenceParameter: {fileID: 0}

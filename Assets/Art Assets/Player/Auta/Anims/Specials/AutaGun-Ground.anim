@@ -29,21 +29,9 @@ AnimationClip:
       value: {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - time: 0.15714285
       value: {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.19999999
-      value: {fileID: -2198383118989181737, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - time: 0.24285713
-      value: {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.28571427
-      value: {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.3285714
-      value: {fileID: -2198383118989181737, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.37142855
-      value: {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.4142857
-      value: {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.49999997
       value: {fileID: -6004792911389338521, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - time: 0.61428565
+    - time: 0.3571428
       value: {fileID: -6004792911389338521, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     attribute: m_Sprite
     path: 
@@ -69,12 +57,6 @@ AnimationClip:
     - {fileID: -2198383118989181737, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: -2198383118989181737, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: -2198383118989181737, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: 3982878473275728509, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
-    - {fileID: 2876478034104164003, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - {fileID: -6004792911389338521, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
     - {fileID: -6004792911389338521, guid: 58b042ac287c7304c85ad0104de1a7d3, type: 3}
   m_AnimationClipSettings:
@@ -82,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6285714
+    m_StopTime: 0.37142852
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -102,21 +84,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 1e-45
+    functionName: Swoosh
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.114285715
-    functionName: GunFire
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.24285714
-    functionName: GunFire
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.37142858
     functionName: GunFire
     data: 
     objectReferenceParameter: {fileID: 0}

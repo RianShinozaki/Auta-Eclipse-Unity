@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3613653f2a8e94540983648931075f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
+  parent: {fileID: 5492783203385954776}
   anim: {fileID: 0}
 --- !u!114 &1218597437
 MonoBehaviour:

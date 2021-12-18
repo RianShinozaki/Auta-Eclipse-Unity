@@ -15,7 +15,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     void Start()
     {
-        parent = transform.root.GetComponent<PlayerController>();
+        parent = transform.parent.GetComponent<PlayerController>();
         anim = GetComponent<Animator>();
     }
 

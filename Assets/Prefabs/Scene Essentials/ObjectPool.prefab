@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &31244531781593962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31244531781593956}
+  - component: {fileID: 31244531781593957}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31244531781593956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31244531781593962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31244531781593957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31244531781593962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c48d7162e5a54e40a4bb1243791d9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGlobal: 0
+  Pools:
+  - Name: Coin
+    Obj: {fileID: 5281894276587112902, guid: 2b2f90e316fa3c5418f4458c3a4781d1, type: 3}
+    InitialCount: 30
+  - Name: Lumpy
+    Obj: {fileID: 7342701581529692105, guid: 8d2148d830e18b547af0e81594e56e64, type: 3}
+    InitialCount: 10
+  - Name: LightBurst
+    Obj: {fileID: 3758205426637261465, guid: 9494b53077489fc4383887206f4081c7, type: 3}
+    InitialCount: 30
+  - Name: AutaBullet
+    Obj: {fileID: 6302138777550492557, guid: 4c947bc5069acfe4d9b6e3d13d7d476f, type: 3}
+    InitialCount: 10
+  - Name: DamageDrawer
+    Obj: {fileID: 6160662197872228980, guid: 86b40e476ea6e7d4c85467b0351e9c75, type: 3}
+    InitialCount: 15
+  - Name: EnemyBullet
+    Obj: {fileID: 4707644244312374717, guid: 3a0fd185557a3df48a7b906c2aa41090, type: 3}
+    InitialCount: 20

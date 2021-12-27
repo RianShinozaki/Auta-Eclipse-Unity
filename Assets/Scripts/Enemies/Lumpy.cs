@@ -125,7 +125,7 @@ public class Lumpy : BaseEnemy {
 
     public void Strike() {
         Velocity.x = MoveSpeed * 2.4f * transform.localScale.x;
-        Velocity.y = 7;
+        Velocity.y = 0;
         Grounded = false;
         GroundPoints.Clear();
         stateMachine.SetState(State_Attack);

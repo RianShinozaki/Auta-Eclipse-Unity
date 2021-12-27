@@ -19,7 +19,7 @@ public class HurtBox : MonoBehaviour
     {
         DamageDrawerPrefab = Resources.Load<GameObject>("FX/pre_DamageDrawer");
 
-        entity = transform.root.gameObject.GetComponent<PhysicsEntity>();
+        entity = transform.GetComponentInParent<PhysicsEntity>();
         coll = GetComponent<Collider2D>();
 
         foreach(Collider2D ignore in DefaultIgnores)
@@ -28,7 +28,7 @@ public class HurtBox : MonoBehaviour
         }
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         InvincibleTime = Mathf.MoveTowards(InvincibleTime, 0, Time.deltaTime);
 
@@ -51,7 +51,7 @@ public class HurtBox : MonoBehaviour
         if (other.GetComponent<HitBox>())
         {
 
-            Debug.Log("Full hit log -- Defender: " + entity.name + "| Attacker: " + other.gameObject.transform.root.name);
+            Debug.Log("Full hit log -- Defender: " + entity.name + "| Attacker: " + entity.name);
 
             if (!entity.isCombatEntity || InvincibleTime > 0)
             {

@@ -20,20 +20,18 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -7476874301371355965, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.055555556
       value: {fileID: 874374120003447907, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.11111111
+    - time: 0.055555556
       value: {fileID: -5132292344937876533, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.16666667
+    - time: 0.11111112
       value: {fileID: 7267755676472975802, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.22222222
+    - time: 0.16666667
       value: {fileID: 1071315768207858530, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.2777778
+    - time: 0.22222224
       value: {fileID: 4744278263790100882, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.33333334
+    - time: 0.2777778
       value: {fileID: 3381178625996000551, guid: 90000dd0973ec304bb6502123766e137, type: 3}
-    - time: 0.3888889
+    - time: 0.33333334
       value: {fileID: 2990452287014523115, guid: 90000dd0973ec304bb6502123766e137, type: 3}
     attribute: m_Sprite
     path: 
@@ -54,7 +52,6 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -7476874301371355965, guid: 90000dd0973ec304bb6502123766e137, type: 3}
     - {fileID: 874374120003447907, guid: 90000dd0973ec304bb6502123766e137, type: 3}
     - {fileID: -5132292344937876533, guid: 90000dd0973ec304bb6502123766e137, type: 3}
     - {fileID: 7267755676472975802, guid: 90000dd0973ec304bb6502123766e137, type: 3}
@@ -67,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.44444445
+    m_StopTime: 0.3888889
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -87,7 +84,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.44444445
+  - time: 0.3888889
     functionName: AttackEnd
     data: 
     objectReferenceParameter: {fileID: 0}

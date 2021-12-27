@@ -84,7 +84,7 @@ public class HitBox : MonoBehaviour
     {
         if(Entity != null && InflictRecoil)
         {
-            Entity.HitResponse(gameObject, defender);
+            Entity.HitResponse(gameObject, defender, inflictHitStun);
         }
 
     }

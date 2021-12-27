@@ -38,6 +38,7 @@ public class PlayerHitboxController : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        //animator.enabled = parent.transform.GetChild(0).GetComponent<Animator>().enabled;
     }
 
     void OnDisable()

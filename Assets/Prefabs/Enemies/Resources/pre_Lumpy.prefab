@@ -5126,7 +5126,7 @@ MonoBehaviour:
   inflictHitStun: 2
   inflictHurtState: 20
   inflictXKnockback: 6
-  inflictYKnockback: 5
+  inflictYKnockback: 1
   TechnicalAdd: 0
   inflictInvincTime: 1
   collisions: -36

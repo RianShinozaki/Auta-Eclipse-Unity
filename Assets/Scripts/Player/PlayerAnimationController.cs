@@ -12,6 +12,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     public delegate void OnPowerChipUseAnim(PlayerAnimationController player);
     public event OnPowerChipUseAnim PowerChipUseAnim;
+    float animspd = 1;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class PlayerAnimationController : MonoBehaviour
         anim.SetFloat("GhostJumpTimer", parent.GhostJumpTimer);
 
         anim.SetFloat("HurtState", parent.HurtState);
+        anim.SetFloat("Anim Speed", parent.TimeScale * animspd);
 
         if(parent.Grounded && parent.stateMachine.CurrentState == parent.State_Normal && parent.Velocity.x != 0)
         {
@@ -126,7 +128,8 @@ public class PlayerAnimationController : MonoBehaviour
 
     public void SetSpeed(float Spd)
     {
-        anim.SetFloat("Anim Speed", Spd);
+        animspd = Spd;
+
     }
 
     void CancelLag()

@@ -74,7 +74,6 @@ public class BaseEnemy : PhysicsEntity
 
     public override void Update()
     {
-        Debug.Log(stateMachine.CurrentState);
         base.Update();
 
         if(ShowStats)
@@ -199,7 +198,7 @@ public class BaseEnemy : PhysicsEntity
         }
     }
 
-    public override void HitResponse(GameObject attacker, GameObject defender)
+    public override void HitResponse(GameObject attacker, GameObject defender, float hitStun = 0)
     {
         base.HitResponse(attacker, defender);
 
@@ -219,6 +218,7 @@ public class BaseEnemy : PhysicsEntity
                 defender.GetComponent<PhysicsEntity>().Velocity = Velocity * -1;
             }
         }
+        HitStun = hitStun;
     }
 
     public void Summon_AttackTitle(string name, float time = 1.5f)

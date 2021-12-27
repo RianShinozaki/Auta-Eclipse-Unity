@@ -293,7 +293,18 @@ public class PhysicsEntity : MonoBehaviour
     {
         if (HitStun > 0)
         {
-            HitStun = Mathf.MoveTowards(HitStun, 0, Time.deltaTime * TimeScale * 60);
+            HitStun = Mathf.MoveTowards(HitStun, 0, Time.deltaTime * 60);
+            rb.velocity = new Vector3(0, 0, 0);
+            if(HitStun == 0)
+            {
+                TimeScale = 1;
+                //Anim.enabled = true;
+            }
+            else
+            {
+                TimeScale = 0;
+                //Anim.enabled = false;
+            }
             return;
         }
 
@@ -358,7 +369,7 @@ public class PhysicsEntity : MonoBehaviour
         }
     }
 
-    public virtual void HitResponse(GameObject attacker, GameObject Defender) { }
+    public virtual void HitResponse(GameObject attacker, GameObject Defender, float hitStun = 0) { }
 
     public virtual void HurtResponse(float damage = 0, float knockbackx = 0, float knockbacky = 0) { }
 

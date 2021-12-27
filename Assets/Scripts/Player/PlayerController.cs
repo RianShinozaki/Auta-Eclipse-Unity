@@ -37,6 +37,8 @@ public class PlayerController : PhysicsEntity
     [FoldoutGroup("Abilities")] bool CanOrb;
     [FoldoutGroup("Abilities")] public bool Orb;
     [FoldoutGroup("Abilities")] public float OrbPower = 10;
+    [FoldoutGroup("Abilities")] public float OrbFloatTime = 0.1f;
+    [FoldoutGroup("Abilities")] public float OrbAddGravityScale = 0.5f;
     [FoldoutGroup("Abilities")] public float GhostJumpTimer = 0;
     [FoldoutGroup("Abilities")] public bool CanAttackBoost;
     [FoldoutGroup("Abilities")] public bool AttackLag;
@@ -124,7 +126,15 @@ public class PlayerController : PhysicsEntity
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+        if(HitStun > 0 && currentHitBox != null)
+        {
+            currentHitBox.GetComponent<Animator>().speed = 0;
+        }
         base.Update();
+        if(HitStun <= 0 && currentHitBox != null)
+        {
+            currentHitBox.GetComponent<Animator>().speed = 1;
+        }
 
         stateMachine.SetRunState(HitStun == 0);
 
@@ -280,12 +290,12 @@ public class PlayerController : PhysicsEntity
             Sound_Materialize.Post(gameObject);
             CreateAfterImg = false;
         }
-        if(stateMachine.TimeInState > 0.08f)
+        if(stateMachine.TimeInState > OrbFloatTime)
         {
-            Velocity.y -= Gravity * 0.5f * Time.deltaTime;
+            Velocity.y -= Gravity * OrbAddGravityScale * Time.deltaTime;
         } else
         {
-            Velocity.y += Gravity * Time.deltaTime*0.8f;
+            Velocity.y += Gravity * Time.deltaTime;
         }
 
         if(Landed && Mathf.Abs(Velocity.y) < 3)
@@ -579,7 +589,7 @@ public class PlayerController : PhysicsEntity
         Sound_Swoosh.Post(gameObject);
     }
 
-    public override void HitResponse(GameObject attacker, GameObject Defender)
+    public override void HitResponse(GameObject attacker, GameObject Defender, float hitStun = 0)
     {
         base.HitResponse(attacker, Defender);
 
@@ -598,10 +608,8 @@ public class PlayerController : PhysicsEntity
 
         Velocity.x = 0;
         StartCoroutine(AttackPushback(Mathf.Sign(transform.GetChild(0).localScale.x)));
-        if (attacker != null)
-        {
-            HitStun = attacker.GetComponent<HitBox>().inflictHitStun;
-        }
+
+        HitStun = hitStun;
 
         MP += 1;
         if(MP > MaxMP)

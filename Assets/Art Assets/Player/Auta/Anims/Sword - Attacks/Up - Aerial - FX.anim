@@ -21,21 +21,21 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 0}
-    - time: 0.083333336
+    - time: 0.074074075
       value: {fileID: 0}
-    - time: 0.16666667
+    - time: 0.1574074
       value: {fileID: -1646075010739883583, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.22222221
+    - time: 0.21296294
       value: {fileID: -2797673817763528548, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.27777776
+    - time: 0.2685185
       value: {fileID: 6908133267338803834, guid: 05b07ad14d933ec45b3c2e5579e221b6, type: 3}
-    - time: 0.3611111
+    - time: 0.35185185
       value: {fileID: 0}
-    - time: 0.41666666
+    - time: 0.4074074
       value: {fileID: 0}
-    - time: 0.4722222
+    - time: 0.46296296
       value: {fileID: 0}
-    - time: 0.51851845
+    - time: 0.5092592
       value: {fileID: 0}
     attribute: m_Sprite
     path: 
@@ -70,7 +70,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.52777773
+    m_StopTime: 0.5185185
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,7 +90,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.41666666
+  - time: 0.14814815
+    functionName: CallHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.4074074
     functionName: CancelLag
     data: 
     objectReferenceParameter: {fileID: 0}

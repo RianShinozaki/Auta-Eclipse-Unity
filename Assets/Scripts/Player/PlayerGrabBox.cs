@@ -8,11 +8,14 @@ public class PlayerGrabBox : MonoBehaviour
     // Start is called before the first frame update
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        BaseEnemy enemy = collision.transform.root.GetComponent<BaseEnemy>();
+        Debug.Log("grab1");
+        BaseEnemy enemy = collision.transform.parent.GetComponent<BaseEnemy>();
         if (enemy != null)
         {
+            Debug.Log("grab2");
             if (enemy.stunned)
             {
+                Debug.Log("grab3");
                 player.EnemyGrabbed(enemy);
             }
         }

@@ -2209,7 +2209,7 @@ MonoBehaviour:
   - {fileID: 556482248}
   - {fileID: 1420952988}
   currentHitBox: {fileID: 0}
-  currentPowerChip: 2
+  currentPowerChip: 0
   Sound_OrbThrow:
     idInternal: 0
     valueGuidInternal: 
@@ -2479,7 +2479,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5558269532123051130, guid: a9b1334dd967ea2429970e9dcf30c6ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

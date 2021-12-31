@@ -175,6 +175,8 @@ public class HurtBox : MonoBehaviour
                 entity.Velocity.x = Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) * Mathf.Sign(hitbox.transform.parent.localScale.x) / (entity.Staggered ? 1 : 4);
             }
 
+            entity.HurtResponse(((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 1.5f), Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) / (entity.Staggered ? 1 : 4), Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12));
+
             if (hitbox.inflictYKnockback > 0 && entity.Staggered)
             {
                 entity.Velocity.y = Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12);
@@ -195,7 +197,6 @@ public class HurtBox : MonoBehaviour
             }
 
             hitbox.AttackConnected(gameObject);
-            entity.HurtResponse(((hitbox.inflictDamage + entity.BaseAttack) * AffinityDamageMult * CriticalMult - entity.BaseDefense) / (entity.Staggered ? 1 : 1.5f), Mathf.Clamp(hitbox.inflictXKnockback - entity.BaseSturdiness, 0, 12) / (entity.Staggered ? 1 : 4), Mathf.Clamp(hitbox.inflictYKnockback - entity.BaseSturdiness, 0, 12));
 
             
             if(entity.MaxStagger == 0)

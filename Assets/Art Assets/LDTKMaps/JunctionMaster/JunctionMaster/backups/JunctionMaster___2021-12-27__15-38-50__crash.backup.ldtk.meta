@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 957d934c31614284594d0f1063051421
+guid: 1950c3eb90c22904d9bd972c0e36453f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -8,20 +8,14 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
-  _jsonFile: {fileID: -164016180542632921, guid: 957d934c31614284594d0f1063051421, type: 3}
+  _jsonFile: {instanceID: 0}
   _pixelsPerUnit: 16
   _atlas: {instanceID: 0}
   _customLevelPrefab: {instanceID: 0}
   _deparentInRuntime: 0
   _intGridValueColorsVisible: 0
   _useCompositeCollider: 1
-  _intGridValues:
-  - _key: Earth_1
-    _asset: {fileID: 11400000, guid: 788d08c59406a0241b02427e7660de4e, type: 2}
-  - _key: Brickwork_1
-    _asset: {fileID: 11400000, guid: 788d08c59406a0241b02427e7660de4e, type: 2}
-  - _key: EarthBG_1
-    _asset: {fileID: 11400000, guid: 788d08c59406a0241b02427e7660de4e, type: 2}
+  _intGridValues: []
   _entities: []
   _enumGenerate: 0
   _enumPath: 

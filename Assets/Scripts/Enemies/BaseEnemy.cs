@@ -254,6 +254,7 @@ public class BaseEnemy : PhysicsEntity
 
         if(LightEnemy && Grounded == false || Mathf.Abs(knockbackx) > 3)
         {
+            Debug.Log("knockbackx: " + (knockbackx.ToString()));
             Tumble = true;
             TumbleSpeed = Mathf.Clamp(Velocity.x + Velocity.y * Mathf.Sign(Velocity.x), -3, 3) * 60;
         }
